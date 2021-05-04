@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*登入頁&身份驗證*/
+body{
+	margin:0px;
+	background:url(../Images/Bg_Def.jpg);
+	font-family: 微軟正黑體, Arial;
+	/*overflow:hidden;*/
+}
+td{
+	font-size:10pt;
+	line-height:22px;
+	color: #000000;
+	font-family: 微軟正黑體, Arial;
+	text-decoration: none;
+	line-height: 150%;
+	word-break:break-all;
+}
+A:active{
+	color: #ffff00;
+	font-family: 微軟正黑體, Arial;
+	text-decoration: none;
+}
+A:link{
+	color: #ffff00;
+	font-family: 微軟正黑體, Arial;
+	text-decoration: none;
+}
+A:visited{
+	color: #ffff00;
+	font-family: 微軟正黑體, Arial;
+	text-decoration: none;
+}
+A:hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+/*Copyright:ugA_Login.css & ugA_Menu.css皆須修改*/
+.copyright td{
+	font-family: 微軟正黑體, Arial;
+    font-size: 10pt;
+    color: #FFFFFF;
+    line-height: 150%;
+}
+.copyright A:active{
+    color:#ffff00;
+    text-decoration: none
+}
+.copyright A:link{
+    color: #ffff00;
+    text-decoration: none
+}
+.copyright A:visited{
+    color: #ffff00;
+    text-decoration: none
+}
+.copyright A:hover{
+    color: #FFFFFF;
+    text-decoration: underline
+}
+input,select{
+	border:#6b6b6b 1px solid;
+	font-size:10pt;
+	color:#000000;
+	font-family:微軟正黑體, Arial;
+}
+textarea{
+	border:#999999 1px solid;
+	color:#333333;
+	font-family:微軟正黑體, Arial;
+	background-color:white;
+}
+.radio{
+	border:#FFFFFF 0px solid;
+	background-color:transparent;
+}
+.notice{
+	color:#FF0000;
+}
+.css_refImg a:active ,.css_refImg a:link ,.css_refImg a:visited{
+	color:#e94a8a;
+	text-decoration:none;
+}
+.css_refImg a:hover{
+	color:#FF0000;
+	text-decoration:none;
+}

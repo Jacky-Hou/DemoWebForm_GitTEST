@@ -1,0 +1,11 @@
+﻿/*橘色系*/
+.Header .Nav { border-top:none;}
+.Header .Nav ul.MainMenu { background:orange;}
+.Header .Nav ul.MainMenu li.MainMenuLi a:link,
+.Header .Nav ul.MainMenu li.MainMenuLi a:visited,
+.Header .Nav ul.MainMenu li.MainMenuLi a:hover,
+.Header .Nav ul.MainMenu li.MainMenuLi a:active { color:white;}
+.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub { background:orange;}
+.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub li a:hover,
+.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub li a:active { color:white;}
+.footer { border-top:0.1rem solid black;}

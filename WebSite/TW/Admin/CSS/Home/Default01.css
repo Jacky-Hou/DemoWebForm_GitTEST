@@ -1,0 +1,160 @@
+﻿@charset "utf-8";
+/*1-4.Header設定
+------------------------*/
+.Header { width:100%; height:100px; margin:0 auto; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; z-index:9; padding-left:110px;}
+.Header .Logo { width:110px; height:100px; float:left; position:absolute; top:0; left:0;}
+.Header .TopMenu { display:none;}
+.Header .Search{ display:none;}
+
+/*1-6.Nav設定
+------------------------*/
+.Header .Div-W1000 { max-width:100%; display:inline;}
+.Header .Nav { width:100%; height:50px; float:right; margin-top:25px; padding-left:40px;}
+.Header .Nav * { padding:0; margin:0; list-style:none;}
+.Header .Nav ul.MainMenu { background:none;}
+.Header .NavFixed > ul.MainMenu { background:none;}
+.slicknav_menu { display:none;}
+
+/*1-7.DefBanner設定
+------------------------*/
+.DefBanner { width:100%; height:auto; overflow:hidden; position:relative; margin:0 auto;}
+.swiper-container-DefBanner { position:relative;}
+.swiper-container-DefBanner .swiper-pagination-clickable { position:absolute; width:100%; height:auto; overflow:hidden; bottom:0; left:0; text-align:center; z-index:8;}
+.swiper-container-DefBanner .swiper-pagination-clickable span { margin:5px;}
+
+
+/*-----------------首頁中間內容設定-----------------*/
+.DefContent { width:100%; height:auto; overflow:hidden; margin:0 auto;}
+.DefContent .Div-W1000 { max-width:1920px;}
+.DefProducts01 { width:100%; height:auto; max-width:1920px; overflow:hidden; background:url(../../Images/Home/Default01/DefProducts01.jpg) top center no-repeat; padding:100px 0; text-align:center;}
+.DefProducts01 .DefProducts_02 {margin-top:140px;}
+.DefProducts01 .DefProducts_02  .swiper-wrapper { margin-bottom:40px;}
+.DefProducts01 .swiper-wrapper .swiper-slide { max-width:100%;}
+.DefProducts01 .swiper-wrapper .DivName { display:none;}
+.DefProducts01 .swiper-container-Product2 { max-width:700px; margin:0 auto; overflow:hidden;}
+.DefProducts01 .swiper-pagination-clickable .swiper-pagination-bullet { margin:0 2.5px;}
+.DefProducts01 .More { width:100%; height:auto; overflow:hidden; margin:0 auto; padding:30px 0; padding-bottom:0;}
+.DefProducts01 .More a { display:block; width:130px; height:40px; line-height:40px; overflow:hidden; margin:0 auto; text-align:center; color:#fff; border:1px solid rgba(255,255,255,0.5); background:rgba(0,0,0,0.2); text-decoration:none;
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+
+.DefNews01 { width:100%; max-width:1920px; height:750px; overflow:hidden; background:url(../../Images/Home/Default01/DefNews01.jpg) top center no-repeat; padding-top:80px;}
+.DefNews01 * {box-sizing:border-box; padding:0; margin:0;}
+.DefNews01 .DefProducts_02 { width:100%; height:auto; overflow:hidden; margin:0 auto; max-width:1200px;}
+.DefNews01 .DefProducts_02 .swiper-wrapper { margin-bottom:40px;}
+.DefNews01 .DefProducts_02 .swiper-slide {  max-width:285px; height:400px; overflow:hidden; background:#ebeae8;}
+.DefNews01 .DefProducts_02 .swiper-slide .DivFrame { width:100%; max-width:285px; height:auto; overflow:hidden; margin:0 auto;}
+.DefNews01 .DefProducts_02 .swiper-slide .DivFrame .DivImg { width:100%; height:270px; overflow:hidden; margin:0 auto;}
+.DefNews01 .DefProducts_02 .swiper-slide .DivFrame .DivImg a { display:block;}
+.DefNews01 .DefProducts_02 .swiper-slide .DivFrame .DivImg a img { width:285px; height:270px;}
+.DefNews01 .DefProducts_02 .swiper-slide .DivFrame .DivName { width:100%; height:110px; overflow:hidden; margin:0 auto;}
+.DefNews01 .DefProducts_02 .swiper-slide .DivFrame .DivName a { display:block; width:100%; height:auto; overflow:hidden; padding:20px 15px; text-decoration:none;}
+.DefNews01 .DefProducts_02 .swiper-slide .DivFrame .DivName a h3 { font-size:15px; color:#464646; font-weight:normal;}
+.DefNews01 .DefProducts_02 .swiper-slide .DivFrame .DivName a h1 { font-size:18px; color:#464646; font-weight:normal;}
+
+/*2015.11.25 Karen 修正首頁新聞第二行壓底問題*/
+.DefNews01 .DefProducts_02 .swiper-slide .DivFrame .DivName a br { display: block; margin: 4px 0;}
+
+.DefNews01 .DefProducts_02 .swiper-wrapper { margin-bottom:45px;}
+.DefNews01 .DefProducts_02 .swiper-pagination-People3 { text-align:center;}
+.DefNews01 .DefProducts_02 .swiper-pagination-clickable .swiper-pagination-bullet { margin:0 2.5px;}
+.DefNews01 .More { width:100%; height:auto; overflow:hidden; margin:0 auto; padding:40px 0;}
+.DefNews01 .More a { display:block; width:130px; height:40px; line-height:40px; overflow:hidden; margin:0 auto; text-align:center; color:#fff; border:1px solid rgba(255,255,255,0.5); text-decoration:none;
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+
+.DefAboutUs01 { width:100%; max-width:1920px; height:auto; overflow:hidden; background:url(../../Images/Home/Default01/DefAboutUs01.jpg) 0 0 no-repeat; padding:120px 0;
+-webkit-box-shadow: inset 0px 0px 100px 0px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    inset 0px 0px 100px 0px rgba(0, 0, 0, 0.75);
+box-shadow:         inset 0px 0px 100px 0px rgba(0, 0, 0, 0.75);}
+.DefAboutUs01 img { display:none;}
+.DefAboutUs01 * {box-sizing:border-box; padding:0; margin:0;}
+.DefAboutUs01 .DefContentH1 { width:100%; max-width:1024px; height:auto; overflow:hidden; margin:0 auto; text-align:center;}
+.DefAboutUs01 .DefContentH1 * { padding:0; margin:0;}
+.DefAboutUs01 .DefContentH1 h1 { width:100%; height:40px; line-height:40px; overflow:hidden; color:#fff; font-weight:normal; float:left;}
+.DefAboutUs01 .DefContentH1 p { font-size:18px; color:#fff; margin:40px auto; width:100%; height:auto; overflow:hidden; line-height:1.7em; display:block; float:left;}
+.DefAboutUs01 .More { width:100%; float:left; height:auto; overflow:hidden; margin:0 auto;}
+.DefAboutUs01 .More a { display:block; width:130px; height:40px; line-height:40px; overflow:hidden; margin:0 auto; text-align:center; color:#fff; border:1px solid rgba(255,255,255,0.5); text-decoration:none;
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+
+.DefAlbum01 { width:100%; max-width:1920px; height:auto; overflow:hidden; background:url(../../Images/Home/Default01/DefAlbum01.jpg) top center no-repeat; padding:120px 0;}
+.DefAlbum01 * {box-sizing:border-box; padding:0; margin:0;}
+.DefAlbum01 .DefContentH1 { width:100%; height:auto; overflow:hidden; margin:0 auto; text-align:center;}
+.DefAlbum01 .DefContentH1 * { padding:0; margin:0;}
+.DefAlbum01 .DefContentH1 h1 { font-weight:normal; color:#fff;}
+.DefAlbum01 .DefProducts_01 { width:100%; height:auto; overflow:hidden; margin:70px auto; margin-bottom:30px; max-width:1200px;}
+.DefAlbum01 .DefProducts_01 .swiper-wrapper { margin-bottom:40px;}
+.DefAlbum01 .DefProducts_01 .swiper-slide {  max-width:280px; height:280px; overflow:hidden; border:2.5px solid #fff; background:#fff;
+/*陰影*/
+-webkit-box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.1);-moz-box-shadow:2px 2px 2px 0px rgba(50, 50, 50, 0.1);
+box-shadow:2px 2px 2px 0px rgba(50, 50, 50, 0.1);}
+.DefAlbum01 .DefProducts_01 .swiper-slide .DivFrame { width:100%; max-width:275px; height:auto; overflow:hidden; margin:0 auto;}
+.DefAlbum01 .DefProducts_01 .swiper-slide .DivFrame .DivImg { width:100%; height:275px; overflow:hidden; margin:0 auto;}
+.DefAlbum01 .DefProducts_01 .swiper-slide .DivFrame .DivImg a { display:block;}
+.DefAlbum01 .DefProducts_01 .swiper-slide .DivFrame .DivImg a img { width:275px; height:275px;}
+.DefAlbum01 .DefProducts_01 .swiper-pagination-People2 { text-align:center;}
+.DefAlbum01 .DefProducts_01 .swiper-pagination-clickable .swiper-pagination-bullet { margin:0 2.5px;}
+.DefAlbum01 .More { width:100%; height:auto; overflow:hidden; margin:0 auto; padding:0;}
+.DefAlbum01 .More a { display:block; width:130px; height:40px; line-height:40px; overflow:hidden; margin:0 auto; text-align:center; color:#fff; border:1px solid rgba(255,255,255,0.5); text-decoration:none; background:rgba(0,0,0,0.3);
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+
+
+.DefFAQ01 { width:100%; max-width:1920px; height:800px; overflow:hidden; background:url(../../Images/Home/Default01/DefFAQ01.jpg) 0 0 no-repeat; padding-top:80px; position:relative;}
+.DefFAQ01 * {box-sizing:border-box; padding:0; margin:0;}
+.DefFAQ01 .DefContentH1 { width:480px; height:280px; overflow:hidden; position:absolute;right:50%; margin-right:-720px; top:285px;}
+.DefFAQ01 .DefContentH1 * { padding:0; margin:0;}
+.DefFAQ01 .DefContentH1 h1 { width:100%; height:55px; overflow:hidden; text-indent:-9999px; background:url(../../Images/Home/Default01/DefFAQ01_H1.png) 0 0 no-repeat;}
+.DefFAQ01 .DefContentH1 p { font-size:18px; color:#6c6c6c; margin-top:30px; line-height:1.7em;}
+.DefFAQ01 .More { width:130px; height:auto; overflow:hidden; float:left; margin-top:85px;}
+.DefFAQ01 .More a { display:block; width:130px; height:40px; line-height:40px; overflow:hidden; margin:0 auto; text-align:center; color:#6c6c6c; border:1px solid #6c6c6c; text-decoration:none;
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+
+/*1-10.SiteMap設定
+------------------------*/
+.SiteMap { display:none;}
+@media only screen and (min-width:0px) and (max-width:1200px) {
+	.DefNews01 .DefProducts_02 { max-width:900px;}
+	.DefAlbum01 .DefProducts_01 { max-width:900px;}
+	}
+
+@media only screen and (min-width:0px) and (max-width:1024px){
+	.Header { padding:0; padding-left:110px;}
+	.DefAboutUs01 .DefContentH1 { padding:0 40px;}
+	}
+
+@media only screen and (min-width:0px) and (max-width:930px){
+	.Header { background:#000;}
+	.DefBanner { margin-top:100px;}
+	.DefProducts01 { background:url(../../Images/Home/Default01/DefProducts01.jpg) top center no-repeat;
+	-moz-background-size:auto 100%;-webkit-background-size:auto 100%;-o-background-size:auto 100%;background-size:auto 100%;}
+	.DefProducts01 .swiper-container-Product2 { max-width:600px;}
+	.DefNews01 .DefProducts_02 { max-width:600px;}
+	.DefAlbum01 .DefProducts_01 { max-width:600px;}
+	}
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+	/*1-6.Nav設定
+	------------------------*/
+	.slicknav_menu { display:block;}
+	.Header .Nav { display:none;}
+	.slicknav_menu { margin-top:20px; width:50%; position:fixed;}
+	.slicknav_menu .slicknav_icon-bar { background:#fff;}
+	.slicknav_menu .slicknav_open .slicknav_icon { background:url(../../JS/SlickNav/slicknav_icon_close_w.png) 0 0 no-repeat;}
+	.slicknav_nav { background:rgba(0,0,0,0.7); margin-top:24px;}
+	.DefProducts01 .swiper-container-Product2 { max-width:500px;}
+	}
+
+@media only screen and (min-width:0px) and (max-width:620px){
+	.DefProducts01 .swiper-container-Product2 { max-width:400px;}
+	.DefNews01 .DefProducts_02 { max-width:285px;}
+	.DefAlbum01 .DefProducts_01 { max-width:280px;}
+	}
+
+
+@media only screen and (min-width:0px) and (max-width:540px) {
+	.DefProducts01 .swiper-container-Product2 { max-width:300px;}
+	}
+

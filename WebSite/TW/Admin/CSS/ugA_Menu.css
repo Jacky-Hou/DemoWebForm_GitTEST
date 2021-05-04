@@ -1,0 +1,80 @@
+﻿@charset "utf-8";
+
+body{
+	margin:0px;
+	font-family: 微軟正黑體, Verdana, Geneva, sans-serif;
+	background:url(../Images/Bg_Def.jpg);
+}
+
+td{
+	font-size:10pt;
+	line-height:22px;
+	color: #FFFFFF;
+	font-family:微軟正黑體, Verdana, Geneva, sans-serif;
+	text-decoration: none;
+	line-height: 150%;
+	word-break:break-all;
+}
+
+.m_css_MenuCat
+{
+    font-size: 12pt;
+    color: #FFF;
+    font-family: 微軟正黑體, Verdana, Geneva, sans-serif;
+    font-vatiant: normal
+}
+.m_css_Menu
+{
+    /*font-weight: bolder;*/
+    font-size: 12pt;
+    color: #085d8e;
+    font-family: 微軟正黑體, Verdana, Geneva, sans-serif;
+    font-vatiant: normal
+}
+
+A:active{
+	color: #FFFF00;
+	font-family: 微軟正黑體, Verdana, Geneva, sans-serif;
+	text-decoration: none;
+}
+A:link{
+	color: #FFFF00;
+	font-family: 微軟正黑體, Verdana, Geneva, sans-serif;
+	text-decoration: none;
+}
+A:visited{
+	color: #FFFF00;
+	font-family: 微軟正黑體, Verdana, Geneva, sans-serif;
+	text-decoration: none;
+}
+A:hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+/*Copyright:ugA_Login.css & ugA_Menu.css皆須修改*/
+.copyright td{
+	font-family: 微軟正黑體, Arial;
+    font-size: 10pt;
+    color: #FFFFFF;
+    line-height: 150%;
+}
+.copyright A:active{
+    color:#ffff00;
+    text-decoration: none
+}
+.copyright A:link{
+    color: #ffff00;
+    text-decoration: none
+}
+.copyright A:visited{
+    color: #ffff00;
+    text-decoration: none
+}
+.copyright A:hover{
+    color: #FFFFFF;
+    text-decoration: underline
+}
+.notice{
+	color:#FFFF00;
+}

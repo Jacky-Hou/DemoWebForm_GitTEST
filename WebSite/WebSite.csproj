@@ -1,0 +1,1170 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D93F2F2-8F92-43AD-8500-DE052637AC69}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebSite</RootNamespace>
+    <AssemblyName>WebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.94.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.94.2\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.3\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.3.0\lib\net45\FastMember.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.0.0.999, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.0.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Z:\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Z:\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Z:\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Z:\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\ClassLibrary.dll" />
+    <Content Include="bin\ClassLibrary.pdb" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.IO.Pipes.AccessControl.dll" />
+    <Content Include="bin\roslyn\System.IO.Pipes.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Security.AccessControl.dll" />
+    <Content Include="bin\roslyn\System.Security.Claims.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Security.Principal.Windows.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\WebSite.dll" />
+    <Content Include="bin\WebSite.pdb" />
+    <None Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="Content\jquery.jqGrid\ellipsis-xbl.xml" />
+    <Content Include="Content\jquery.jqGrid\ui.jqgrid.css" />
+    <Content Include="Content\themes\base\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Content\themes\base\minified\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="index.aspx" />
+    <Content Include="Scripts\i18n\grid.locale-ar.js" />
+    <Content Include="Scripts\i18n\grid.locale-bg.js" />
+    <Content Include="Scripts\i18n\grid.locale-bg1251.js" />
+    <Content Include="Scripts\i18n\grid.locale-cat.js" />
+    <Content Include="Scripts\i18n\grid.locale-cn.js" />
+    <Content Include="Scripts\i18n\grid.locale-cs.js" />
+    <Content Include="Scripts\i18n\grid.locale-da.js" />
+    <Content Include="Scripts\i18n\grid.locale-de.js" />
+    <Content Include="Scripts\i18n\grid.locale-dk.js" />
+    <Content Include="Scripts\i18n\grid.locale-el.js" />
+    <Content Include="Scripts\i18n\grid.locale-en.js" />
+    <Content Include="Scripts\i18n\grid.locale-es.js" />
+    <Content Include="Scripts\i18n\grid.locale-fa.js" />
+    <Content Include="Scripts\i18n\grid.locale-fi.js" />
+    <Content Include="Scripts\i18n\grid.locale-fr.js" />
+    <Content Include="Scripts\i18n\grid.locale-gl.js" />
+    <Content Include="Scripts\i18n\grid.locale-he.js" />
+    <Content Include="Scripts\i18n\grid.locale-hr.js" />
+    <Content Include="Scripts\i18n\grid.locale-hr1250.js" />
+    <Content Include="Scripts\i18n\grid.locale-hu.js" />
+    <Content Include="Scripts\i18n\grid.locale-id.js" />
+    <Content Include="Scripts\i18n\grid.locale-is.js" />
+    <Content Include="Scripts\i18n\grid.locale-it.js" />
+    <Content Include="Scripts\i18n\grid.locale-ja.js" />
+    <Content Include="Scripts\i18n\grid.locale-kr.js" />
+    <Content Include="Scripts\i18n\grid.locale-lt.js" />
+    <Content Include="Scripts\i18n\grid.locale-mne.js" />
+    <Content Include="Scripts\i18n\grid.locale-nl.js" />
+    <Content Include="Scripts\i18n\grid.locale-no.js" />
+    <Content Include="Scripts\i18n\grid.locale-pl.js" />
+    <Content Include="Scripts\i18n\grid.locale-pt-br.js" />
+    <Content Include="Scripts\i18n\grid.locale-pt.js" />
+    <Content Include="Scripts\i18n\grid.locale-ro.js" />
+    <Content Include="Scripts\i18n\grid.locale-ru.js" />
+    <Content Include="Scripts\i18n\grid.locale-sk.js" />
+    <Content Include="Scripts\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Scripts\i18n\grid.locale-sr.js" />
+    <Content Include="Scripts\i18n\grid.locale-sv.js" />
+    <Content Include="Scripts\i18n\grid.locale-th.js" />
+    <Content Include="Scripts\i18n\grid.locale-tr.js" />
+    <Content Include="Scripts\i18n\grid.locale-tw.js" />
+    <Content Include="Scripts\i18n\grid.locale-ua.js" />
+    <Content Include="Scripts\i18n\grid.locale-vi.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.0.js" />
+    <Content Include="Scripts\jquery-ui-1.10.0.min.js" />
+    <Content Include="Scripts\jquery.jqGrid.js" />
+    <Content Include="Scripts\jquery.jqGrid.min.js" />
+    <Content Include="Test\FBorLineshare.aspx" />
+    <Content Include="TW\Admin\Acct\ugA_Acct.aspx" />
+    <Content Include="TW\Admin\Acct\ugA_AcctCat.aspx" />
+    <Content Include="TW\Admin\Acct\ugA_Acct_m.aspx" />
+    <Content Include="TW\Admin\Acct\ugA_incLeft.ascx" />
+    <Content Include="TW\Admin\Acct\ugA_AcctCat_m.aspx" />
+    <Content Include="TW\Admin\CSS\font-awesome\css\font-awesome.min.css" />
+    <Content Include="TW\Admin\CSS\icofont\css\icofont.css" />
+    <Content Include="TW\Admin\CSS\ProgressBar.css" />
+    <Content Include="TW\Admin\CSS\ugA_Login.css" />
+    <Content Include="TW\Admin\CSS\ugA_Main.css" />
+    <Content Include="TW\Admin\CSS\ugA_Menu.css" />
+    <Content Include="TW\Admin\CSS\ugA_Setting.css" />
+    <Content Include="TW\Admin\CSS\ugA_SubMenu.css" />
+    <Content Include="TW\Admin\CSS\ugA_UI.css" />
+    <Content Include="TW\Admin\Default.aspx" />
+    <Content Include="TW\Admin\Images\Bg_Click100P.gif" />
+    <Content Include="TW\Admin\Images\Bg_Click100P_blue.gif" />
+    <Content Include="TW\Admin\Images\Bg_Click100P_Red.gif" />
+    <Content Include="TW\Admin\Images\Bg_Def.jpg" />
+    <Content Include="TW\Admin\Images\Bg_FnBu.gif" />
+    <Content Include="TW\Admin\Images\Bg_FnBu_o.gif" />
+    <Content Include="TW\Admin\Images\Bg_Left.gif" />
+    <Content Include="TW\Admin\Images\Bg_Login.jpg" />
+    <Content Include="TW\Admin\Images\Bg_Menu.jpg" />
+    <Content Include="TW\Admin\Images\Bg_Menu01.gif" />
+    <Content Include="TW\Admin\Images\Bg_Menu02.gif" />
+    <Content Include="TW\Admin\Images\Bg_MenuCat.gif" />
+    <Content Include="TW\Admin\Images\Bg_MenuHome.gif" />
+    <Content Include="TW\Admin\Images\Bg_MenuItem.gif" />
+    <Content Include="TW\Admin\Images\Bg_MenuTitle.gif" />
+    <Content Include="TW\Admin\Images\Bu_Back.gif" />
+    <Content Include="TW\Admin\Images\Bu_Home.gif" />
+    <Content Include="TW\Admin\Images\Bu_Home_o.gif" />
+    <Content Include="TW\Admin\Images\Bu_Login.gif" />
+    <Content Include="TW\Admin\Images\Bu_LoginCls.gif" />
+    <Content Include="TW\Admin\Images\Bu_Logoff.gif" />
+    <Content Include="TW\Admin\Images\Bu_Logoff_o.gif" />
+    <Content Include="TW\Admin\Images\Diary\Face\01.gif" />
+    <Content Include="TW\Admin\Images\Diary\Face\02.gif" />
+    <Content Include="TW\Admin\Images\Diary\Face\03.gif" />
+    <Content Include="TW\Admin\Images\Diary\Face\04.gif" />
+    <Content Include="TW\Admin\Images\Diary\Face\05.gif" />
+    <Content Include="TW\Admin\Images\Diary\Face\_notes\dwsync.xml" />
+    <Content Include="TW\Admin\Images\Eng\Bu_Back.gif" />
+    <Content Include="TW\Admin\Images\Eng\Bu_Login.gif" />
+    <Content Include="TW\Admin\Images\Eng\Bu_LoginCls.gif" />
+    <Content Include="TW\Admin\Images\FnBu_icon_add.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_add_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_best.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_best_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_browse.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_browse_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_change.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_change_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_cleanSearch.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_cleanSearch_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_copy.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_copy_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_cover.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_cover_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_delete.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_deleteExcel.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_deleteExcel_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_delete_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_download.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_download_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_files.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_files2.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_files2_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_files_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_import.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_import_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_inventory.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_inventory_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_modify.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_modify_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_money.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_money_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_newProduct.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_newProduct_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_preinstall.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_preinstall_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_print.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_print_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_renew.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_renew_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_reply.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_reply_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_search.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_search_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_selectProduct.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_selectProduct_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_startAndEnd.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_startAndEnd_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_stop.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_stop_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_top.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_top_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_type.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_type_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_up.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_upToDateProduct.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_upToDateProduct_o.jpg" />
+    <Content Include="TW\Admin\Images\FnBu_icon_up_o.jpg" />
+    <Content Include="TW\Admin\Images\Icon_Calendar.gif" />
+    <Content Include="TW\Admin\Images\Icon_CalendarNext.gif" />
+    <Content Include="TW\Admin\Images\Icon_CalendarPrev.gif" />
+    <Content Include="TW\Admin\Images\Icon_Dot.gif" />
+    <Content Include="TW\Admin\Images\Icon_Email.gif" />
+    <Content Include="TW\Admin\Images\Icon_Error.gif" />
+    <Content Include="TW\Admin\Images\Icon_File.gif" />
+    <Content Include="TW\Admin\Images\Icon_Folder.gif" />
+    <Content Include="TW\Admin\Images\Icon_Item.gif" />
+    <Content Include="TW\Admin\Images\Icon_LayOutLB.gif" />
+    <Content Include="TW\Admin\Images\Icon_LayOutLD.gif" />
+    <Content Include="TW\Admin\Images\Icon_LayOutLT.gif" />
+    <Content Include="TW\Admin\Images\Icon_LayOutRB.gif" />
+    <Content Include="TW\Admin\Images\Icon_LayOutRD.gif" />
+    <Content Include="TW\Admin\Images\Icon_LayOutRT.gif" />
+    <Content Include="TW\Admin\Images\Icon_Loading.gif" />
+    <Content Include="TW\Admin\Images\Icon_Modify.gif" />
+    <Content Include="TW\Admin\Images\Icon_People.gif" />
+    <Content Include="TW\Admin\Images\Icon_Preview.gif" />
+    <Content Include="TW\Admin\Images\Icon_Sticky.gif" />
+    <Content Include="TW\Admin\Images\Icon_Url.gif" />
+    <Content Include="TW\Admin\Images\Icon_View.gif" />
+    <Content Include="TW\Admin\Images\Icon_Web.gif" />
+    <Content Include="TW\Admin\Images\Icon_WebMail.gif" />
+    <Content Include="TW\Admin\Images\Img_DefUpload.gif" />
+    <Content Include="TW\Admin\Images\Loading.gif" />
+    <Content Include="TW\Admin\Images\loading.swf" />
+    <Content Include="TW\Admin\Images\Setting\background\Def_bg05.jpg" />
+    <Content Include="TW\Admin\Images\Setting\icon\20150706175046.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\20150717135221.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\20150804144212.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\20150804145733.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\20150804145818.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\20150813120835.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\20150813120858.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\20150813121358.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\20150813121422.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu26.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu27.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu28.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu29.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu30.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu31.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu32.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu33.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu39.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu49.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu50.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\b2b2cmenu51.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\back_bu.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\captcha.bmp" />
+    <Content Include="TW\Admin\Images\Setting\icon\Header_bg.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\Header_bg2.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\icon_account.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\icon_password.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\icon_wrong.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\login_bg.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\login_bg2.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\login_bu.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\login_logo.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu01.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu02.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu03.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu04.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu05.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu06.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu07.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu08.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu09.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu10.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu11.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu12.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu13.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu14.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu15.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu16.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu17.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu18.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu19.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu20.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu21.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu22.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu23.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu24.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu25.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu26.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu27.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu28.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu29.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu30.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu31.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu32.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu33.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu34.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu35.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu36.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu37.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu38.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu39.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu40.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu41.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu42.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu43.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu44.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu45.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu46.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu47.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu48.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu49.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu50.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu51.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu52.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu53.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\menu_icon.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\nav_01.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\nav_02.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\nav_03.png" />
+    <Content Include="TW\Admin\Images\Setting\icon\nav_04.png" />
+    <Content Include="TW\Admin\Images\uGearLogo.gif" />
+    <Content Include="TW\Admin\Images\UI\Bg_MenuTitle.png" />
+    <Content Include="TW\Admin\Images\UI\Def_bg01.jpg" />
+    <Content Include="TW\Admin\Images\UI\Home_icon.png" />
+    <Content Include="TW\Admin\Images\UI\left_bg.png" />
+    <Content Include="TW\Admin\Images\UI\Logoff_icon.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon01.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon02.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon03.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon04.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon05.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon06.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon07.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon08.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon09.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon10.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon11.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon12.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon13.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon14.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon15.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon16.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon17.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon18.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon19.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon20.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon21.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon22.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon23.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon24.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon25.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon26.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon27.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon28.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon29.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon30.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon31.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon32.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon33.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon34.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon35.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon36.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon37.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon38.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon39.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon40.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon41.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon42.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon43.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon44.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon45.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon46.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon47.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon48.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon49.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon50.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon51.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon52.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon53.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon54.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon55.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon56.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon57.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon58.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon59.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon60.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon61.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon62.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon63.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon64.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon65.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon66.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon67.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon68.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon69.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon70.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon71.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon72.png" />
+    <Content Include="TW\Admin\Images\UI\MenuItem_icon73.png" />
+    <Content Include="TW\Admin\Images\UI\MenuTitle_line.png" />
+    <Content Include="TW\Admin\Images\UI\_notes\dwsync.xml" />
+    <Content Include="TW\Admin\Images\YouTubeDescr01.jpg" />
+    <Content Include="TW\Admin\Images\_notes\dwsync.xml" />
+    <Content Include="TW\Admin\Inc\ugA_DatePicket.ascx" />
+    <Content Include="TW\Admin\Inc\ugA_Pagination.ascx" />
+    <Content Include="TW\Admin\ugA_LoginChk.html" />
+    <Content Include="TW\Admin\User\ugA_incLeft.ascx" />
+    <Content Include="TW\Admin\Inc\ugA_MsgBox.ascx" />
+    <Content Include="TW\Admin\User\ugA_User.aspx" />
+    <Content Include="TW\Admin\User\ugA_User_m.aspx" />
+    <Content Include="TW\Captcha-Text\ugC_Captcha-Text.aspx" />
+    <Content Include="TW\CSS\font-awesome\css\font-awesome.css" />
+    <Content Include="TW\CSS\font-awesome\css\font-awesome.min.css" />
+    <Content Include="TW\CSS\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="TW\CSS\Home\Default.css" />
+    <Content Include="TW\CSS\icofont.css" />
+    <Content Include="TW\CSS\icofont\css\icofont.css" />
+    <Content Include="TW\CSS\icofont\fonts\icofont.svg" />
+    <Content Include="TW\CSS\Setting\ugC_CSS1.css" />
+    <Content Include="TW\CSS\Setting\ugC_CSS2.css" />
+    <Content Include="TW\CSS\Setting\ugC_CSS3.css" />
+    <Content Include="TW\CSS\Setting\ugC_CSS4.css" />
+    <Content Include="TW\CSS\Setting\ugC_CSS5.css" />
+    <Content Include="TW\CSS\Setting\ugC_CSS6.css" />
+    <Content Include="TW\CSS\Setting\ugC_CSS7.css" />
+    <Content Include="TW\CSS\Setting\ugC_CSS8.css" />
+    <Content Include="TW\CSS\SlickNav\slicknav.css" />
+    <Content Include="TW\CSS\ugC_Main.css" />
+    <Content Include="TW\Home\Default.aspx" />
+    <Content Include="TW\Home\ugC_incBannerButton_Def.ascx" />
+    <Content Include="TW\Home\ugC_incBannerText_Def.ascx" />
+    <Content Include="TW\Home\ugC_incBanner_Def.ascx" />
+    <Content Include="TW\Home\ugC_incLink02_Def.ascx" />
+    <Content Include="TW\Home\ugC_incLink_Def.ascx" />
+    <Content Include="TW\Home\ugC_incProducts_Def.ascx" />
+    <Content Include="TW\iframe\ValidateCode.aspx" />
+    <Content Include="TW\Images\mario.png" />
+    <Content Include="TW\Inc\ug_AcctCatID.ascx" />
+    <Content Include="TW\Inc\ug_AcctEdu.ascx" />
+    <Content Include="TW\Inc\ug_AcctHowKnow.ascx" />
+    <Content Include="TW\Inc\ug_AcctOccu.ascx" />
+    <Content Include="TW\Inc\ug_Area.ascx" />
+    <Content Include="TW\Inc\ug_City.ascx" />
+    <Content Include="TW\Inc\ug_Continent.ascx" />
+    <Content Include="TW\Inc\ug_ContinentCityArea.ascx" />
+    <Content Include="TW\Jquery\FBshare.aspx" />
+    <Content Include="TW\Jquery\JqueryAutoComple.aspx" />
+    <Content Include="TW\Jquery\Step1.aspx" />
+    <Content Include="TW\Jquery\Step2.aspx" />
+    <Content Include="TW\Jquery\Step3.aspx" />
+    <Content Include="TW\Jquery\Step4.aspx" />
+    <Content Include="TW\Jquery\Step5.aspx" />
+    <Content Include="TW\Jquery\Step6.aspx" />
+    <Content Include="TW\JS\bootstrap.css" />
+    <Content Include="TW\JS\bootstrap.js" />
+    <Content Include="TW\JS\ChkField.js" />
+    <Content Include="TW\JS\ddsort.js" />
+    <Content Include="TW\JS\jquery-1.12.4.js" />
+    <Content Include="TW\JS\jquery-ui.css" />
+    <Content Include="TW\JS\jquery-ui.min.js" />
+    <Content Include="TW\JS\jquery.jqGrid.min.js" />
+    <Content Include="TW\JS\jquery.js" />
+    <Content Include="TW\JS\jquery-3.4.1.min.js" />
+    <Content Include="TW\JS\jquery.ui\jquery-1.12.4.js" />
+    <Content Include="TW\JS\jquery.ui\jquery-ui.css" />
+    <Content Include="TW\JS\jquery.ui\jquery-ui.js" />
+    <Content Include="TW\JS\jquery.ui\jquery-ui.min.js" />
+    <Content Include="TW\JS\SkitterSlideshow\jquery.easing.1.3.js" />
+    <Content Include="TW\JS\SlickNav\jquery.slicknav.js" />
+    <Content Include="TW\JS\jquery.ui\jquery-ui-1.8.2.custom.min.js" />
+    <Content Include="TW\JS\jquery.ui\jquery-ui-slideraccess.js" />
+    <Content Include="TW\JS\jquery.ui\jquery-ui-timepicker-addon.css" />
+    <Content Include="TW\JS\jquery.ui\jquery-ui-timepicker-addon.js" />
+    <Content Include="TW\JS\jquery.ui\jquery.ui.core.js" />
+    <Content Include="TW\JS\jquery.ui\jquery.ui.datepicker.js" />
+    <Content Include="TW\JS\jquery.ui\jquery.ui.timepicker.js" />
+    <Content Include="TW\JS\jquery.ui\jquery.ui.widget.js" />
+    <Content Include="TW\JS\jquery.ui\themes\CSS\demos.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.accordion.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.all.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.autocomplete.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.base.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.button.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.core.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.datepicker.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.dialog.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.progressbar.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.resizable.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.selectable.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.slider.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.tabs.css" />
+    <Content Include="TW\JS\jquery.ui\themes\jquery.ui.theme.css" />
+    <Content Include="TW\JS\Menu.js" />
+    <Content Include="TW\JS\SlickNav\modernizr.min.js" />
+    <Content Include="TW\JS\Open.js" />
+    <Content Include="TW\JS\ScrollTop.js" />
+    <Content Include="TW\JS\Slider.js" />
+    <Content Include="TW\Admin\ugA_CopyRight.htm" />
+    <Content Include="TW\Admin\ugA_Logout.aspx" />
+    <Content Include="TW\Admin\ugA_Menu.aspx" />
+    <Content Include="TW\JS\Swiper\Css\swiper.min.css" />
+    <Content Include="TW\JS\Swiper\is\classList.min.js" />
+    <Content Include="TW\JS\Swiper\is\swiper.min.js" />
+    <Content Include="TW\JS\ToolJS.js" />
+    <Content Include="TW\Member\ugC_incMember.ascx" />
+    <Content Include="TW\Member\ugC_incPageMenuTop.ascx" />
+    <Content Include="TW\Member\ugC_Member.aspx" />
+    <Content Include="TW\Member\ugC_Member_Final.aspx" />
+    <Content Include="TW\Member\ugC_Member_Login.aspx" />
+    <Content Include="TW\Member\ugC_Member_Regulation.aspx" />
+    <Content Include="TW\oAuthLine\lineOAuth.js" />
+    <Content Include="TW\ugC_Captcha.aspx" />
+    <Content Include="TW\ugC_incTop.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBAccess.cs" />
+    <Compile Include="DBClass\Account.cs" />
+    <Compile Include="DBClass\Event.cs" />
+    <Compile Include="DBClass\Company.cs" />
+    <Compile Include="DBClass\ContinentCityArea.cs" />
+    <Compile Include="DBClass\Log.cs" />
+    <Compile Include="DBClass\Menus.cs" />
+    <Compile Include="DBClass\AdminSetting.cs" />
+    <Compile Include="DBClass\SystemLog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetWebConfig.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\FBorLineshare.aspx.cs">
+      <DependentUpon>FBorLineshare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\FBorLineshare.aspx.designer.cs">
+      <DependentUpon>FBorLineshare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_Acct.aspx.cs">
+      <DependentUpon>ugA_Acct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_Acct.aspx.designer.cs">
+      <DependentUpon>ugA_Acct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_AcctCat.aspx.cs">
+      <DependentUpon>ugA_AcctCat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_AcctCat.aspx.designer.cs">
+      <DependentUpon>ugA_AcctCat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_Acct_m.aspx.cs">
+      <DependentUpon>ugA_Acct_m.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_Acct_m.aspx.designer.cs">
+      <DependentUpon>ugA_Acct_m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_incLeft.ascx.cs">
+      <DependentUpon>ugA_incLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_incLeft.ascx.designer.cs">
+      <DependentUpon>ugA_incLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_AcctCat_m.aspx.cs">
+      <DependentUpon>ugA_AcctCat_m.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Acct\ugA_AcctCat_m.aspx.designer.cs">
+      <DependentUpon>ugA_AcctCat_m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\Basic.Master.cs">
+      <DependentUpon>Basic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\Basic.Master.designer.cs">
+      <DependentUpon>Basic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\Basic_Index.Master.cs">
+      <DependentUpon>Basic_Index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\Basic_Index.Master.designer.cs">
+      <DependentUpon>Basic_Index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\ugA_DatePicket.ascx.cs">
+      <DependentUpon>ugA_DatePicket.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\ugA_DatePicket.ascx.designer.cs">
+      <DependentUpon>ugA_DatePicket.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\ugA_Pagination.ascx.cs">
+      <DependentUpon>ugA_Pagination.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\ugA_Pagination.ascx.designer.cs">
+      <DependentUpon>ugA_Pagination.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\ugA_Logout.aspx.cs">
+      <DependentUpon>ugA_Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\ugA_Logout.aspx.designer.cs">
+      <DependentUpon>ugA_Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\ugA_Menu.aspx.cs">
+      <DependentUpon>ugA_Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\ugA_Menu.aspx.designer.cs">
+      <DependentUpon>ugA_Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\User\ugA_incLeft.ascx.cs">
+      <DependentUpon>ugA_incLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\User\ugA_incLeft.ascx.designer.cs">
+      <DependentUpon>ugA_incLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\ugA_MsgBox.ascx.cs">
+      <DependentUpon>ugA_MsgBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\Inc\ugA_MsgBox.ascx.designer.cs">
+      <DependentUpon>ugA_MsgBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\User\ugA_User.aspx.cs">
+      <DependentUpon>ugA_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\User\ugA_User.aspx.designer.cs">
+      <DependentUpon>ugA_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Admin\User\ugA_User_m.aspx.cs">
+      <DependentUpon>ugA_User_m.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Admin\User\ugA_User_m.aspx.designer.cs">
+      <DependentUpon>ugA_User_m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Captcha-Text\ugC_Captcha-Text.aspx.cs">
+      <DependentUpon>ugC_Captcha-Text.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Captcha-Text\ugC_Captcha-Text.aspx.designer.cs">
+      <DependentUpon>ugC_Captcha-Text.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Home\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Home\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incBannerButton_Def.ascx.cs">
+      <DependentUpon>ugC_incBannerButton_Def.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incBannerButton_Def.ascx.designer.cs">
+      <DependentUpon>ugC_incBannerButton_Def.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incBannerText_Def.ascx.cs">
+      <DependentUpon>ugC_incBannerText_Def.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incBannerText_Def.ascx.designer.cs">
+      <DependentUpon>ugC_incBannerText_Def.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incBanner_Def.ascx.cs">
+      <DependentUpon>ugC_incBanner_Def.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incBanner_Def.ascx.designer.cs">
+      <DependentUpon>ugC_incBanner_Def.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incLink02_Def.ascx.cs">
+      <DependentUpon>ugC_incLink02_Def.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incLink02_Def.ascx.designer.cs">
+      <DependentUpon>ugC_incLink02_Def.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incLink_Def.ascx.cs">
+      <DependentUpon>ugC_incLink_Def.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incLink_Def.ascx.designer.cs">
+      <DependentUpon>ugC_incLink_Def.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incProducts_Def.ascx.cs">
+      <DependentUpon>ugC_incProducts_Def.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Home\ugC_incProducts_Def.ascx.designer.cs">
+      <DependentUpon>ugC_incProducts_Def.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\iframe\ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\iframe\ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Inc\Basic.Master.cs">
+      <DependentUpon>Basic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Inc\Basic.Master.designer.cs">
+      <DependentUpon>Basic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Inc\ug_AcctCatID.ascx.cs">
+      <DependentUpon>ug_AcctCatID.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Inc\ug_AcctCatID.ascx.designer.cs">
+      <DependentUpon>ug_AcctCatID.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Inc\ug_AcctEdu.ascx.cs">
+      <DependentUpon>ug_AcctEdu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Inc\ug_AcctEdu.ascx.designer.cs">
+      <DependentUpon>ug_AcctEdu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Inc\ug_AcctHowKnow.ascx.cs">
+      <DependentUpon>ug_AcctHowKnow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Inc\ug_AcctHowKnow.ascx.designer.cs">
+      <DependentUpon>ug_AcctHowKnow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Inc\ug_AcctOccu.ascx.cs">
+      <DependentUpon>ug_AcctOccu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Inc\ug_AcctOccu.ascx.designer.cs">
+      <DependentUpon>ug_AcctOccu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Inc\ug_Area.ascx.cs">
+      <DependentUpon>ug_Area.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Inc\ug_Area.ascx.designer.cs">
+      <DependentUpon>ug_Area.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Inc\ug_City.ascx.cs">
+      <DependentUpon>ug_City.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Inc\ug_City.ascx.designer.cs">
+      <DependentUpon>ug_City.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Inc\ug_Continent.ascx.cs">
+      <DependentUpon>ug_Continent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Inc\ug_Continent.ascx.designer.cs">
+      <DependentUpon>ug_Continent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Inc\ug_ContinentCityArea.ascx.cs">
+      <DependentUpon>ug_ContinentCityArea.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Inc\ug_ContinentCityArea.ascx.designer.cs">
+      <DependentUpon>ug_ContinentCityArea.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Jquery\DBCon.cs" />
+    <Compile Include="TW\Jquery\FBshare.aspx.cs">
+      <DependentUpon>FBshare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Jquery\FBshare.aspx.designer.cs">
+      <DependentUpon>FBshare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Jquery\JqueryAutoComple.aspx.cs">
+      <DependentUpon>JqueryAutoComple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Jquery\JqueryAutoComple.aspx.designer.cs">
+      <DependentUpon>JqueryAutoComple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Jquery\Step1.aspx.cs">
+      <DependentUpon>Step1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Jquery\Step1.aspx.designer.cs">
+      <DependentUpon>Step1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Jquery\Step2.aspx.cs">
+      <DependentUpon>Step2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Jquery\Step2.aspx.designer.cs">
+      <DependentUpon>Step2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Jquery\Step3.aspx.cs">
+      <DependentUpon>Step3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Jquery\Step3.aspx.designer.cs">
+      <DependentUpon>Step3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Jquery\Step4.aspx.cs">
+      <DependentUpon>Step4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Jquery\Step4.aspx.designer.cs">
+      <DependentUpon>Step4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Jquery\Step5.aspx.cs">
+      <DependentUpon>Step5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Jquery\Step5.aspx.designer.cs">
+      <DependentUpon>Step5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Jquery\Step6.aspx.cs">
+      <DependentUpon>Step6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Jquery\Step6.aspx.designer.cs">
+      <DependentUpon>Step6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Member\ugC_incMember.ascx.cs">
+      <DependentUpon>ugC_incMember.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Member\ugC_incMember.ascx.designer.cs">
+      <DependentUpon>ugC_incMember.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Member\ugC_incPageMenuTop.ascx.cs">
+      <DependentUpon>ugC_incPageMenuTop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Member\ugC_incPageMenuTop.ascx.designer.cs">
+      <DependentUpon>ugC_incPageMenuTop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Member\ugC_Member.aspx.cs">
+      <DependentUpon>ugC_Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Member\ugC_Member.aspx.designer.cs">
+      <DependentUpon>ugC_Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Member\ugC_Member_Final.aspx.cs">
+      <DependentUpon>ugC_Member_Final.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Member\ugC_Member_Final.aspx.designer.cs">
+      <DependentUpon>ugC_Member_Final.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Member\ugC_Member_Login.aspx.cs">
+      <DependentUpon>ugC_Member_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Member\ugC_Member_Login.aspx.designer.cs">
+      <DependentUpon>ugC_Member_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Member\ugC_Member_Regulation.aspx.cs">
+      <DependentUpon>ugC_Member_Regulation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Member\ugC_Member_Regulation.aspx.designer.cs">
+      <DependentUpon>ugC_Member_Regulation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\oAuthLine\LineLoginStatus.ashx.cs">
+      <DependentUpon>LineLoginStatus.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\Public\AdminClass.cs" />
+    <Compile Include="TW\Public\ClientClass.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\Public\PubicClass.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\ugC_Captcha.aspx.cs">
+      <DependentUpon>ugC_Captcha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\ugC_Captcha.aspx.designer.cs">
+      <DependentUpon>ugC_Captcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TW\ugC_incTop.ascx.cs">
+      <DependentUpon>ugC_incTop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TW\ugC_incTop.ascx.designer.cs">
+      <DependentUpon>ugC_incTop.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\WebSite.dll.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="TW\Admin\Images\Diary\Face\Thumbs.db" />
+    <Content Include="TW\Admin\Images\Setting\background\Thumbs.db" />
+    <Content Include="TW\Admin\Images\Setting\CopyRight\Thumbs.db" />
+    <Content Include="TW\Admin\Images\Setting\MenuAgo\Thumbs.db" />
+    <Content Include="TW\Admin\Inc\Basic_Index.Master" />
+    <Content Include="TW\Admin\Inc\Basic.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="TW\Inc\Basic.Master" />
+    <Content Include="TW\CSS\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="TW\CSS\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="TW\CSS\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="TW\CSS\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="TW\CSS\icofont\fonts\icofont.eot" />
+    <Content Include="TW\CSS\icofont\fonts\icofont.ttf" />
+    <Content Include="TW\CSS\icofont\fonts\icofont.woff" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="TW\oAuthLine\LineLoginStatus.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="TW\Admin\JS\" />
+    <Folder Include="TW\CSS\font-awesome\css\_notes\" />
+    <Folder Include="TW\CSS\Setting\_notes\" />
+    <Folder Include="TW\GoogleCalender\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{1f5036f7-e1ab-4ecf-aae2-c345fa15adc2}</Project>
+      <Name>ClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4432</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4432/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

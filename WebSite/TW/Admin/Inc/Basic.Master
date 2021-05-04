@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Basic.master.cs" Inherits="WebSite.TW.Admin.Basic" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>瀏覽</title>
+    <meta name="viewport" content="width=device-width,inital-scale=1,user-scalable=yes" />
+    <link href="../../JS/jquery.ui/themes/jquery.ui.all.css" rel="stylesheet" />
+    <link href="../../JS/jquery.ui/themes/CSS/demos.css" rel="stylesheet" />
+    <link href="../CSS/ugA_UI.css" rel="stylesheet" />
+    <link href="../CSS/ugA_Main.css" rel="stylesheet" />
+
+    <script src="../../JS/jquery-3.4.1.min.js"></script>
+    <script src="../../JS/jquery.ui/jquery-ui.min.js"></script>
+    <script src="../../JS/ChkField.js"></script>
+ 
+<%--<script src='<%=ResolveUrl("../../JS/jquery-3.4.1.min.js")%>'></script>--%>
+
+<%--<script src='<%=ResolveUrl("../../JS/jquery.ui/jquery.ui.core.js")%>'></script>
+    <script src='<%=ResolveUrl("../../JS/jquery.ui/jquery.ui.widget.js")%>'></script>
+    <script src='<%=ResolveUrl("../../JS/jquery.ui/jquery.ui.datepicker.js")%>'></script>--%>
+
+<%--<script src='<%=ResolveUrl("../../JS/jquery.ui/jquery-ui.min.js")%>'></script>--%>
+<%--<script src='<%=ResolveUrl("../../JS/ChkField.js")%>'></script>--%>
+
+    <script type="text/javascript">
+        $(function () {
+            initialize();
+        })
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server" id="body" class="" >
+    <form id="form1" runat="server" style="height: 100%;">
+        <div class="Wrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

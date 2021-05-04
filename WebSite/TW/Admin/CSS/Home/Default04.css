@@ -1,0 +1,401 @@
+﻿@charset "utf-8";
+
+/*====================Departure/TW CSS Start====================*/
+
+header, nav, section, article, aside, time, footer { display:block;}
+*, *:before, *:after { box-sizing: border-box; }
+html, body { padding:0; margin:0; font-family:'Roboto', "微軟正黑體"; }
+img { border:0; max-width:100%; height:auto;}
+html { overflow:auto; -webkit-text-size-adjust: 100%;}
+.clear { clear:both;}
+
+
+
+/*---0.Wrapper---*/
+
+.Wrapper { width:100%; height:auto; overflow:hidden; margin:0 auto; background:url(../Images/NewLayout/ContentBg.jpg) center center fixed no-repeat;   -moz-background-size: cover;
+-webkit-background-size: cover; -o-background-size: cover;   background-size: cover;   } 
+
+.DefWrapper { background:#FFF;}
+
+/*---1.TopMenu---*/
+
+.TopMenuWrapper { width:100%; height:150px; overflow:visible; margin:0 auto; padding:15px 10px 40px 10px; border-bottom:1px solid #777777; background:#3b3b3b; }
+
+.TopMenuWrapper .TopMenuBox { width:100%; max-width:1680px; height:auto; overflow:visible; padding-top:40px; margin:0 auto;  /*官網更新中字樣拿掉後可移除*/ position:relative; }
+.TopMenuWrapper .TopMenuBox * { margin:0; padding:0; text-decoration:none; list-style:none; }
+.Logo { width:100%; max-width:115px; height:120px; overflow:hidden; position:absolute; left:0; top:10px; z-index:10; }
+.Logo a { display:block; width:100%; height:120px; overflow:hidden; background: url(../../Images/Logo.png) 0 0 no-repeat; text-indent:-9999px;}
+
+.TopMenuBox .TopMenu { width: 390px; height:30px; overflow:hidden; float:right; position:absolute; right:0; top:5px; z-index:10; }
+.TopMenuBox .TopMenu li{ float:left; border-right:1px solid #636363; padding:0 10px;}
+.TopMenuBox .TopMenu li a{ color: #c6c6c6; font-size:14px; }
+.TopMenuBox .TopMenu li a:hover{ color:#FFF;}
+.TopMenuBox .TopMenu li:last-child{ border:0;}
+
+.TopMenuBox .Search { width:200px; height:30px; float:left;overflow:hidden; position:absolute; right:400px; top:0; z-index:10; }
+.TopMenuBox .Search a{width:25px; height:25px;  text-indent:-9999px; background:url(../../Images/Layout/UI/SearchBtn.png) no-repeat; position:absolute; right:5px; top:2px; z-index:1;}
+.TopMenuBox .Search form { width:100%; height:30px; overflow:hidden; position:relative; }
+.TopMenuBox .Search form input { width:100%;height:30px;  line-height:30px; font-family:"微軟正黑體"; padding:0 30px 0 5px;  }
+.TopMenuBox .Search .searchbtn { width:25px; height:30px; background:url(../Images/NewLayout/Bu_Search.png) center no-repeat; float:left;}
+.TopMenuBox .Languages { width:250px; height:30px; overflow:hidden; float:right; font-size:13px; color:#ababab; line-height:30px; text-align:right;}
+.TopMenuBox .Languages span { margin:0 5px;}
+.TopMenuBox .Languages a {  color:#c6c6c6; }
+.TopMenuBox .Languages a:hover { color:#fff; }
+.TopMenuBox .Languages2 { display:none;}
+
+.TopMenuBox .Nav { width:100%; height:40px; overflow:visible; float:right; padding-left:280px;}
+.TopMenuBox .MainMenu { width:100%; overflow:visible; float:right; }
+.TopMenuBox .MainMenu .MainMenuLi { width:10%; height:50px; line-height:50px; float:left; text-align:center;  position:relative; }
+.TopMenuBox .MainMenu .MainMenuLi:nth-child(6) { margin-right:0;}
+.TopMenuBox .MainMenu .MainMenuLi a { color:#d4d4d4; font-size:16px; width:100%; height:50px; overflow:hidden; line-height:50px; display:block; font-family:'Alegreya',"微軟正黑體"; 
+/*超出範圍顯示"..."*/
+white-space: nowrap; text-overflow: ellipsis;-o-text-overflow: ellipsis;
+}
+.TopMenuBox .MainMenu .MainMenuLi a:hover {  border-bottom:3px solid #F7AB00; }
+
+.TopMenuBox .MainMenu .MainMenuSub { width:100%; height:auto; overflow:hidden; background: rgba(227, 227, 227, 0.95);  border-top:3px solid #F7AB00; display:none; position:absolute; top:45px; z-index:999; }
+.TopMenuBox .MainMenu .MainMenuSub li { width:100%; height:auto;  }
+.TopMenuBox .MainMenu .MainMenuSub li a { width:100%; height:auto;line-height:1.5em; display:block; font-size:14px; color:#5a5a5a; padding:15px 5px;}
+.TopMenuBox .MainMenu .MainMenuSub li a:hover { color:#000;  border-bottom:none; }
+
+.Nav li.MainMenuLi:hover .MainMenuSub { display:block;}
+
+/*官網更新中字樣拿掉後可移除*/
+.TopMenuBox .Update { padding:0; margin:0; font-size:12px; color:#c6c6c6; width:250px; position:absolute; left:0; top:0; }
+
+
+.TopMenuWrapper .Div-W1000{ width:auto; max-width:none; float:left;}
+
+/*---2.Banner---*/
+
+.BannerWrapper { width:100%; height:auto; overflow:hidden; margin:0 auto;}
+.BannerWrapper img { display:block;}
+
+/*---3.DefBrandStory---*/
+
+.DefBrandStoryWrapper { width:100%; height:600px; overflow:hidden; margin:0 auto; background: url(../../Images/Home/Default04/Default04_AboutUs.jpg) center ;
+-moz-background-size:cover;-webkit-background-size:cover;-o-background-size:cover;background-size:cover; }
+
+.DefBrandStory { width:40%; height:auto; float:right; overflow:hidden; margin:125px 0; }
+.DefBrandStory * { padding:0; margin:0; color:#FFF; text-decoration:none; text-align:left;}
+
+.DefBrandStory h1 { font-size:50px;font-weight:100; height:90px; line-height:90px; margin-bottom:35px;text-shadow: rgb(3, 3, 3) 2px 2px 4px;}
+.DefBrandStory p { font-size:24px; font-weight:100; line-height:30px; text-shadow: rgb(3, 3, 3) 2px 2px 4px;}
+.DefBrandStory a { font-size:24px; font-weight:100; line-height:30px; display:block; margin-top:35px; text-shadow: rgb(3, 3, 3) 2px 2px 4px;}
+.DefBrandStory a.BrandLink { display:none;}
+
+
+/*---4.DefProduct&News---*/
+
+.DefProductNewsWrapper { width:100%; height:auto;  padding:50px 50px; overflow:hidden; margin:0 auto; position:relative;}
+.DefProductNewsWrapper * {   padding:0; margin:0;   }
+.DefProductNewsWrapper h1 { font-size:50px;  text-decoration:none; font-weight:100;  }
+.DefProductNewsWrapper img { display:block;}
+
+.DefProduct { width:54.2%; height:auto; display:block; float:left; overflow:hidden;}
+.DefProduct h1 { color:#fff; position:absolute;top:50%; margin-top:-33.5px; left:70px; }
+
+.DefNews { width:44%;   height:auto; display:block; float:right;  overflow:hidden;}
+.DefNews h1 {color:#FFF;position:absolute;  top:50%; margin-top:-33.5px; right:70px; text-shadow: rgb(3, 3, 3) 2px 2px 4px;}
+
+
+
+/*---5.DefStore---*/
+
+.DefStoreWrapper { width:100%; height:400px; overflow:hidden; margin:0 auto; margin-bottom: 40px; 
+background:url(../Images/NewLayout/Bg_DefStore.jpg) center; -moz-background-size:cover;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;   }
+.DefStoreWrapper .DefStore { width:230px; height:160px; display:block; background:url(../Images/NewLayout/Img_DefStore.png) center no-repeat; margin:0 auto; margin-top:120px; margin-bottom:120px; }
+.DefStoreWrapper iframe{ width:100%;}
+
+
+/*---6.Footer---*/
+
+.FooterWrapper  { width:100%; min-height:340px; overflow:visible; margin:0 auto; padding:0 15px;  background:url(../Images/NewLayout/Line_Footer.jpg) top repeat-x, #3b3b3b; position:relative; }
+
+.Footer { width:100%; max-width:1680px; height:auto;  margin:0 auto; padding:40px 0 25px 0;	 }
+.Footer * { margin:0; padding:0; text-decoration:none; list-style:none; }
+
+.Footer .socialnetwork { width:173px; height:32px; overflow:hidden; position:absolute; left:50%; margin-left:-86.5px; top:-15.5px }
+.Footer .socialnetwork ul li { width:32px; height:32px; float:left; margin-right:15px;}
+.Footer .socialnetwork ul li:nth-child(4) { margin-right:0; }
+
+.Footer .Gotop { width:32px; height:32px; background:url(../Images/NewLayout/Icon_Gotop.png) center no-repeat; position:absolute; right:15px; top:-15.5px;}
+
+.Footer .FooterSitemap { width:100%; max-width:1000px; height:auto; margin:0 auto; overflow:hidden; margin-top:30px; margin-bottom:60px;}
+.Footer .FooterSitemap li { width:19.2%; line-height:27.5px; text-align:center; float:left; margin-right:1%; }
+.Footer .FooterSitemap li:nth-child(5) { margin-right:0; }
+.Footer .FooterSitemap li a { font-size:16px; color:#d4d4d4;font-family:'Alegreya',"微軟正黑體"; }
+.Footer .FooterSitemap li a:hover { color:#fff;}
+
+.Footer .Copyright { width:100%; height:auto; margin:0 auto; text-align:center; font-size:16px; color:#777777; }
+.Footer .Copyright a { color:#777; text-decoration:none;}
+.Footer .Copyright br{ display:none;}
+
+
+/*優吉兒網站連結*/
+.uGear { width:170px; height:60px; margin-top:20px; text-align:left; font-family:"微軟正黑體"; background:url(../../images/Layout/uGear/truste_Ugear.png) left top no-repeat;  float:right; position:static; margin:20px 10px 0 0;  } 
+.uGear:hover {background:url(../../images/Layout/uGear/truste_Ugear_o.png); background-repeat:no-repeat;}
+.uGear a { display:inline-block; width:auto; height:60px; line-height:90px; font-size:12px; color:#fff; text-decoration:none; text-indent:2px;}
+.uGear a:hover { color:#fff33f; }
+
+
+
+
+
+/*====================媒體查詢設定 Start====================*/
+
+
+
+@media only screen and (min-width:0px) and (max-width:1700px) {
+.TopMenuBox .Nav{padding-left: 180px;}
+
+	
+}
+
+@media only screen and (min-width:0px) and (max-width:1440px) {
+/*---1.TopMenu---*/
+.TopMenuBox .MainMenu { width:100%;  }
+
+	
+}
+@media only screen and (min-width:0px) and (max-width:1440px) {
+
+
+/*---4.DefProduct&News---*/
+.DefProduct h1 {  font-size:40px;  margin-top:-27.5px; }
+.DefNews h1 { font-size:40px;  margin-top:-27.5px; }
+
+
+
+}
+
+@media only screen and (min-width:0px) and (max-width:1240px) {
+/*---1.TopMenu---*/
+.TopMenuBox .Logo span { display:none; }
+.TopMenuBox .Nav { padding-left:170px;}
+}
+@media only screen and (min-width:0px) and (max-width:1120px) {
+
+.TopMenuBox .MainMenu .MainMenuLi a { font-size:14.5px;}
+}
+
+@media only screen and (min-width:0px) and (max-width:1024px) {
+	
+/*---1.TopMenu---*/
+.TopMenuWrapper { height:150px;  padding:15px ; /*官網更新中字樣拿掉後可移除*/ height:165px;}
+.TopMenuBox .Logo img { width:100%; height:auto; }
+.TopMenuBox .Nav { display:none;}
+/*.TopMenuBox .SearchLanguagesWrapper { width:80%; float:none; margin:0 auto; margin-top:30px ; height:auto; }
+.TopMenuBox .Search {width:100% ; float:none; padding-right:30px; position:relative;  }
+.TopMenuBox .Search .form { width:100%;   }
+.TopMenuBox .Search .searchbtn { position:absolute; right:0; top:0; }
+.TopMenuBox .Languages { float:none; width:100%; text-align:center; }
+.TopMenuBox .Languages2 {  display:none; width:130px; height:30px; overflow:hidden; font-size:13px; color:#ababab; line-height:30px; position:absolute; left:25px; top:65px;}
+.TopMenuBox .Languages2 span { margin:0 5px;}
+.TopMenuBox .Languages2 a {  color:#c6c6c6; }
+.TopMenuBox .Languages2 a:hover { color:#fff; }
+*/
+
+/*官網更新中字樣拿掉後可移除*/
+.TopMenuBox .Update { position:relative; width:100%; text-align:center;}
+
+
+/*---3.DefBrandStory---*/
+.DefBrandStory h1 { font-size:40px; }
+.DefBrandStory p { font-size:20px; }
+.DefBrandStory a { font-size:20px; }
+
+
+.TopMenuWrapper { height:100px;  overflow:hidden; padding-right:60px; }
+.Logo {max-width: 85px; top:-20px; height:auto; }
+.Logo a{ height:70px;background: url(../../Images/Logo.png) 0 0 no-repeat; background-size:400px auto;}
+.TopMenuWrapper .TopMenuBox{ top:20px;}
+
+
+body .slicknav_menu { display:block; width:70%; }
+body .slicknav_menu { margin-top:23px;}
+body .slicknav_menu .slicknav_icon-bar { background:#fff;}
+body .slicknav_btn{width:45px; height:45px;}
+.slicknav_nav ul li{ min-width:100%;}
+body .slicknav_nav{margin-top: 25px;}
+body .slicknav_menu .slicknav_open .slicknav_icon {background: url(../../JS/SlickNav/slicknav_icon_close_w.png) 0 0 no-repeat;}
+
+
+}
+
+@media only screen and (min-width:0px) and (max-width:1000px){
+.uGear { width:100%; height:60px; float:none; margin:0 auto; text-align:center; background:none;  }
+.uGear:hover {background:none;}
+.uGear a { display:inline-block; width:auto; height:60px; line-height:90px; font-size:12px; color:#fff; text-decoration:none; text-indent:2px;}
+.uGear a:hover { color:#fff33f; }
+
+.Footer{ padding-bottom:0;}
+}
+
+
+@media only screen and (min-width:0px) and (max-width:920px) {
+
+
+/*---3.DefBrandStory---*/
+.DefBrandStoryWrapper { position:relative;}
+.DefBrandStory { width:100%;  }
+.DefBrandStory h1 { display:none;}
+.DefBrandStory p {  display:none;}
+.DefBrandStory a {  display:none;}
+.DefBrandStory a.BrandLink { display:block; font-size:40px; position:absolute;  top:50%; margin-top:-33.5px; right:35px; margin-top:-27.5px;font-weight: 100; }
+
+
+/*---4.DefProduct&News---*/
+
+.DefProduct { width:100%; float:none; margin:0 auto; position:relative; margin-bottom:30px;}
+.DefProduct h1 { left:35px; }
+.DefNews { width:100%; float:none; margin:0 auto;  position:relative;}
+.DefNews h1 { right:35px; } 
+
+
+/*---Product---*/
+.productrelated { width:100%; height:auto; overflow:hidden;  border-top:1px solid #c9c8c8; padding:25px 15px 30px 15px;}
+.productrelated h1 {  font-size:25px; margin-bottom:50px; }
+.productrelated li{ width:50%; margin-bottom:25px; }
+.productrelated .productname a {  font-size:16px;  margin-top:20px;  }
+
+
+.Member .ordsrh_Date td { width:100%; height:auto; display:block;}
+
+
+}
+
+
+@media only screen and (min-width:0px) and (max-width:810px){
+
+.TopMenuWrapper {
+    height: 165px;
+    overflow: hidden;
+    padding-right: 15px;
+	position:relative;
+}
+.TopMenuWrapper .TopMenuBox{ position:static;}
+.TopMenuBox .Search{ top:auto; bottom:50px;width: 60%; left:50%; margin-left:-30%;}
+.TopMenuBox .TopMenu{ top:auto; bottom:10px;width: 360px; left:50%; margin-left:-180px;}
+.Logo{ top:10px; left:50%;}
+.TopMenuWrapper .TopMenuBox * .Logo{ margin-left:-42.5px;}
+body .slicknav_nav {
+    margin-top: 90px;
+}
+}
+
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+
+
+
+/*---3.DefBrandStory---*/
+.DefBrandStoryWrapper { height:150px; }
+
+/*---4.DefProduct&News---*/
+.DefProductNewsWrapper {  padding: 10px 0; }
+.DefProduct {margin-bottom:10px; width:120%;}
+
+
+/*---5.DefStore---*/
+.DefStoreWrapper { height:150px; }
+.DefStoreWrapper .DefStore { width:161px; height:112px; margin: 19px auto; -moz-background-size:cover;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;}
+
+
+
+/*---6.Footer---*/
+.FooterWrapper  { min-height:260PX;}
+.Footer .FooterSitemap {  margin-top:15px; margin-bottom:15px;}
+.Footer .FooterSitemap li  { width:32.6666%; margin-bottom:15px; line-height:20px;}
+.Footer .FooterSitemap li:nth-child(3) { margin-right:0;}
+.Footer .FooterSitemap li a { font-size:14px;}
+.Footer .Copyright { font-size:12px;}
+.uGear { float:none; margin:0 auto; text-align:center;  }
+.uGear #uGearLogo1 { display:none;}
+.uGear #uGearLogo2 { display:none;}
+.uGear:hover #uGearLogo1 { display:none;}
+.uGear:hover #uGearLogo2 { display:none;}
+
+
+}
+
+
+
+@media only screen and (min-width:0px) and (max-width:500px) {
+.Member .memberform li { padding:65px 10px 15px 10px; text-align:center; }
+.Member .memberform li h3 { width:100%; height:auto; padding:15px 10px; text-align:center;}
+.Member .memberform li input { height:30px; line-height:30px;}
+.Member .memberform li input[type="radio"] { height:inherit; line-height:inherit;}
+.Member .length-l,.Member .length-s,.Member .length-xxl { width:100%;}
+.Member .memberform .AddressWrap1 { width:33%; display:block; float:left; height:auto; overflow:hidden; margin-bottom:10px;}
+.Member .memberform #selContinentID,.Member .memberform #selCityID,.Member .memberform #selAreaID { width:90%; max-width:inherit;}
+.Member .memberform #selOccu,.Member .memberform #selEdu { width:100%; max-width:inherit;}
+.Member .memberform li #txtAddr { width:inherit; margin-top:10px;}
+.Member .Step_wrap Img.StepImg { margin-left:0; margin:0 auto; margin-bottom:15px; display:none;}
+.Member .Step_wrap Img.StepImg1 { margin:0 auto; margin-bottom:15px;  display:none;}
+.Member .memberform li .Clear { display:block;}
+
+.Member .shoppingcart-wrapper tr td { /*font-size:14px;*/ width:100%; height:auto; display:block; overflow:hidden; text-align:center;}
+.Member .shoppingcart-wrapper tr td.title3 { position:relative; width:100%; height:auto; overflow:hidden; display:block; text-align:center;}
+.Member .shoppingcart-wrapper tr td #selPMT { width:90%; margin:0 auto; display:block;}
+.Member .shoppingcart-wrapper tr td .title3_SpanWrapper { text-align:center;}
+
+.Member .OrdSrhItem_srh { max-width:inherit;}
+}
+@media only screen and (min-width:0px) and (max-width:480px) {
+/*---3.DefBrandStory---*/
+.DefBrandStory a.BrandLink { font-size:25px; right:20px; margin-top:-12.5px;}
+
+
+/*---4.DefProduct&News---*/
+.DefProduct h1 { left:20px; font-size:25px;margin-top:-12.5px; }
+.DefNews h1 { right:20px; font-size:25px; margin-top:-12.5px;} 
+
+/*---5.DefStore---*/
+.DefStoreWrapper .DefStore { width:125px; height:87px; margin: 31.5px auto; }
+
+.Footer .Copyright br{ display: block; line-height:1.8em;}
+
+
+}
+@media only screen and (min-width:0px) and (max-width:460px) {
+
+/*---6.Footer---*/
+.Footer .FooterSitemap li  { width:49%;}
+.Footer .FooterSitemap li:nth-child(2) { margin-right:0;}
+.Footer .FooterSitemap li:nth-child(3) { margin-right:1%;}
+
+
+.TopMenuBox .TopMenu li a{ font-size:12px;}
+.TopMenuBox .TopMenu {
+    width: 325px;
+    margin-left: -162.5px;
+}
+}
+@media only screen and (min-width:0px) and (max-width:360px) {
+.TopMenuBox .SearchLanguagesWrapper  { width:100%;}
+
+
+/*---3.DefBrandStory---*/
+.DefBrandStory a.BrandLink { font-size:20px;right:15px; margin-top:-10px;}
+
+/*---4.DefProduct&News---*/
+.DefProduct h1 { left:15px; font-size:20px;margin-top:-10px; }
+.DefNews h1 { right:15px; font-size:20px; margin-top:-10px;} 
+
+/*---5.DefStore---*/
+.DefStoreWrapper .DefStore { width:100px; height:70px; margin: 40px auto; }
+
+.Product .productdata .Quantity { width:100%; max-width:inherit; }
+.Product .productdata a.Bu_ShoppingCart {  width:100%; max-width:inherit; margin-left:0;}
+.Product .productdata a.Bu_ShoppingCart:hover { background:#EF7D43; }
+
+}
+
+@media only screen and (min-width:0px) and (max-width:310px) {
+/*---6.Footer---*/
+.Footer .FooterSitemap li  { width:100%; margin-right:0;}
+.Footer .FooterSitemap li:nth-child(3) { margin-right:0;}
+.Footer .FooterSitemap li:nth-child(4) { margin-right:0;}
+}

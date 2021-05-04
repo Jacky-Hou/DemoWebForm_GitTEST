@@ -1,0 +1,862 @@
+﻿@charset "utf-8";
+/*列表&編輯頁*/
+/*2015.9.25 Jay 強制所有文字斷行*/
+* {word-wrap:break-word;word-break:break-all;}
+body {background-color:#ffffff;margin:10px 10px 10px 10px;margin:0;}
+td {font-size:12px;font-family: 微軟正黑體, Verdana, Arial, Helvetica, sans-serif;line-height:20px;-moz-background-size:contain;-webkit-background-size:contain;-o-background-size:contain;background-size:contain;}
+A:active, A:link, A:visited { text-decoration:none; color:#0000ff;}
+A:hover {color:#0000ff;text-decoration:none;}
+input {background-color:rgba(235, 235, 235, 0.2);height:30px;border:1px solid #ccc;outline:none;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+input:focus { background-color:#ffffcc; }
+select {background-color:rgba(235, 235, 235, 0.2);border:1px solid #ccc;outline:none;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif; max-width:90%;}
+select:focus { background-color:#ffffcc; }
+textarea {background-color:rgba(235, 235, 235, 0.2);border:1px solid #ccc;padding:10px;outline:none;
+/*陰影*/
+-moz-box-shadow:inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+box-shadow:inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;
+}
+textarea:focus {background:rgba(238, 238, 238, 0.5);background-color:#ffffcc;}
+.Radio {border:#999999 0px solid;background-color:transparent;}
+.css_ReadOnly {background-color:#ffffff;color:#000000;/*border:none;*/}
+.css_ReadOnlyBorder {background-color:#ffffff;color:#000000;border:1px solid #cccccc;}
+.css_ReplyDescr {background-color:#ffcccc;color:#000000;/*border:none;*/}
+.css_Line { border-bottom:1px dashed #cccccc; }
+.ss_msgbox_msg {color:#ff0000;color:#FFFFCC;font-size:13px;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+.ss_msgbox_msg_Wrapper {width:100%;height:40px;height:auto;overflow:hidden;background:rgba(0, 0, 0, 0.6);position:absolute;top:0;left:0;}
+.ss_msgbox_msg_Wrapper * {width:100%;line-height:40px;table-layout:fixed;}
+.ss_msgbox_status {color:#333399;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+
+/*======== 文字顏色 Start ========*/
+.css_BlueTxt { color:#0000ff; }
+.css_BlackTxt { color:#000000; }
+.css_BrownTxt { color:#993300; }
+.css_GreenTxt { color:#006600; }
+.css_GrayTxt { color:#666666; }
+.css_OrangeTxt { color:#ff6600; }
+.css_PurpleTxt { color:#8a00ff; }
+.css_RedTxt { color:#ff0000; }
+/*======== 文字顏色 End ========*/
+
+/* ======== 新增.修改時 ======== */
+.ss_add_subject {color:#000066;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;width:auto;}
+.ss_add_comment {color:#993300;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+.ss_add_star {color:#ff0000;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+.ss_add_fun {color:#000000;font-size:13px;text-decoration:none;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+/* ======== 新增.修改時 ======== */
+
+/* ======== 列表頁 ======== */
+.ss_input {background-color:#ffffcc;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+.ss_lst_comment {color:#993300;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+.ss_lst_fun {color:#000000;font-size:13px;text-decoration:none;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+.ss_sel_star {color:#ff0000;font-family:微軟正黑體, Verdana, Arial, Helvetica, sans-serif;}
+.Title_over {background-color:#ffffbf;color:#ff3300;}
+.RightDiv font { padding-left:15px; }
+/* ======== 列表頁 ======== */
+
+/* ======== 列表頁表格 Start ======== */
+.tbStyle01 th {clear:both;font-family:"微軟正黑體";border-top:3px double #7088c6;border-right:3px double #7088c6;border-bottom:3px double #7088c6;border-left:3px double #7088c6;font-weight:normal;font-size:12px;/*color:#0000FF;*/padding:1px 1px 1px 1px;text-align:center;/*white-space:nowrap;*/background-color:#d5dbee;background:#658dcb;border:0;}
+.tbStyle01 .fn-sorting-up {cursor:pointer;display:block;width:50%;height:auto;overflow:hidden;text-indent:-9999px;text-align:left;position:relative;float:left;}
+.tbStyle01 .fn-sorting-up:before {content:'\2191';display:block;text-indent:0;width:100%;height:auto;overflow:hidden;text-align:center;position:absolute;top:0;left:0;}
+.tbStyle01 .fn-sorting-up:hover:before {font-weight:bold;font-size:20px;}
+.tbStyle01 .fn-sorting-down {cursor:pointer;display:block;width:50%;height:auto;overflow:hidden;text-indent:-9999px;text-align:left;position:relative;float:left;}
+.tbStyle01 .fn-sorting-down:before {content:'\2193';display:block;text-indent:0;width:100%;height:auto;overflow:hidden;text-align:center;position:absolute;top:0;left:0;}
+.tbStyle01 .fn-sorting-down:hover:before {font-weight:bold;font-size:20px;}
+.tbStyle01 #Bgn {clear:both;border-left:3px double #7088c6;background:#658dcb;border:0;border-bottom:1px solid #fff;border-left: 1px solid #fff;}
+.tbStyle01 th div {clear:both;padding:5px;background-color:#d5dbee;border-top:1px solid #7088c6;border-right:1px solid #7088c6;border-bottom:1px solid #7088c6;border-left:1px solid #7088c6;height:100%;border:0;padding:5px 0;/*white-space:nowrap;*/background:#658dcb;border:0;color:#fff;}
+.tbStyle01 th * { color:#fff; }
+.tbStyle01 th {padding:10px 0;border-left:1px solid #fff;font-size:16px;border-bottom:1px solid #fff;}
+.tbStyle01 th.w-60 { width:60px; }
+.tbStyle01 th.w-80 { width:80px; }
+.tbStyle01 th.w-100 { width:100px; }
+.tbStyle01 th.w-120 { width:120px; }
+.tbStyle01 th.w-140 { width:140px; }
+.tbStyle01 th.w-150 { width:150px; }
+.tbStyle01 th.w-200 { width:200px; }
+.tbStyle01 th.w-250 { width:250px; }
+.tbStyle01 th.click-num { width:100px; }
+.tbStyle01 th.percentage { width:100px; }
+.tbStyle01 th.total { width:100px; }
+.tbStyle01 th.mem-sts { width:100px; }
+.tbStyle01 th.rec-sts { width:80px; }
+.tbStyle01 th.top-sts { width:60px; }
+.tbStyle01 th.cover-sts { width:60px; }
+.tbStyle01 th.tel { width:160px; }
+.tbStyle01 th.date { width:120px; }
+.tbStyle01 th.datetime { width:220px; }
+.tbStyle01 th.url-link { width:60px; }
+.tbStyle01 th.edit { width:60px; }
+.tbStyle01 th.detail { width:60px; }
+.tbStyle01 th.detail-80 { width:80px; }
+.tbStyle01 th.dbsts { width:100px; }
+.tbStyle01 th.del { width:60px; }
+.tbStyle01 td {clear:both;padding:3px;/*margin:3px;*//*border:0px solid #996600;*/border-right:1px solid #ffffff;padding:15px 10px;font-size:14px;}
+.tbStyle01 td span.small-size { font-size:11px; }
+.odd { background-color:#f5f5f5; }
+.even { background-color:#ffffff; }
+.tbNoPadd {padding:0px;margin:0px;}
+.tbNoPadd td {padding:0px;margin:0px;}
+/* ======== 列表頁表格 End ======== */
+
+/*======== 表格(粉藍) Start ========*/
+.css_TableLightBlue {width:100%;border-top:1px solid #7088c6;border-right:1px solid #7088c6;border-collapse:collapse;}
+.css_TableLightBlue td.Title {background-color:#d5dbee;color:#000000;padding:0px 3px 0px 3px;/*vertical-align:text-top;*/		border-bottom:1px solid #7088c6;border-left:1px solid #7088c6;}
+.css_TableLightBlue td {background-color:#ffffff;color:#000000;padding:6px 3px 6px 3px;border-bottom:1px solid #7088c6;border-left:1px solid #7088c6;}
+tr.odd_TableLightBlue td {background-color:#ffffff;border-bottom:1px solid #7088c6;border-left:1px solid #7088c6;}
+tr.even_TableLightBlue td {background-color:#f9f9f9;border-bottom:1px solid #7088c6;border-left:1px solid #7088c6;}
+tr.over_TableLightBlue td {background-color:#ffffcc;color:#ff0000;border-bottom:1px solid #7088c6;border-left:1px solid #7088c6;}
+/*======== 表格(粉藍) End ========*/
+
+/* ======== 功能選單按鈕 Start ======== */
+.css_FnBu {width:76px;height:21px;line-height:21px;background-image:url('../Images/Bg_FnBu.gif');background-repeat:no-repeat;background-position:bottom;color:#ffffff;text-align:center;letter-spacing:2px;vertical-align:bottom;padding-bottom:2px;*padding-bottom:0px;/*font-size:10pt;*/}
+.css_FnBu_over {width:76px;height:21px;line-height:21px;background-image:url('../Images/Bg_FnBu_o.gif');background-repeat:no-repeat;background-position:bottom;color:#ffffff;text-align:center;letter-spacing:2px;vertical-align:bottom;padding-bottom:2px;*padding-bottom:0px;/*font-size:10pt;*/}
+/*20150930 Ruru修改 start*/
+.FnBu_wrapper {width:100%;height:auto;overflow:hidden;text-align: center;margin:10px 0;}
+.FnBu_wrapper div {width:80px;height:80px;overflow:hidden;display:inline-block;text-align:center;margin-left:2px;text-indent:-99999px;cursor:pointer;}
+.FnBu_icon_add { background:url(../Images/FnBu_icon_add.jpg) no-repeat; }
+.FnBu_icon_add:hover { background:url(../Images/FnBu_icon_add_o.jpg) no-repeat; }
+.FnBu_icon_stock { background:url(../Images/FnBu_icon_renewstock.jpg) no-repeat; }
+.FnBu_icon_stock:hover { background:url(../Images/FnBu_icon_renewstock_o.jpg) no-repeat; }
+.FnBu_icon_startAndEnd { background:url(../Images/FnBu_icon_startAndEnd.jpg) no-repeat; }
+.FnBu_icon_startAndEnd:hover { background:url(../Images/FnBu_icon_startAndEnd_o.jpg) no-repeat; }
+.FnBu_icon_delete { background:url(../Images/FnBu_icon_delete.jpg) no-repeat; }
+.FnBu_icon_delete:hover { background:url(../Images/FnBu_icon_delete_o.jpg) no-repeat; }
+.FnBu_icon_browse { background:url(../Images/FnBu_icon_browse.jpg) no-repeat; }
+.FnBu_icon_browse:hover { background:url(../Images/FnBu_icon_browse_o.jpg) no-repeat; }
+.FnBu_icon_modify { background:url(../Images/FnBu_icon_modify.jpg) no-repeat; }
+.FnBu_icon_modify:hover { background:url(../Images/FnBu_icon_modify_o.jpg) no-repeat; }
+.FnBu_icon_best { background:url(../Images/FnBu_icon_best.jpg) no-repeat; }
+.FnBu_icon_best:hover { background:url(../Images/FnBu_icon_best_o.jpg) no-repeat; }
+.FnBu_icon_change { background:url(../Images/FnBu_icon_change.jpg) no-repeat; }
+.FnBu_icon_change:hover { background:url(../Images/FnBu_icon_change_o.jpg) no-repeat; }
+.FnBu_icon_change2 { background:url(../Images/FnBu_icon_change2.jpg) no-repeat; }
+.FnBu_icon_change2:hover { background:url(../Images/FnBu_icon_change2_o.jpg) no-repeat; }
+.FnBu_icon_cleanSearch { background:url(../Images/FnBu_icon_cleanSearch.jpg) no-repeat; }
+.FnBu_icon_cleanSearch:hover { background:url(../Images/FnBu_icon_cleanSearch_o.jpg) no-repeat; }
+.FnBu_icon_copy { background:url(../Images/FnBu_icon_copy.jpg) no-repeat; }
+.FnBu_icon_copy:hover { background:url(../Images/FnBu_icon_copy_o.jpg) no-repeat; }
+.FnBu_icon_cover { background:url(../Images/FnBu_icon_cover.jpg) no-repeat; }
+.FnBu_icon_cover:hover { background:url(../Images/FnBu_icon_cover_o.jpg) no-repeat; }
+.FnBu_icon_files { background:url(../Images/FnBu_icon_files.jpg) no-repeat; }
+.FnBu_icon_files:hover { background:url(../Images/FnBu_icon_files_o.jpg) no-repeat; }
+.FnBu_icon_files2 { background:url(../Images/FnBu_icon_files2.jpg) no-repeat; }
+.FnBu_icon_files2:hover { background:url(../Images/FnBu_icon_files2_o.jpg) no-repeat; }
+.FnBu_icon_newProduct { background:url(../Images/FnBu_icon_newProduct.jpg) no-repeat; }
+.FnBu_icon_newProduct:hover { background:url(../Images/FnBu_icon_newProduct_o.jpg) no-repeat; }
+.FnBu_icon_preinstall { background:url(../Images/FnBu_icon_preinstall.jpg) no-repeat; }
+.FnBu_icon_preinstall:hover { background:url(../Images/FnBu_icon_preinstall_o.jpg) no-repeat; }
+.FnBu_icon_print { background:url(../Images/FnBu_icon_print.jpg) no-repeat; }
+.FnBu_icon_print:hover { background:url(../Images/FnBu_icon_print_o.jpg) no-repeat; }
+.FnBu_icon_reply { background:url(../Images/FnBu_icon_reply.jpg) no-repeat; }
+.FnBu_icon_reply:hover { background:url(../Images/FnBu_icon_reply_o.jpg) no-repeat; }
+.FnBu_icon_search { background:url(../Images/FnBu_icon_search.jpg) no-repeat; }
+.FnBu_icon_search:hover { background:url(../Images/FnBu_icon_search_o.jpg) no-repeat; }
+.FnBu_icon_stop { background:url(../Images/FnBu_icon_stop.jpg) no-repeat; }
+.FnBu_icon_stop:hover { background:url(../Images/FnBu_icon_stop_o.jpg) no-repeat; }
+.FnBu_icon_top { background:url(../Images/FnBu_icon_top.jpg) no-repeat; }
+.FnBu_icon_top:hover { background:url(../Images/FnBu_icon_top_o.jpg) no-repeat; }
+.FnBu_icon_type { background:url(../Images/FnBu_icon_type.jpg) no-repeat; }
+.FnBu_icon_type:hover { background:url(../Images/FnBu_icon_type_o.jpg) no-repeat; }
+.FnBu_icon_up { background:url(../Images/FnBu_icon_up.jpg) no-repeat; }
+.FnBu_icon_up:hover { background:url(../Images/FnBu_icon_up_o.jpg) no-repeat; }
+.FnBu_icon_inventory { background:url(../Images/FnBu_icon_inventory.jpg) no-repeat; }
+.FnBu_icon_inventory:hover { background:url(../Images/FnBu_icon_inventory_o.jpg) no-repeat; }
+.FnBu_icon_deleteExcel { background:url(../Images/FnBu_icon_deleteExcel.jpg) no-repeat; }
+.FnBu_icon_deleteExcel:hover { background:url(../Images/FnBu_icon_deleteExcel_o.jpg) no-repeat; }
+.FnBu_icon_import { background:url(../Images/FnBu_icon_import.jpg) no-repeat; }
+.FnBu_icon_import:hover { background:url(../Images/FnBu_icon_import_o.jpg) no-repeat; }
+.FnBu_icon_download { background:url(../Images/FnBu_icon_download.jpg) no-repeat; }
+.FnBu_icon_download:hover { background:url(../Images/FnBu_icon_download_o.jpg) no-repeat; }
+.FnBu_icon_upToDateProduct { background:url(../Images/FnBu_icon_upToDateProduct.jpg) no-repeat; }
+.FnBu_icon_upToDateProduct:hover { background:url(../Images/FnBu_icon_upToDateProduct_o.jpg) no-repeat; }
+.FnBu_icon_selectProduct { background:url(../Images/FnBu_icon_selectProduct.jpg) no-repeat; }
+.FnBu_icon_selectProduct:hover { background:url(../Images/FnBu_icon_selectProduct_o.jpg) no-repeat; }
+.FnBu_icon_money { background:url(../Images/FnBu_icon_money.jpg) no-repeat; }
+.FnBu_icon_money:hover { background:url(../Images/FnBu_icon_money_o.jpg) no-repeat; }
+.FnBu_icon_renew { background:url(../Images/FnBu_icon_renew.jpg) no-repeat; }
+.FnBu_icon_renew:hover { background:url(../Images/FnBu_icon_renew_o.jpg) no-repeat; }
+/*20150930 Ruru修改 End*/
+/* ======== 功能選單按鈕 End ======== */
+
+/*分頁設定*/
+.css_PageList {text-align: left;width:100%;height:auto;overflow:hidden;min-height:40px;}
+.css_PageList * {padding:5px 10px;box-sizing:border-box;margin:3px;display:inline-block;overflow:hidden;font-size:16px;}
+.css_PageList .current { padding:14px 20px; }
+.css_PageList A, .css_PageList a:link, .css_PageList a:visited, .css_PageList a:active {border-right: #eee 1px solid;border-left: #eee 1px solid;border-top: #eee 1px solid;border-bottom: #eee 1px solid;font-family:微軟正黑體, Geneva, sans-serif;color: #036cb4;text-decoration: none;}
+.css_PageList A:hover {border-right: #999 1px solid;border-left: #999 1px solid;border-top: #999 1px solid;border-bottom: #999 1px solid;font-family:微軟正黑體, Geneva, sans-serif;color: #ffffff;text-decoration:none;background:#036cb4;}
+.css_PageList .current {font-family:微軟正黑體, Geneva, sans-serif;color: #000000;font-weight: bold;}
+.css_PageList .disabled {border-right: #eee 1px solid;border-left: #eee 1px solid;border-top: #eee 1px solid;border-bottom: #eee 1px solid;font-family:微軟正黑體, Geneva, sans-serif;text-decoration:none;color: #ddd;}
+.css_PageList .total {font-family:微軟正黑體, Geneva, sans-serif;color:036cb4;}
+
+.css_DataList {padding:0 0 5px 0;border-bottom:1px dashed #eee;}
+.css_DataList ul {margin:0;width:480px;}
+.css_DataList ul li {list-style-type:none;width:150px;display:inline-block;*display:inline;vertical-align:top;}
+.clearfix:after {display:block;visibility:hidden;clear:both;height:0;font-size:0;content:".";}
+.css_ShopFor ul {margin:0;padding:0;list-style-type:none;width:510px;}
+.css_ShopFor ul li {clear:both;width:100%;border-bottom:1px dashed #eee;padding:5px 0 5px 0;}
+.css_ShopFor ul li ul {width:460px;margin-left:25px;}
+.css_ShopFor ul li ul li {clear:none;width:150px;border-bottom:none;padding:3px 0 0 0;display:inline-block;*display:inline;vertical-align:top;}
+.notice { color:#FF0000; }
+/*長條圖*/
+.myProgress {position: relative;width: 100%;height: 30px;background-color: #ddd;}
+.PBar {
+background: #ccddf9; /* Old browsers */
+background: -moz-linear-gradient(top, #ccddf9 0%, #5ab9ed 57%, #ccddf9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ccddf9 0%, #5ab9ed 57%, #ccddf9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ccddf9 0%, #5ab9ed 57%, #ccddf9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccddf9', endColorstr='#ccddf9', GradientType=0 ); /* IE6-9 */
+}
+
+/*2015.8.3 Jay fixed 解決後台列印合約時左側選單會顯示的問題,列印合約時不用顯示左側操作選單*/
+@media print {
+.left { display:none; }
+.right { width:100%; }
+}
+/*=================================2015.8.27 Jay 開始逐項解決後台各單元右側 RWD 縮放問題=================================*/
+
+/*-------------------------------共用設定-------------------------------*/
+/*換頁及取消全選*/
+.PageListWrap {width:100%;height:auto;overflow:hidden;}
+.PageListWrap .PageListWrapLeft {width:100%;height:auto;overflow:hidden;padding:10px 0;}
+.PageListWrap .PageListWrapRight {width:100%;height:auto;overflow:hidden;text-align:right;padding:10px 0;}
+.right td { font-size:16px; }
+.right input[type="checkbox"] {width:30px;height:30px;overflow:hidden;}
+.right select {min-height:30px;line-height:30px;font-size:16px;min-width:43px;}
+.right select[name="selDBSts"] { width:70px; }
+.right select[name="selSrhDate"] { width:150px; }
+/*刪除圖片按鈕位置浮動*/
+.ugA_ImageDelInputWrap * {float:left;line-height:36px;}
+/*修改圖示變大 寬30px*/
+.right a img[alt="修改"] { width:40px; }
+.right table, .right th, .right td { /*width:100%; table-layout:fixed;*/ }
+
+/*------------------------------區域欄位設定-------------------------------*/
+.RightDiv div.addressformWrapper {width:100%;height:auto;overflow:hidden;}
+.RightDiv div.addressform {width:10%;min-width:115px;height:33px;float:left;text-align:left;margin-right:10px;}
+
+/*------------------------------inputBox設定-------------------------------*/
+.RightDiv div.inputBox { width:auto; }
+.RightDiv div.inputBox2 { width:25%; }
+
+/*-------------------------------上方選單特別設定------------------------------*/
+.Left01w {width:100%;font-size: 16px;}
+div.Left01w .Left01 {width:25%;float:left;}
+div.Left01w .Left02 {width:50%;float:left;}
+
+/*-------------------------------頁碼設定------------------------------*/
+.ugA_MenuPageWrapper {width:100%;height:auto;overflow:hidden;margin:10px 0;}
+.ugA_MenuPageLeft {width:90%;float:left;}
+.ugA_MenuPageRight {width:10%;float:right;font-size:16px;text-align:right;height:54px;line-height:54px;}
+.right .menuWrapper input { height:27px; }
+.right input.middle-form { width:300px; }
+.right input.longForm { width:600px; }
+.right input.largeForm { width:750px; }
+.ContentDivWrapper .ContentDiv input.shortForm {width:110px;height:30px;height:auto;}
+.ContentDivWrapper .ContentDiv input.small-form {width:50px;height:30px;height:auto;}
+.ContentDivWrapper .ContentDiv div.shortFormWrapper { width:auto; }
+
+/*-------------------------------01.權限管理-------------------------------*/
+/*下拉選單設定*/
+.User .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;line-height:30px;}
+.User .menuLeft, .User .menuRight {width:50%;height:auto;overflow:hidden;float:left;}
+.User .menuWrapper input{height: 30px;line-height:30px;}
+.User .menuWrapper input[type="checkbox"] {width: 30px;height: 30px;padding: 0 5px;margin: 0 5px;float:left;}
+/*2015.9.25 每個單元必下*/
+.User table, .User th, .User td {table-layout:fixed;width:100%;}
+
+/*-------------------------------02.系統設定(單元名稱)背景底圖-------------------------------*/
+/*2015.9.25 每個單元必下*/
+.Settings table, .Settings th, .Settings td {table-layout:fixed;width:100%;}
+.ugA_Settings_Menu {height:30px;min-height:30px;line-height:30px;float:left;}
+.Settings form[name="frmUG"] input[type="checkbox"] {width: 30px;height: 30px;padding: 0 5px;margin: 0 5px;float:left;}
+.Settings .ugA_Settings_Menu_m * {float:left;line-height:36px;}
+/*下拉選單設定*/
+.Settings .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;line-height:30px;}
+.Settings .menuLeft, .Acct .menuRight {width:22%;height:auto;overflow:hidden;float:left;}
+
+/*-------------------------------04.單元點擊次數-------------------------------*/
+/*2015.9.25 每個單元必下*/
+.Counter table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------05.報表分析-------------------------------*/
+.Paper table.tbStyle01 th.percentage div {width:5em;margin:0 auto;}
+/*訂單銷售報表*/
+.Paper .ugA_Ord_Search {width:100%;height:auto;overflow:hidden;}
+.Paper .ugA_Ord_Search * {font-size:16px;height:30px;min-height:30px;line-height:30px;float:left;}
+.Paper .ugA_Ord_Search input {padding:0 5px;margin:0 5px;}
+.Paper .ugA_Ord_Search .ugA_Ord_Search_Left {width:50%;float:left;height:auto;overflow:hidden;margin:5px 0;}
+.Paper .ugA_Ord_Search .ugA_Ord_Search_Right {width:50%;float:left;height:auto;overflow:hidden;margin:5px 0;}
+/*產品銷售報表*/
+.Paper table.ugA_Analysis th.percentage div { width:3em; }
+.Paper .ugA_Ord_Search2 {	width:100%;	height:auto;	overflow:hidden;}
+.Paper .ugA_Ord_Search2 * {	font-size:16px;	height:30px;	min-height:30px;	line-height:30px;	float:left;}
+.Paper .ugA_Ord_Search2 input {	padding:0 5px;	margin:0 5px;}
+.Paper .ugA_Ord_Search2 .ugA_Ord_Search_Left {width:50%;float:left;height:auto;overflow:hidden;margin:5px 0;}
+.Paper .ugA_Ord_Search2 .ugA_Ord_Search_Right {width:50%;float:left;height:auto;overflow:hidden;margin:5px 0;}
+/*2015.9.25 每個單元必下*/
+.Paper table, .Paper th, .Paper td {table-layout:fixed;	width:100%;}
+
+/*-------------------------------06.廣告輪播管理-------------------------------*/
+/*2015.10.02 每個單元必下*/
+.Banner table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------07.關於我們(多頁介紹)-------------------------------*/
+/*2015.10.02 每個單元必下*/
+.Company table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------08.關於我們(分類多頁)-------------------------------*/
+/*2015.10.02 每個單元必下*/
+.Company_Two table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------09.最新消息-------------------------------*/
+.News table { display: inline-table; }
+/*2015.10.02 每個單元必下*/
+.News table, .Counter th, .Counter td {table-layout:fixed;width:100%;}	
+
+/*-------------------------------10.新聞牆-------------------------------*/
+.NewsGallery table { display: inline-table; }
+/*2015.10.02 每個單元必下*/
+.NewsGallery table, .Counter th, .Counter td {table-layout:fixed;width:100%;}	
+
+/*-------------------------------11.常見問題-------------------------------*/
+.Faq table { display: inline-table; }
+/*2015.10.02 每個單元必下*/
+.Faq table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------12.檔案下載-------------------------------*/
+/*2015.10.02 每個單元必下*/
+.Down table, .Counter th, .Counter td {	table-layout:fixed;	width:100%;}
+
+/*-------------------------------13.友站連結-------------------------------*/
+/*2015.10.02 每個單元必下*/
+.Link table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+/*下拉選單設定*/
+.Link .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;line-height:30px;}
+.Link .menuLeft, .User .menuRight {width:50%;height:auto;overflow:hidden;float:left;}
+.Link .menuWrapper input{height: 30px;line-height:30px;}
+.Link .menuWrapper input[type="checkbox"] {width: 30px;height: 30px;padding: 0 5px;margin: 0 5px;float:left;}
+.Link .menuWrapper .menuLeft input[name="txtSKeyword"], .Link .menuWrapper .menuRight input[name="txtSKeyword"] {height: 30px;line-height:30px;}
+
+/*-------------------------------14.服務據點-------------------------------*/
+/*2015.10.05 每個單元必下*/
+.Retail table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------16.相簿-------------------------------*/
+/*2015.10.05 每個單元必下*/
+.Album_Multi table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+.Album_Multi .css_DataList ul { width:100%; }
+.Album_Multi .css_DataList ul li {width:33.3333%;float: left;}
+
+#Process { height:16px; }
+.Album_Multi .ugA_Photo_Wrapper {width:100%;height:auto;overflow:hidden;font-size: 16px;}
+.Album_Multi .ugA_Photo_Wrapper .Left {width:50%;float:left;height:auto;overflow:hidden;margin:5px 0;background:none;}
+.Album_Multi .ugA_Photo_Wrapper .Right {width:50%;float:left;height:auto;overflow:hidden;margin:5px 0;padding:0;}
+.PhotoBox {/*width:22%;margin:0 1.5%;margin-bottom:20px;*/height:auto;overflow:hidden;float:left;border:1px solid #ccc;padding:1.2%;width:23.5%; margin:10px 0 10px 2%;}
+.PhotoBox:nth-child(4n+1) { clear:both; margin-left:0;}
+
+/*-------------------------------17.操作手冊-------------------------------*/
+/*2015.10.05 每個單元必下*/
+.Operation table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------18.會員管理-------------------------------*/
+/*下拉選單設定*/
+.Acct .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;line-height:30px;}
+.Acct .menuWrapper > * > * ~ span { float:left;}
+.Acct .menuWrapper > * > * ~ span ~ input { max-width:130px;}
+.Acct .menuLeft, .acct .menuRight {width:22%;height:auto;overflow:hidden;float:left; margin-bottom:5px;}
+/*.Acct .menuLeft:first-child { width:34%; }*/
+.Acct .menuWrapper input[type="checkbox"] {width: 30px;height: 30px;padding: 0 5px;margin: 0 5px;float:left;}
+.Acct .menuWrapper .menuLeft input[name="txtSAcctName"], .menuWrapper .menuRight input[name="txtSAcctName"]{height: 30px;line-height:30px;}
+.Acct .menuWrapper .menuLeft input[name="txtSLoginID"], .menuWrapper .menuRight input[name="txtSLoginID"] {height: 30px;line-height:30px;}
+/*2015.10.05 每個單元必下*/
+.Acct table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+.Acct .RightDiv01 { width:100%; }
+.Acct div.RightDiv01Left {width:10%;float:left;}
+.Acct div.RightDiv01Right {width:90%;float:left;text-align:left;}
+
+/*-------------------------------20.產品分類-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.ShowroomKind table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------21.產品管理-------------------------------*/
+/*下拉選單設定*/
+.Showroom .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;}
+.Showroom .menuLeft, .Showroom .menuRight {width:25%;height:auto;overflow:hidden;float:left;margin-top:10px;}
+.Showroom .menuLeft:first-child { width:100%; }
+.Showroom .menuWrapper input[type="checkbox"] {width: 30px;height: 30px;padding: 0 5px;margin: 0 5px;float:left;}
+.Showroom .menuWrapper .menuLeft input[name="txtSKeyword"], .menuWrapper .menuRight input[name="txtSKeyword"] {height: 30px;line-height:30px;}
+/*選項設定*/
+.Showroom .ContentDivWrapper .ContentDiv div.RightDiv li span:nth-child(2n+1) {width:30px;margin-right:10px;}
+.Showroom .ContentDivWrapper .ContentDiv div.RightDiv li span:nth-child(2n+2) {width:80%;}
+.Showroom .css_DataList ul { width:100%; }
+.Showroom .css_DataList ul li {width:33.3333%;float: left;}
+.Showroom .css_ShopFor ul { width:100%; }
+.Showroom .css_ShopFor ul li ul li { width:200px; }
+.Showroom .ContentDivWrapper .ContentDiv div { text-align:left; }
+.Showroom .clearfix .clearfixLeft {width:30%;float:left;}
+.Showroom .clearfix .clearfixRight {width:70%;float:left;}
+/*2015.10.06 每個單元必下*/
+.Showroom table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+.Showroom div.RightDiv_Showroom_m {width:20%;float:left;}
+
+/*-------------------------------22.產品大量上架-------------------------------*/
+.ShowroomUpload table.ugA_ShowroomUploadImport th:nth-child(7n+6) {width:60px;}
+.ShowroomUpload table.ugA_ShowroomUploadImport th:nth-child(7n+7) {width:60px;}
+/*2015.10.06 每個單元必下*/
+.ShowroomUpload table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+.Showroom .readme { width:100%; }
+
+/*-------------------------------23.產品管理(到貨通知)測試中-------------------------------*/
+.ShowroomNotice table.ugA_ShowroomAdd th:nth-child(7n+5) {width:60px;}
+.ShowroomNotice table.ugA_ShowroomAdd th:nth-child(7n+6) {width:100px;}
+.ShowroomNotice table.ugA_ShowroomAdd th:nth-child(7n+7) {width:60px;}
+/*2015.10.06 每個單元必下*/
+.ShowroomNotice table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------24.產地地區-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.PrdRegionKind table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------25.年度年份-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.PrdYear table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------26.產品顏色-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.ShowColor table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------27.產品尺寸-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.ShowSize table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------28.產品應用(一層)-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.PrdApplication table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------29.產品屬性(一層)-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.PrdType table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------30.產品設定(一層)-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.PrdProperty table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------31.產品應用(兩層)-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.PrdApplication_Two table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------32.產品屬性(兩層)-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.PrdType_Two table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------33.產品設定(兩層)-------------------------------*/
+/*2015.10.06 每個單元必下*/
+.PrdProperty_Two table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------34.訂單管理-------------------------------*/
+/*下拉選單*/
+.Ord .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;}
+.Ord .menuLeft {width:33.3333%;height:auto;overflow:hidden;float:left;margin-bottom:10px;}
+.Ord .menuWrapper input[type="checkbox"] {width: 30px;height: 30px;padding: 0 5px;margin: 0 5px;float:left;}
+.Ord .menuWrapper .menuLeft input[name="txtSAcctName"], .menuWrapper .menuRight input[name="txtSAcctName"] {height: 30px;line-height:30px;}
+.Ord .menuWrapper .menuLeft input[name="txtSLoginID"], .menuWrapper .menuRight input[name="txtSLoginID"] {height: 30px;line-height:30px;}
+.Ord .menuWrapper .menuLeft input[name="txtSBgnDate"], .menuWrapper .menuRight input[name="txtSBgnDate"] {height: 30px;line-height:30px;}
+.Ord .menuWrapper .menuLeft input[name="txtSEndDate"], .menuWrapper .menuRight input[name="txtSEndDate"] {height: 30px;line-height:30px;}
+.Ord .menuWrapper .menuLeft input[name="txtSOrdNum"], .menuWrapper .menuRight input[name="txtSOrdNum"] {height: 30px;line-height:30px;}
+/*2015.10.06 每個單元必下*/
+.Ord table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------35.追蹤清單(測試中)-------------------------------*/
+/*選單*/
+.Track .ugA_Track_search {height:auto;min-height:30px;line-height:30px;float:left;display:inline-block;overflow:hidden;}
+.Track .right form[name="frmUG"] input[type="checkbox"] {width: 30px;height: 30px;line-height:30px;padding: 0 5px;margin: 0 5px;float:left;}
+/*2015.10.07 每個單元必下*/
+.Track table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+.Track .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;text-align:left;}
+.Track .menuLeft {width:33.3333%;height:auto;overflow:hidden;float:left;margin-bottom:10px;line-height:30px;}
+
+/*-------------------------------37.購物折扣設定(全館折扣)(滿千送百)-------------------------------*/
+.Promote .contentWrapper {width:100%;height:auto;overflow:hidden;/*box-sizing: border-box; */}
+.Promote div.contentWrapperRight {width:95%;float:left;margin:5px 0;margin-left:35px;}
+.Promote div.contentWrapperLeft {width:100%;float:left;margin:5px 0;}
+.Promote input[type="text"] { width:107px; }
+.Promote .ContentDivWrapper .ContentDiv div { text-align:left; }
+
+/*-------------------------------38.十大年節活動(另闢賣場)特定主題商品-------------------------------*/
+/*2015.10.07 每個單元必下*/
+.Promotion table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------39.數量折扣設定(任N件起N折)(買滿N件N元)------------------------------*/
+/*2015.10.07 每個單元必下*/
+.ShowActivity table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------40.出貨物流商------------------------------*/
+/*2015.10.07 每個單元必下*/
+.Logistics table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------41.影片分享(多筆介紹)------------------------------*/
+/*2015.10.07 每個單元必下*/
+.Media table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------42.影片分享(多筆介紹)------------------------------*/
+/*2015.10.07 每個單元必下*/
+.Media_Two table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------43.電子報訂閱名單------------------------------*/
+/*2015.10.07 每個單元必下*/
+.EpaperEmail table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------44.電子報編輯------------------------------*/
+/*選單*/
+.Epaper .ugA_Epaper_search {height:30px;min-height:30px;line-height:30px;/* float:left;*/}
+.Epaper .right form[name="frmUG"] input[type="checkbox"] {width: 30px;height: 30px;line-height:30px;padding: 0 5px;margin: 0 5px;float:left;}
+.Epaper .ugA_Epaper_Left {width:30%;float:left;margin-bottom:5px;}
+.Epaper .ugA_Epaper_Left2 {width:40%;float:left;}
+/*2015.10.07 每個單元必下*/
+.Epaper table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------45.人才招募------------------------------*/
+/*2015.10.07 每個單元必下*/
+.Job table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------46.經營團隊------------------------------*/
+/*2015.10.07 每個單元必下*/
+.People table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------48.電子投票------------------------------*/
+/*2015.10.07 每個單元必下*/
+.Vote table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------49.交流園地------------------------------*/
+/*2015.10.07 每個單元必下*/
+.Forum table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------50.線上諮詢------------------------------*/
+/*2015.10.07 每個單元必下*/
+.Inquiry table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+/*下拉選單*/
+.Inquiry .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;text-align:left;}
+.Inquiry .menuLeft {width:33.3333%;height:auto;overflow:hidden;float:left;margin-bottom:10px;line-height:30px;}
+.Inquiry .menuWrapper input[type="checkbox"] {width: 30px;height: 30px;padding: 0 5px;margin: 0 5px;float:left;}
+
+/*-------------------------------51.問卷調查------------------------------*/
+.SurveyRec-item-question{ background-color:#D5DBEE; border-bottom:1px dashed #7088c6;color:#333333;}
+.SurveyRec-item-answer{padding-left:25px;}
+/*2015.10.07 每個單元必下*/
+.Survey table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------52.行事曆大事件------------------------------*/
+/*2015.10.08 每個單元必下*/
+.Calendar table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------53.線上報名(行事曆樣式)------------------------------*/
+.Event .EventBR { display:none; }
+/*2015.10.08 每個單元必下*/
+.Event table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------電子書------------------------------*/
+/*每個單元必下*/
+.Ebook table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+/*下拉選單設定*/
+.Ebook .ugA_Ebook_Wrapper {width:100%;height:auto;overflow:hidden;font-size: 16px;}
+.Ebook .ugA_Ebook_Wrapper .Left {width:50%;float:left;height:auto;overflow:hidden;margin:5px 0;background:none;}
+.Ebook .ugA_Ebook_Wrapper .Right {width:50%;float:left;height:auto;overflow:hidden;margin:5px 0;padding:0;}
+
+/*-------------------------------58.首頁燈箱廣告------------------------------*/
+.WinAD .ugA_WinAd_m * {float:left;line-height:36px;}
+/*2015.10.08 每個單元必下*/
+.WinAD table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------95.前台單元設定 天(選單底圖)地(版權宣告)------------------------------*/
+/*2015.10.13 每個單元必下*/
+.settings_ago table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------96.加購商品管理-------------------------------*/
+.ShowroomAP .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;}
+.ShowroomAP .menuLeft {width:100%;height:auto;overflow:hidden;float:left;margin-top:10px;}
+.ShowroomAP .menuWrapper input[type="checkbox"] {width: 30px;height: 30px;padding: 0 5px;margin: 0 5px;float:left;}
+/*2015.10.13 每個單元必下*/
+.ShowroomAP table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+/*-------------------------------97.活動贈品管理-------------------------------*/
+.ShowroomGift .menuWrapper {width:100%;height:auto;overflow:hidden;font-size:16px;}
+.ShowroomGift .menuLeft {width:100%;height:auto;overflow:hidden;float:left;margin-top:10px;}
+.ShowroomGift .menuWrapper input[type="checkbox"] {width: 30px;height: 30px;padding: 0 5px;margin: 0 5px;float:left;}
+/*2015.10.13 每個單元必下*/
+.ShowroomGift table, .Counter th, .Counter td {table-layout:fixed;width:100%;}
+
+@media only screen and (min-width:0px) and (max-width:1615px) {
+/*-------------------------------會員管理------------------------------*/
+.Acct div.RightDiv01Left {width:12%;}
+.Acct div.RightDiv01Right {width:88%;}
+}
+
+@media only screen and (min-width:0px) and (max-width:1500px) {
+table.tbStyle01 th.m1500-hide {display:none;}
+table.tbStyle01 td.m1500-hide {display:none;}
+/*-------------------------------電子報編輯------------------------------*/
+/*選單*/
+.Epaper .ugA_Epaper_Left {width:50%;}
+.Epaper .ugA_Epaper_Left2 {width:100%;}
+	
+/*-------------------------------線上諮詢------------------------------*/
+/*下拉選單*/
+.Inquiry .menuLeft {width:50%;}
+
+/*-------------------------------訂單管理-------------------------------*/
+/*下拉選單*/
+.Ord .menuLeft {width:50%;}
+}
+
+@media only screen and (min-width:0px) and (max-width:1400px) {
+/*-------------------------------頁碼設定------------------------------*/
+.ugA_MenuPageLeft {width:100%;}
+.ugA_MenuPageRight {width:100%;}
+.css_PageList {text-align:right;}
+
+/*產品銷售報表*/
+.Paper .ugA_Ord_Search2 div:nth-of-type(4n+3) {width:100%;}
+.Paper .ugA_Ord_Search2 div:nth-of-type(4n+4) {width:100%;}
+	
+/*會員管理下拉選單設定*/
+.Acct .menuLeft, .acct .menuRight {width:50%;margin:5px 0;}
+.Acct .menuLeft:first-child {width:50%;}
+	
+/*產品管理下拉選單設定*/
+.Showroom .menuLeft, .Showroom .menuRight {width:50%;}
+	
+/*-------------------------------會員管理------------------------------*/
+.Acct div.RightDiv01Left {width:15%;}
+.Acct div.RightDiv01Right {width:85%;}
+
+/*-------------------------------產品管理------------------------------*/
+.Showroom div.RightDiv_Showroom_m {width:25%;}
+
+/*------------------------------inputBox設定-------------------------------*/
+.RightDiv div.inputBox2 {width:50%;}
+}
+
+@media only screen and (min-width:0px) and (max-width:1300px) {
+}
+
+@media only screen and (min-width:0px) and (max-width:1280px) {
+table.tbStyle01 th.m1280-hide {display:none;}
+table.tbStyle01 td.m1280-hide {display:none;}
+
+/*-------------------------------電子報編輯------------------------------*/
+/*選單*/
+.Epaper .ugA_Epaper_Left {width:100%;}
+.Epaper .ugA_Epaper_Left2 {width:100%;}
+	
+/*-------------------------------會員管理------------------------------*/
+.Acct div.RightDiv01Left {width:20%;}
+.Acct div.RightDiv01Right {width:80%;}
+	
+/*-------------------------------產品管理------------------------------*/
+.Showroom div.RightDiv_Showroom_m {width:33.3333%;}
+}
+
+@media only screen and (min-width:0px) and (max-width:1200px) {
+table.tbStyle01 th.m1200-hide {display:none;}
+table.tbStyle01 td.m1200-hide {display:none;}
+
+/*訂單銷售報表*/
+.Paper .ugA_Ord_Search .ugA_Ord_Search_Left {width:100%;}
+.Paper .ugA_Ord_Search .ugA_Ord_Search_Right {width:100%;}
+/*產品銷售報表*/
+.Paper .ugA_Ord_Search2 .ugA_Ord_Search_Left {width:100%;}
+.Paper .ugA_Ord_Search2 .ugA_Ord_Search_Right {width:100%;}
+	
+/*-------------------------------產品管理-------------------------------*/
+.Showroom .css_DataList ul li {width:50%;}
+.Showroom .clearfix .clearfixLeft {width:100%;}
+.Showroom .clearfix .clearfixRight {width:100%;}
+	
+/*-------------------------------相簿-------------------------------*/
+/*相簿*/
+.Album_Multi .css_DataList ul li {width:50%;}
+.PhotoBox {/*width:30.333%;margin:0 1.5%;margin-bottom:25px;*/ width:32%; margin:10px 0 10px 2%;}
+.PhotoBox:nth-child(4n+1) { clear:none; margin-left:1.5%;}
+.PhotoBox:nth-child(3n+1) { clear:both; margin-left:0;}
+
+/*-------------------------------上方選單特別設定------------------------------*/
+div.Left01w .Left01 {width:30%;}
+}
+
+@media only screen and (min-width:0px) and (max-width:1050px) {
+table.tbStyle01 th.m1050-hide {display:none;}
+table.tbStyle01 td.m1050-hide {display:none;}
+div.m1050-hide {display:none;}
+
+/*-------------------------------線上諮詢------------------------------*/
+/*下拉選單*/
+.Inquiry .menuLeft {width:100%;}
+	
+/*-------------------------------會員管理------------------------------*/
+.Acct div.RightDiv01 {width:100%;}
+.Acct div.RightDiv01Left {width:25%;}
+.Acct div.RightDiv01Right {width:75%;}
+
+/*-------------------------------產品管理------------------------------*/
+.Showroom div.RightDiv_Showroom_m {width:50%;}
+
+/*------------------------------inputBox設定-------------------------------*/
+.RightDiv div.inputBox {width:100%;}
+
+/*-------------------------------上方選單特別設定------------------------------*/
+div.Left01w .Left01 {width:50%;}
+	
+/*-------------------------------訂單管理-------------------------------*/
+/*下拉選單*/
+.Ord .menuLeft {width:100%;}
+}
+
+@media only screen and (min-width:0px) and (max-width:960px) {
+table.tbStyle01 th.m960-hide {display:none;}
+table.tbStyle01 td.m960-hide {display:none;}
+
+/*會員管理下拉選單設定*/
+.Acct .menuLeft, .menuRight {width:100%;}
+.Acct .menuLeft:first-child {width:100%;}
+	
+/*產品管理下拉選單設定*/
+.Showroom .menuLeft, .Showroom .menuRight {width:100%;}
+}
+
+@media only screen and (min-width:0px) and (max-width:900px) {
+/*-------------------------------加購商品管理-------------------------------*/
+.ShowroomAP table.tbStyle01 {display: table;}
+
+/*-------------------------------活動贈品管理-------------------------------*/
+.ShowroomGift table.tbStyle01 {display:table;}
+}
+
+@media only screen and (min-width:0px) and (max-width:880px) {
+/*-------------------------------產品管理-------------------------------*/
+.Showroom .css_DataList ul li {width:100%;text-align:left;}
+
+/*-------------------------------相簿-------------------------------*/
+.Album_Multi .css_DataList ul li {width:100%;text-align:left;}
+}
+
+@media only screen and (min-width:0px) and (max-width:850px) {
+/*-------------------------------網站優化設定(網站關鍵字)廠商通知信-------------------------------*/
+.HomeImg textarea {background:#fff;}
+.HomeImg textarea:focus {background:#ffffcc;}
+	
+/*-------------------------------單元點擊次數-------------------------------*/
+.Counter table.tbStyle01 td:first-child {text-align:left;padding-left:20px;}
+
+/*-------------------------------報表分析-------------------------------*/
+.Paper table.tbStyle01 td:first-child {text-align:left;padding-left:20px;}
+/*訂單銷售報表*/
+.Paper table.ugA_Ord th:nth-child(6n+3) {text-align:center;padding-left:0;}
+	
+/*-------------------------------相簿(多檔上傳)-------------------------------*/
+/*相片*/
+.Album_Multi .ugA_Photo_Wrapper .Left {width:100%;}
+.Album_Multi .ugA_Photo_Wrapper .Right {width:100%;}
+
+/*下拉選單設定*/
+.menuWrapper input, .menuWrapper select {width:100%;margin-top:10px; max-width:none;}
+.Acct .menuWrapper > * > * ~ span ~ input { max-width:none; width:100%;}
+.Acct .menuLeft, .acct .menuRight { width:100%;}
+.PhotoBox {/*width:47%;margin:0 1.5%;margin-bottom:25px;*/ width:48%; margin:12.5px 0 12.5px 4%; padding:5px;}
+.PhotoBox:nth-child(4n+1),.PhotoBox:nth-child(3n+1) { clear:none; margin-left:4%;}
+.PhotoBox:nth-child(odd) { clear:both; margin-left:0;}
+
+/*-------------------------------電子報編輯------------------------------*/
+/*選單*/
+.Epaper select {width:50%;}
+
+/*-------------------------------電子書-------------------------------*/
+/*下拉選單設定*/
+.Ebook .ugA_Ebook_Wrapper .Left {width:100%;}
+.Ebook .ugA_Ebook_Wrapper .Right {width:100%;}
+
+/*-------------------------------會員管理------------------------------*/
+.Acct div.RightDiv01Left {width:100%;}
+.Acct div.RightDiv01Right {width:100%;padding-left:40px;}
+.Acct div.RightDiv select[name="selDueDateSts"] {width:auto;height:43px;}
+	
+/*-------------------------------產品管理------------------------------*/
+.Showroom .ContentDivWrapper .ContentDiv div.ss_add_subject {text-align:center;}
+
+/*------------------------------inputBox設定-------------------------------*/
+.RightDiv div.inputBox {width:50%;}
+
+/*------------------------------區域欄位設定-------------------------------*/
+.RightDiv div.addressform {margin-bottom:10px;}
+
+/*-------------------------------上方選單特別設定------------------------------*/
+div.Left01w .Left01 {width:100%;margin-bottom:10px;}
+div.Left01w .Left02 {width:100%;}
+	
+/*-------------------------------購物折扣設定(全館折扣)(滿千送百)-------------------------------*/
+.Promote .ugA_Promote_Title {width:100%;table-layout:fixed;height:auto;overflow:hidden;}
+.Promote .ugA_Promote_content {width:100%;table-layout:fixed;}
+
+.right form[name="frmUG"] input.longForm {width:100%;}
+}
+
+/*-------------------------------表格一律在768px時變換-------------------------------*/
+@media only screen and (min-width:0px) and (max-width:768px) {
+.Paper .Label {margin:3px;}
+.Paper .right form[name="frmUG"] select {min-height:40px;line-height:40px;}
+table.tbStyle01 th.m768-hide {display:none;}
+table.tbStyle01 td.m768-hide {display:none;}
+div.m768-hide {display:none;}
+
+/*-------------------------------報表分析  需再細分調整，因為裡面有不同表格-------------------------------*/
+/*訂單銷售報表*/
+.Paper table.ugA_Ord td.total {display:table-cell;text-align:center;padding-left:10px;}
+.Paper .ugA_Ord_Search .ugA_Ord_Search_Left .Label {clear:both;}
+/*產品銷售報表*/
+.Paper .ugA_Ord_Search2 .ugA_Ord_Search_Left div {width:100%;height:auto;overflow:hidden;margin:5px 0;}
+	
+/*-------------------------------問卷調查------------------------------*/
+.Survey .RightDivSpan {width:100%;height:auto;overflow:hidden;display:block;margin:10px 0;}
+	
+/*-------------------------------線上報名(行事曆樣式)------------------------------*/
+.Event .right form[name="frmUG"] .ContentDivWrapper .RightDiv select {width:45px;}
+.Event .EventBR {display:inline;}
+	
+/*-------------------------------97.活動贈品管理-------------------------------*/
+.ShowroomGift table.tbStyle01 th:nth-of-type(5n+1) {display:none;}
+.ShowroomGift table.tbStyle01 td:nth-of-type(5n+1) {display:none;}
+}
+@media only screen and (min-width:0px) and (max-width:650px) {
+}
+@media only screen and (min-width:0px) and (max-width:550px) {
+/*------------------------------inputBox設定-------------------------------*/
+.RightDiv div.inputBox2 {width:100%;}
+}
+
+@media only screen and (min-width:0px) and (max-width:460px) {
+/*-------------------------------產品管理------------------------------*/
+.Showroom div.RightDiv_Showroom_m {width:100%;}
+/*產品管理(到貨通知)測試中*/
+.ShowroomNotice table.ugA_Showroom th:nth-of-type(12n+11) {display:none;}
+.ShowroomNotice table.ugA_Showroom td:nth-of-type(12n+11) {display:none;}
+
+/*-------------------------------系統設定(單元名稱)背景底圖-------------------------------*/
+.Settings table.tbStyle01 td.img img {max-width:100%;}
+.Settings table.ugA_Settings_Menu th:nth-of-type(4n+3) {display:none;}
+.Settings table.ugA_Settings_Menu td:nth-of-type(4n+3) {display:none;}
+}
+
+@media only screen and (min-width:0px) and (max-width:450px) {
+/*-------------------------------相簿(多檔上傳)-------------------------------*/
+.PhotoBox {width:97%;/*margin:0 1.5%;margin-bottom:25px;*/ margin:12.5px auto;}
+.PhotoBox:nth-child(4n+1),.PhotoBox:nth-child(3n+1),.PhotoBox:nth-child(odd) { margin-left:auto;}
+
+.ContentDivWrapper .ContentDiv div.shortFormWrapper {width:100%;text-align:left;}
+	
+/*-------------------------------35.追蹤清單-------------------------------*/
+/*選單*/
+.Track .ugA_Track_search {float:none;margin:0 auto;text-align:center;display:block;}
+.Track .ugA_Track_search span {width:120px;height:30px;margin:15px auto;display:block;}
+.Track .ugA_Track_search input[type="text"] {width:100%;float:none;margin:0 auto;display:block;height:30px;line-height:30px;padding:0 5px;}
+}

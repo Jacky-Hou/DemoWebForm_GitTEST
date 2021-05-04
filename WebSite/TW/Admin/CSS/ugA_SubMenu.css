@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*選項左方框架*/
+body
+{
+	/*background:#00498F;*/
+	margin:0px;
+	background:url(../Images/Bg_Left.gif);
+	background-repeat:repeat-x;
+}
+
+/*上方標題*/
+.ss_sm_title
+{
+    color: #FFFFFF; font-weight: bold;
+	font-size: 12pt;
+	font-family: 微軟正黑體,　Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*選項*/
+.ss_sm_item
+{
+    color: #e94a8a;
+    text-decoration: none;
+	font-size: 10pt;
+	font-family: 微軟正黑體,　Verdana, Arial, Helvetica, sans-serif;
+}
+
+A:hover
+{
+    color: #be0707;
+    text-decoration: none
+}
+A:active
+{
+    text-decoration: none
+}
+A:visited
+{
+    text-decoration: none
+}

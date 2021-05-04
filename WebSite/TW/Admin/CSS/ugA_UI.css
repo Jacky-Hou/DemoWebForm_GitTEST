@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*設定所有元素為 border-box*/
+*, *:before, *:after { box-sizing: border-box; }
+
+html, body { width:100%; /*height:100%; overflow:auto;*/ padding:0; margin:0; /*background: #000;*//* height:auto;min-height:100%; */}
+body { font-family:"微軟正黑體"; height:auto; min-height:100%; overflow:hidden; height:100%;/* background: url(../Images/Setting/background/Def_bg01.jpg) center top no-repeat fixed; position:relative;
+-moz-background-size:cover;
+-webkit-background-size:cover;
+-o-background-size:cover;
+background-size:cover;*/
+
+}
+html {
+    height: 100%;
+	position:relative;
+	overflow:auto;
+    overflow: hidden;
+	 
+}
+
+
+/* html5 標籤元素設定*/
+header, nav, section, article, aside, footer { display:block;}
+
+.Wrapper{ width:100%; height:auto; margin:0 auto; overflow:hidden; position:relative;/*padding-bottom: 950px; margin-bottom: -950px;*/ height:100%; overflow:auto; overflow:hidden;}
+
+.left{ width:12%; height:auto; overflow:hidden; float:left; background: url(../Images/UI/left_bg.png); height:100%; position:relative;}
+.left .leftTop{ width:205px; width:100%; height:40px; height:auto; color:#FFF; background: url(../Images/UI/left_bg.png); padding:0 10%; line-height:40px;}
+.left .leftTop a{ text-decoration:none; color:#FFF; display:block;}
+.left .leftTop .Home_icon{/*width:15px; height:15px;*/ margin-right:27px; border:0; margin-right:18%;max-width: 100%; height: auto;  max-height: 15px; margin-right:12%;}
+
+.left .MenuTitle{ width:205px; width:100%; height:150px; height:auto; color:#FFF; text-align:center; font-size:20px; padding:10%; background: url(../Images/UI/MenuTitle_line.png) center bottom repeat-x;}
+.left .MenuTitle a{ text-decoration:none; color:#FFF;}
+.left .MenuTitle img{ border:0;/* width:80px; height:80px; */ max-width: 100%; height: auto;  max-height: 80px;}
+
+.left .MenuItem { width:100%; height: auto; overflow: hidden; height:100%; margin-bottom:60px; height:auto;}
+.left .MenuItem ul{ margin:0; padding:0; padding:0 8%;}
+.left .MenuItem li{ width:205px; width:100%; height:32px; margin:0; padding:0; list-style:none; color:#FFF; margin:20px 0; line-height:32px; height: auto; letter-spacing:-0.3px; }
+.left .MenuItem li a{ width:205px; width:100%; height:32px; display:block; font-size:14px; text-decoration:none; color:#FFF; height: auto; font-size:13.5px; position:relative;line-height:20px;padding:6px 0; padding-left:40px;text-shadow: 1px 1px #565656;}
+.left .MenuItem li img{ vertical-align:middle; margin-right:15px; margin-right:8%; margin-right:4%; border:0;/* max-width:32px; height:auto;*/max-width: 100%; height: auto;  max-height: 32px; position:absolute; top:50%; margin-top:-16px; left:0;}
+
+.left .leftBottom{ width:205px; width:100%; height:40px; height:auto; color:#FFF; background: url(../Images/UI/left_bg.png) center bottom; padding:0 10%; line-height:40px; position:absolute; bottom:0;}
+.left .leftBottom a{ text-decoration:none; color:#FFF;}
+.left .leftBottom .Logoff_icon{/*width:17px; height:18px;*/ margin-right:20px; vertical-align:middle; border:0;max-width: 100%; height: auto;  max-height: 18px;}
+
+.right{ width:88%; height:auto;/* float:left; */overflow:hidden; background: #FFF; height:100%;}
+.right input{height:30px;line-height:28px;}
+.right form[name="frmUG"] input{height:auto; line-height:normal; line-height:20px; padding:4px;}
+.right form[name="frmUG"] .ContentDivWrapper select{height:33px; line-height:31px;}
+.right form[name="frmUG"] select{height:auto; line-height:normal;}
+
+
+
+/**, *:before, *:after { box-sizing: border-box; }
+html { padding:0; margin:0; height:100%;}
+body { padding:0; margin:0; height:auto; min-height:100%;}
+.Wrapper { width:100%; height:auto; overflow:hidden;}*/
+.left { width:10%; height:auto; min-height:100%; overflow:hidden; float:left;width:12%;}
+.left table[width="150"] { margin:0 auto;}
+.right { width:90%; height:auto; min-height:100%; overflow:hidden; float:left; background:#fff; padding:0 15px;width:88%; position:relative; height:100%;  overflow-y:auto; padding-top:60px;}
+.ss_add_subject { min-width:70px; max-width:100px;}
+.ContentDivWrapper { width:100%; height:auto; padding:0; overflow:hidden;}
+.ContentDivWrapper .ContentDiv { width:100%; height:auto; overflow:hidden; margin:10px 0;}
+.ContentDivWrapper .ContentDiv > strong.Strong { font-size:20px; font-weight:bold; height:auto; line-height:26px;}
+/* 右側 UI 設定 2015.8.14 Jay*/
+.ContentDivWrapper .ContentDiv * { max-width:100%; font-size:16px;}
+.ContentDivWrapper .ContentDiv a ~ img,
+.ContentDivWrapper .ContentDiv a ~ a img{ display:block; width:300px; max-width:100%; height:auto; float:left;}
+.ContentDivWrapper .ContentDiv * [color="#FF0000"] { font-size:14px;}
+.ContentDivWrapper .ContentDiv div.ss_add_subject { position:relative; padding-left:15px;}
+.ContentDivWrapper .ContentDiv div.ss_add_subject .ss_add_star { position:absolute; top:3px; left:0;}
+.ContentDivWrapper .ContentDiv tr:nth-child(2n+1) { background:rgba(255,255,255,1);}
+.ContentDivWrapper .ContentDiv tr:nth-child(2n+2) { background:rgba(238,238,238,0.5);}
+.ContentDivWrapper .ContentDiv table { width:100%;}
+.ContentDivWrapper .ContentDiv td { height:30px; line-height:30px; padding:10px;}
+.ContentDivWrapper .ContentDiv input {box-sizing: border-box; width:300px; padding:5px; height:30px; line-height:28px; background:#fff; outline:none; border:1px solid #ccc;
+/*陰影*/
+-moz-box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);-webkit-box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);}
+.ContentDivWrapper .ContentDiv tr[id="id_joindata1"] input { width:100%; max-width:300px;}
+.ContentDivWrapper .ContentDiv input[type="radio"], .ContentDivWrapper .ContentDiv input[type="checkbox"] { width:30px; float:left;
+/*陰影*/
+-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; height:28px; line-height:inherit;}
+
+.ContentDivWrapper .ContentDiv input:focus { background:rgba(238,238,238,0.5);  color:#555;background-color:#ffffcc;}
+/*設定 CK Editor 為 border-box*/
+.ContentDivWrapper .ContentDiv div[role="application"] {box-sizing: border-box;}
+
+.ContentDivWrapper .ContentDiv div { width:100%; height:auto; overflow:hidden; float:left; text-align:center;}
+.ContentDivWrapper .ContentDiv div.ss_add_subject { /*width:14%;*/ width:19%; text-align:left; max-width:100%; line-height:33px;}
+.ContentDivWrapper .ContentDiv div.RightDiv,
+.ContentDivWrapper .ContentDiv div.css_RedTxt { /*width:86%;*/ width:81%; text-align:left; height:auto; line-height:30px;}
+.ContentDivWrapper .ContentDiv div.RightDiv > .SurveyUl,
+.ContentDivWrapper .ContentDiv div.RightDiv > .SurveyUl li { padding:0; margin:0; list-style:none;}
+.ContentDivWrapper .ContentDiv div.RightDiv > .SurveyUl li { display:inline-block; width:auto; height:auto; overflow:hidden; float:left; margin:0 5px 5px 0;}
+.ContentDivWrapper .ContentDiv div.RightDiv > .SurveyUl li > * { float:left; line-height:30px; margin:3px;}
+.ContentDivWrapper .ContentDiv div.RightDiv span.Label { float:left; margin:2px 0;}
+
+.ContentDivWrapper .editor-area-title { background-color:#ccc; font-size:16px; text-align:center; font-weight:bold; padding:5px 0; cursor:pointer;}
+
+.ContentDivWrapper textarea { width:100%; max-width:100%;}
+
+.SocialNetWork_Checkbox { width:100%; height:auto; overflow:hidden; padding:0;}
+.SocialNetWork_Checkbox li { display:inline-block; margin:0 15px 15px 0;}
+.SocialNetWork_Checkbox li img { margin-left:5px;}
+
+@media only screen and (min-width:0px) and (max-width:1620px){
+	.left .leftTop { letter-spacing:-0.1em;}
+	.left .leftBottom{ letter-spacing:-0.1em;}
+	
+	.ContentDivWrapper .ContentDiv div.ss_add_subject { width:22%;}
+    .ContentDivWrapper .ContentDiv div.RightDiv,.ContentDivWrapper .ContentDiv div.css_RedTxt { width:78%;}
+
+	}
+@media only screen and (min-width:0px) and (max-width:1500px){
+	.left { width:14%;}.right { width:86%;} 
+	.left .leftTop { letter-spacing:-0.2em;}
+	.left .leftBottom { letter-spacing:-0.2em;}
+	}
+@media only screen and (min-width:0px) and (max-width:1455px){
+	.left .leftTop,.left .leftBottom  { letter-spacing:-0.3em;}
+	.left .MenuItem li img { margin-right:0;}
+
+	}
+
+@media only screen and (min-width:0px) and (max-width:1300px){.left { width:15%;}.right { width:85%;} table div.cke_chrome { width:100%;}
+    .ContentDivWrapper .ContentDiv div.ss_add_subject {/* width:22%;*/ width:37%;}
+	.ContentDivWrapper .ContentDiv div.RightDiv, .ContentDivWrapper .ContentDiv div.css_RedTxt {/* width:78%;*/ width:63%;}
+}
+@media only screen and (min-width:0px) and (max-width:1100px){.left { width:19%;}.right { width:81%;} }
+@media only screen and (min-width:0px) and (max-width:900px){
+	.left { width:22%;}
+	.right { width:78%;}
+	table { table-layout:fixed; width:100%; /*2017.2.9 Jay 修改 display:block;*/}
+	table * { word-wrap:break-word; word-break:break-all; height:auto;}
+	table .ss_add_subject { width:70px; table-layout:fixed;}
+	input { max-width:100%;}
+	table div { max-width:100%; height:auto; overflow:hidden; padding:0;}
+	table .css_FnBu { background:#658dcb; width:100%; height:auto; float:left; vertical-align:top;border-radius:5px; padding:0 5px; height:40px; line-height:40px; font-size:14px;}
+	table .css_FnBu_over { background: #ff9b19; width:100%; float:left; height:auto; vertical-align:top;border-radius:5px; padding:0 5px; height:40px; line-height:40px; font-size:14px;}
+	}
+@media only screen and (min-width:0px) and (max-width:750px){.left { width:24%;}.right { width:76%;} }
+@media only screen and (min-width:0px) and (max-width:630px){.left { width:27%;}.right { width:73%;} }
+@media only screen and (min-width:0px) and (max-width:560px){
+	.left .MenuItem li a{font-size:12px;font-size:13.5px;}
+	}
+
+@media only screen and (min-width:0px) and (max-width:550px){
+	.left .leftTop .Home_icon,.left .leftBottom .Logoff_icon{margin-right:10%;} 
+	.left .leftTop a,.left .MenuTitle a,.left .leftBottom a { font-size:15px;}
+	}
+@media only screen and (min-width:0px) and (max-width:500px){
+	.left .leftTop .Home_icon,.left .leftBottom .Logoff_icon{margin-right:6%;} 
+	}
+
+@media only screen and (min-width:0px) and (max-width:480px){
+	.left .leftTop .Home_icon,.left .leftBottom .Logoff_icon{margin-right:4%;} 
+	}
+@media only screen and (min-width:0px) and (max-width:460px){
+	.left .leftTop a,.left .leftBottom a { font-size:15px;}
+	.left .leftTop,.left .leftBottom{ padding:0 5%;}
+	}
+@media only screen and (min-width:0px) and (max-width:385px){
+	.left .leftTop,.left .leftBottom  { letter-spacing:-0.5em;}
+	.left .leftTop a,.left .MenuTitle a,.left .leftBottom a { font-size:15px;}
+	}
+@media only screen and (min-width:0px) and (max-width:380px){
+	.left .leftTop,.left .leftBottom  { letter-spacing:-0.45em;}
+	.left .leftTop,.left .leftBottom{ padding:0 6%;}
+
+	}
+@media only screen and (min-width:0px) and (max-width:330px){
+	.left .leftTop a,.left .MenuTitle a,.left .leftBottom a { font-size:14px;}
+	}
+@media only screen and (min-width:0px) and (max-width:300px){.left { width:30%;}.right { width:70%;}
+  }
+@media only screen and (min-width:0px) and (max-width:320px){.left { width:32%;}.right { width:68%;}
+  }
+@media only screen and (min-width:0px) and (max-width:275px){.left { width:40%;}.right { width:60%;}
+  }
+
+@media only screen and (min-width:0px) and (max-width:850px){
+	.left { width:100%; min-height:0; position:relative;}
+	.left .leftTop { padding:0; padding-left:10px; width:100px; position:absolute; right:100px; top:0; letter-spacing:-7.5px; background:none; border-left:1px solid #777;}
+	.left .leftTop a { font-size:14px;}
+	.left .leftTop img { margin-top:13px; float:left;}
+	.left .MenuTitle { width:100%; height:41px; line-height:40px; overflow:hidden; padding:0; background:url(../Images/UI/left_bg.png) 0 0 repeat; border-bottom:1px solid #777;}
+	.left .MenuTitle a { display:block; width:100%; height:40px; overflow:hidden; text-align:left;font-size:14px;}
+	.left .MenuTitle img { max-height:30px; margin:5px; float:left;}
+	.left .MenuTitle br { display:none;}
+	.left .leftBottom { padding:0; width:100px; height:40px; line-height:40px; position:absolute; top:0; right:0;letter-spacing:-7.5px; background:none; border-left:1px solid #777; padding-left:5px;}
+	.left .leftBottom a { width:100%; height:40px; overflow:hidden; display:block; float:left; font-size:14px;}
+	.left .leftBottom .Logoff_icon { margin:0; float:left; margin:11.5px 5px;}
+	.left .MenuItem { height:auto; margin:0;}
+	.left .MenuItem ul { width:100%; height:auto; overflow:hidden; padding:0; margin:0; padding:5px;}
+	.left .MenuItem li { width:50%; height:34px; line-height:34px; margin:5px 0; float:left; padding:0;}
+	.left .MenuItem li a { line-height:34px; padding:0;}
+	.left .MenuItem li img { /*max-width:20px;*/ float:left; margin-top:7px; margin-top:3px; margin-right:5px; position:relative;}
+	.right { width:100%; min-height:100%;}
+	html { height:auto; overflow:auto;}
+	body { min-height:0;height:auto;}
+	.BodyWrapper { max-height:300px;}
+	.Wrapper{ overflow:hidden; height:auto;}
+	.right {height:auto;  overflow: hidden;/*  overflow:auto;*/}
+	table { table-layout:fixed; width:100%;}
+	table .ss_add_subject { width:20%;}
+	textarea { width:100%;}
+	input { max-width:100%;}
+	select { width:100%; height:auto; }
+	#hidShowKindID{ margin-bottom:10px;}
+	#hidShowTypeID{ margin-bottom:10px;}
+	#hidShowCatID{ margin-bottom:10px;}
+	input[type="text"]{margin-bottom:10px;}
+	select[name="selSDealSts"]{margin-bottom:10px;}
+	#hidLinkTypeID,#hidMediaTypeID,#selContinentID,#selCityID,#selAreaID{ margin-bottom:10px;}
+	
+	.ContentDivWrapper .ContentDiv div.ss_add_subject { width:100%; text-align:center; padding:10px 0; background:#555; color:#fff;}
+	.ContentDivWrapper .ContentDiv div.RightDiv, .ContentDivWrapper .ContentDiv div.css_RedTxt { width:100%; text-align:center; padding:10px;}
+	
+	.css_ShopFor ul li.clearfix{ text-align:left;}
+	.ContentDivWrapper .css_DataList ul{ width:100%;}
+	.ContentDivWrapper .ContentDiv div.RightDiv select{ margin-bottom:5px;}
+	.ContentDivWrapper .ContentDiv div.RightDiv .css_ReadOnly{ text-align:center;}
+	
+	.ContentDivWrapper .ContentDiv div.RightDiv { background:#eee; border:1px solid #ccc;}
+	.ContentDivWrapper .ContentDiv input { width:100%; height:40px; line-height:38px; padding:10px;}
+	.ContentDivWrapper .ContentDiv input:focus { background:rgba(255,252,219,0.5);  color:#555;}
+	.ContentDivWrapper .ContentDiv div.ss_add_subject { position:static; padding-left:0;}
+	.ContentDivWrapper .ContentDiv div.ss_add_subject .ss_add_star { position:static; }
+
+}
+
+@media only screen and (min-width:0px) and (max-width:512px){
+	.left .leftTop ,.left .leftBottom{ text-indent:-9999em; width: 40px; height:40px; overflow:hidden;}
+	.left .leftTop{right: 38px;}
+
+	}
+	
+@media only screen and (min-width:0px) and (max-width:600px){
+	/*select[name="hidNewsCatID"]{ width:250px;}
+	input[name="txtSubject"],input[name="txtUrlLocate"]{width:250px;}*/
+	}
+/*@media only screen and (min-width:0px) and (max-width:350px){
+	.left .leftTop ,.left .leftBottom{ text-indent:-9999em; width: 40px; height:40px; overflow:hidden;}
+	.left .leftTop{right: 38px;}
+
+	}*/
+	
+/*@media only screen and (min-width:0px) and (max-width:355px){
+	.left .MenuItem li { width:50%; height:34px; line-height:34px; margin:5px 0; float:left; padding:0; 
+    line-height: 32px;
+    height: auto;
+    letter-spacing: -0.3px;}
+	.left .MenuItem li a { line-height:32px; padding:0;    position: relative;
+    line-height: 20px;
+    padding: 6px 0;
+    }
+	}*/
+@media only screen and (min-width:0px) and (max-width:355px){
+	.left .MenuItem li {
+		width: 100%;
+		height:auto;
+	}	
+}

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Basic_Index.Master.cs" Inherits="WebSite.TW.Admin.Basic_Index" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>後台管理系統</title>
+    <meta name="viewport" content="width=device-width,inital-scale=1,user-scalable=yes" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="<%= ResolveUrl("../CSS/ugA_Setting.css") %>" type="text/css" media="screen" />
+    <script type="text/javascript" src="<%= ResolveUrl("../../JS/jquery-3.4.1.min.js")%>"></script>
+    <script type="text/javascript" src="<%= ResolveUrl("../../JS/Menu.js") %>"></script>
+
+    <style>
+        .BodyWrapper {
+            padding: 0;
+            width: 100%;
+            width: 1920px;
+            height: 9999px;
+            overflow: hidden;
+            background-size: 1920px 1080px;
+            position: fixed;
+            left: 50%;
+            margin: 0;
+            margin-left: -960px;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            initialize();
+        })
+    </script>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

@@ -1,0 +1,395 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*設定所有元素為 border-box*/
+*, *:before, *:after { box-sizing: border-box; }
+
+html, body { width:100%; /*height:100%; overflow:auto;*/ padding:0; margin:0; /*background: #000;*//* height:auto;min-height:100%; */}
+body { font-family:"微軟正黑體"; height:auto; min-height:100%; overflow:hidden;/* background: url(../Images/Setting/background/Def_bg01.jpg) center top no-repeat fixed; position:relative;
+-moz-background-size:cover;
+-webkit-background-size:cover;
+-o-background-size:cover;
+background-size:cover;*/
+
+}
+html {
+    height: 100%;
+	position:relative;
+	overflow:auto;
+    /*overflow: hidden;*/
+	 
+}
+@media only screen and (min-width:1024px) and (max-width:9999px){
+	.BodyWrapper {-moz-background-size:cover;
+-webkit-background-size:cover;
+-o-background-size:cover;
+background-size:cover;}}
+
+/*body {
+	margin:0;
+    height: 100%;
+    overflow: scroll;
+	overflow-x:hidden;
+}*/
+
+/*@media only screen and (min-width:1000px){.bodyWrapper{ overflow:hidden;-moz-background-size:cover;
+-webkit-background-size:cover;
+-o-background-size:cover;
+background-size:cover;}}*/
+ 
+ 
+
+/* html5 標籤元素設定*/
+header, nav, section, article, aside, footer { display:block;}
+
+.Wrapper{ width:100%; height:auto; margin:0 auto; overflow:hidden; position:relative;/*padding-bottom: 950px; margin-bottom: -950px;*/}
+.Header{ width:100%; height:55px; height:auto; overflow:hidden; padding:0 20px; background: url(../Images/Setting/icon/Header_bg.png) repeat-y;
+-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:    0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+box-shadow:         0px 5px 5px 0px rgba(0, 0, 0, 0.2);}
+.Header *{ margin:0; padding:0; list-style:none; font-size:14px; color:#FFF;}
+.Header .systemDate{ width:390px; height:auto; float:left; padding:10px 0; font-size:12px;}
+.Header .Nav{width:480px; height:55px; overflow:hidden; float:right;}
+.Header .Nav li{ width:22%; height:55px; overflow:hidden; float:left; line-height:55px; text-align:center; }
+.Header .Nav li.nav01{width:34%;}
+.Header .Nav li a{ text-decoration:none; color:#FFF;}
+.Header .Nav li.nav01{ background: url(../Images/Setting/icon/nav_01.png) 0 0 no-repeat;}
+.Header .Nav li.nav02{ background: url(../Images/Setting/icon/nav_02.png) 0 0 no-repeat;}
+.Header .Nav li.nav03{ background: url(../Images/Setting/icon/nav_03.png) 0 0 no-repeat;}
+.Header .Nav li.nav04{ background: url(../Images/Setting/icon/nav_04.png) 0 0 no-repeat;}
+
+/*---------Header2 start-----------*/
+/*.Header2{ width:100%; height:auto; overflow:hidden; padding:0 20px; background: url(../Images/Setting/icon/Header_bg.png) repeat-y;
+-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:    0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+box-shadow:         0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+display:none;}
+.Header2 *{ margin:0; padding:0; list-style:none; font-size:14px; color:#FFF;}
+.Header2 .systemDate{ width:390px; height:auto; float:left; font-size:12px;}
+
+
+.Header2 .Nav{width:480px; height:55px; overflow:hidden; float:right;}
+.Header2 .Nav li{ width:22%; height:55px; overflow:hidden; float:left; line-height:55px; text-align:center; }
+.Header2 .Nav li.nav01{width:34%;}
+.Header2 .Nav li a{ text-decoration:none; color:#FFF;}
+.Header2 .Nav li.nav01{ background: url(../Images/Setting/icon/nav_01.png) 0 0 no-repeat;}
+.Header2 .Nav li.nav02{ background: url(../Images/Setting/icon/nav_02.png) 0 0 no-repeat;}
+.Header2 .Nav li.nav03{ background: url(../Images/Setting/icon/nav_03.png) 0 0 no-repeat;}
+.Header2 .Nav li.nav04{ background: url(../Images/Setting/icon/nav_04.png) 0 0 no-repeat;}*/
+
+/*---------Header2 end-----------*/
+
+.Pagetop{ width:100%; font-size:14px; color:#fff100; padding:0 20px; padding-top:20px; text-align:center;/*text-shadow: 1px 1px #565656;*/}
+.Pagetop a{ color:#fff100; text-decoration:none;}
+.Pagetop a:hover{ color:#fff100; text-decoration: underline;}
+
+.PageContent{ width:100%; height:auto; overflow:hidden; margin:0 auto; max-width:1000px; margin-top:50px;}
+.PageContent .menu01 { width:16.666%; height:165px; height:auto; overflow:hidden; float:left; color:#FFF; margin-bottom:30px;}
+/*.PageContent .menu01 .menu01Pic { width:100px; height:100px; overflow:hidden; display:block; margin:0 auto;}*/
+.PageContent .menu01 .menu01Pic img{ max-width:100%; height:auto; max-height:100px; display:block; margin:0 auto; border:0;}
+
+.PageContent .menu01 .menu01text {color:#FFF; font-size:14px; text-align:center; width:100%; max-width:100px; /*word-break: break-all;*/margin:0 auto; margin-top:5px; height:57px; overflow:hidden;}
+.PageContent .menu01 .menu01text a{ display:inline; color:#FFF; text-decoration:none; text-shadow: 1px 1px #565656;}
+
+
+.Footer{ width:100%; height:auto; overflow:hidden; padding:30px 0;}
+.Footer .FooterContent{ width:860px; height:auto; overflow:hidden; margin:0 auto; padding:0 10px; width:100%;}
+.Footer .FooterContent * { padding:0; margin:0; list-style:none; font-size:12px; color:#FFF;}
+/*.Footer .FooterContent p { float:right;}*/
+.Footer .FooterContent p { width:100%; text-align:center; display:inline-block; height:auto; overflow:hidden;}
+.Footer .FooterContent p.Center { width:100%; height:auto; overflow:hidden; text-align:center; line-height:20px;}
+.Footer .FooterContent p a{ text-decoration:none;}
+.Footer .FooterContent p a:hover{ text-decoration: underline;}
+.Footer .FooterContent p.info_01{ width:50%; float: left; text-align:right;}
+.Footer .FooterContent p.info_02{ width:50%; float: left; text-align:left;}
+.Footer .FooterContent p.info_03{ width:50%; float: left; text-align:right;}
+.Footer .FooterContent p.info_04{ width:50%; float: left; text-align:left;}
+.Footer .FooterContent p span { padding-right: 5px; display:inline;}
+
+
+/*---------login start------------*/
+/*.loginWrapper{ position:absolute; top:50%; margin-top:-287px;}*/
+.loginWrapper{ /*min-height:1200px; */overflow:hidden; height:auto;}
+.loginWrapper{ padding:16% 0;}
+
+.LoginContent{ width:100%; height:315px; overflow:hidden; margin:0 auto; max-width:640px; max-height:315px;background: url(../Images/Setting/icon/login_bg.png) no-repeat;background-size:100% auto;}
+.LoginContent .login_logo{width:50%; float:left; height:auto; overflow:hidden;}
+.LoginContent .login_logo img{width:170px; height:145px;max-width:170px; max-height:145px; display:block; margin:25% auto;}
+
+.LoginContent .login_text{width:50%; float:left; height:auto; overflow:hidden; color:#FFF; font-size:14px; padding:12px 0; display:block;}
+.LoginContent .login_text .account{width:240px; height:40px;border-bottom: 1px solid #CCC; background: url(../Images/Setting/icon/icon_account.png) left center no-repeat;}
+.LoginContent .login_text .account input{ border:0;width:215px; height:40px; line-height: 40x; display: inline-block; margin: 0 0 0 25px; background:none; color:#FFF;font-family:"微軟正黑體"; padding-left:5px; font-size:20px;}
+input,button,select,textarea{outline:none;}
+ *:focus { outline: none; }
+ 
+.LoginContent .login_text .password{width:240px; height:40px;border-bottom: 1px solid #CCC; background: url(../Images/Setting/icon/icon_password.png) left center no-repeat;}
+.LoginContent .login_text .password input{ border:0;width:215px; height:40px; line-height:40x; display: inline-block; margin: 0 0 0 25px; background:none; color:#FFF; padding-left:5px; font-size:30px;}
+
+.LoginContent .login_text .Captcha{ width:100%; height:auto; overflow:hidden; margin-bottom:5px;}
+.LoginContent .login_text .Captcha input{ float:left; border:0;width:140px; height:40px; line-height:40x; display: inline-block; padding-left:5px; font-size:14px; color:#969696;background:#FFF;border-radius: 5px; margin-right:15px; margin-bottom:5px;}
+#imgCaptcha{width:78px; height:25px; display:block; overflow:hidden; float:left;}
+
+.LoginContent .login_bu{ max-width:240px; max-height:45px; border:0;}
+
+.LoginContent .login_text .renew{ margin:0; margin-bottom:5px;}
+.LoginContent .login_text .renew a{ color:#FFF; text-decoration:none;}
+.LoginContent .login_text .renew a:hover{ color:#FFF; text-decoration: underline;}
+
+.LoginBottom{ width:100%; font-size:14px; color:#fff100; padding:0 20px; text-align:center; margin-top:115px;/* text-shadow: 1px 1px #565656;*/}
+.LoginBottom a{ color:#fff100; text-decoration:none;}
+.LoginBottom a:hover{ color:#fff100; text-decoration: underline;}
+
+.LoginContent .login_text img { border:0;}
+
+input:-webkit-autofill{ transition: background-color 5000s 0s;}
+
+input:-webkit-autofill { -webkit-text-fill-color:#FFF;}
+input:-webkit-autofill:focus { -webkit-text-fill-color: #FFF;}
+/*---------login end------------*/
+
+
+/*---------LoginChk start------------*/
+.LoginContent .LoginChk_text{ padding: 15% 0;}
+
+/*---------LoginChk end------------*/
+
+
+
+
+/*Layout 設定開始*/
+
+/*@media only screen and (min-width:0px) and (max-width:1558px){
+	.Wrapper{ width:100%;}
+	}*/
+@media only screen and (min-width:1601px){
+	.loginWrapper { width:}
+	}
+@media only screen and (min-width:0px) and (max-width:1600px){
+    .loginWrapper{ min-height:950px; min-height:0px; padding:0; height:390px; position:absolute; top:50%; margin-top:-195px;}
+
+    }
+@media only screen and (min-width:0px) and (max-width:1300px){
+    .PageContent .menu01 { width:20%;}
+	.PageContent{ padding:0 6%;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { width:16.666%;}
+	.PageContent{ padding:0 0%;}
+	}
+
+@media only screen and (min-width:0px) and (max-width:1000px){
+	.PageContent .menu01 { padding: 0 4%;}
+	/*.PageContent .menu01 { width:20%;}
+	.PageContent .menu01 { padding: 0 5.5%;}
+	.PageContent .menu01 .menu01text {font-size:12px;}*/
+	.Footer .FooterContent p.info_01{ width:100%;text-align:center;}
+	.Footer .FooterContent p.info_02{ width:100%;text-align:center;}
+	.Footer .FooterContent p.info_03{ width:50%; float: left; text-align:right;}
+	.Footer .FooterContent p.info_04{ width:50%; float: left; text-align:left;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { padding:0;}
+	}
+	
+@media only screen and (min-width:0px) and (max-width:950px){
+	/*.Header{ display:none;}
+	.Header2{ display:block;}
+	.Header2{ width:100%; height:auto;}
+    .Header2 .systemDate{ width:100%; text-align:center; padding-bottom:10px;}
+    .Header2 .Nav { width:100%; float:left; max-width:500px; margin:0 25%;}*/
+	.Header{ width:100%; height:auto; margin:0 auto;}
+    .Header .systemDate{ width:100%; text-align:center; padding-bottom:10px;}
+    .Header .Nav { width:100%; float:left; max-width:500px; margin:0 25%;}
+	
+	.Pagetop{ text-align:center;}
+	.Header2 .systemDate span { font-size:12px;}
+	/*Jay Fixed*/
+	.PageContent{ padding:0 3%;}
+	}
+
+@media only screen and (min-width:0px) and (max-width:900px){
+	/*.loginWrapper{ position:absolute; top:50%; margin-top:-310px;}*/
+	.PageContent .menu01 { padding: 0 4%;}
+
+	.loginWrapper{ padding:10%; padding:5%;}
+	.LoginContent .login_logo{width:100%;}
+	.LoginContent .login_logo img{margin:0 auto;}
+
+    .LoginContent .login_text{float:none; margin:0 auto; max-width:240px; padding-top:50px;}
+    .LoginContent{ width:100%; height:auto; height:640px;overflow:hidden; margin:0 auto; padding:9% 0; max-width:640px; max-height:620px;background:url(../Images/Setting/icon/login_bg2.png) no-repeat;background-size:100% 620px;}
+    .LoginChkContent{background-size:100% 360px; padding:5% 0; max-height:360px;}
+    .LoginContent .LoginChk_text{ padding: 7% 0; text-align:center;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { padding:0;}
+	.Footer { padding:15px 0;}
+	.loginWrapper{ height:auto; position:relative; margin-top:0;}
+    }
+
+@media only screen and (min-width:0px) and (max-width:850px){
+    .Header .Nav {margin:0 20%;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { padding:0 2%;}
+    }
+
+@media only screen and (min-width:0px) and (max-width:800px){
+	.Footer .FooterContent p.info_03{ width:100%;text-align:center;}
+	.Footer .FooterContent p.info_04{ width:100%;text-align:center;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { width:20%; padding:0; width:25%; margin-bottom:10px;}
+   }
+
+@media only screen and (min-width:0px) and (max-width:750px){
+	.LoginContent .login_text{ width:100%; height:auto;}
+	.LoginContent .login_text .account{ width:100%; height:auto;}
+	.LoginContent .login_text .password{ width:100%; height:auto;}
+	.LoginContent .login_text .password{ width:100%; height:auto;}
+	.LoginBottom{ margin-top:90px;}
+	/*Jay Fixed*/
+	.PageContent{ padding:0 3%;}
+	.Footer .FooterContent { padding:0 0px;}
+	.Footer .FooterContent p span.info_01{ display:block; width:100%;text-align:center;}
+	.Footer .FooterContent p span.info_02{ display:block; width:100%;text-align:center;}
+	.Footer .FooterContent p span.info_03{ display:block; width:100%;text-align:center;}
+	.Footer .FooterContent p span.info_04{ display:block; width:100%;text-align:center;}
+    }
+	
+@media only screen and (min-width:0px) and (max-width:700px){
+	.LoginContent{padding:12% 0;}
+	.PageContent .menu01 { width:20%; width:25%;}
+	
+	.PageContent{ padding:0 5%;}
+	/*Jay Fixed*/
+	.PageContent{ padding:0 2%;}
+	.PageContent .menu01 { padding:0 3%;}
+	.PageContent .menu01 .menu01text {font-size:12px;}
+    .Header .Nav {margin:0 15%;}
+    .LoginChkContent{padding:8% 0;}
+	
+	}
+	
+@media only screen and (min-width:0px) and (max-width:650px){
+    .Header .Nav {margin:0 10%;}
+
+	.PageContent .menu01 .menu01text {font-size:12px; height:50px;} 
+	.LoginBottom .LoginBottom01,.LoginBottom .LoginBottom02,.LoginBottom .LoginBottom03,.LoginBottom .LoginBottom04{ display: block; width:100%;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { width:25%; padding:0;}
+
+	}	
+	
+@media only screen and (min-width:0px) and (max-width:600px){
+    .Header .Nav {margin:0 5%;}
+	.loginWrapper { min-height:0;}
+	}
+	
+@media only screen and (min-width:0px) and (max-width:550px){
+    .Header .Nav {margin:0 3%;}
+	.PageContent .menu01 { padding: 0 3.5%; padding:0 1.5%;}
+	.LoginBottom { padding:0;}
+	.LoginContent { padding:5% 0; height:auto;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
+	.LoginContent .login_text { padding-top:20px;}
+	.LoginContent .login_logo img { max-width:115px;}
+	
+	}	
+	
+@media only screen and (min-width:0px) and (max-width:530px){
+    .Pagetop .Pagetop01,.Pagetop .Pagetop02,.Pagetop .Pagetop03,.Pagetop .Pagetop04{ display: block; width:100%;}
+	}	
+
+	
+@media only screen and (min-width:0px) and (max-width:512px){
+	.Footer .FooterContent ul { width:100%;}
+	.Header2 .Nav li.nav01,.Header2 .Nav li.nav02,.Header2 .Nav li.nav03,.Header2 .Nav li.nav04{ background:none;}
+	.LoginContent{background-size:100% 580px;}
+	.LoginContent { height:580px; height:auto;}
+	}
+	
+@media only screen and (min-width:0px) and (max-width:510px){
+    .Header .Nav {margin:0;}
+	.LoginBottom{ margin-top:40px;}
+	
+	.Footer .FooterContent * { font-size:12px; line-height:2em; line-height:1.5em;}
+	
+	.Footer .FooterContent .problem{ display:block; width:100%;text-align:center;}
+	.Footer .FooterContent .content{ display:block; width:100%;text-align:center;}
+	.Footer .FooterContent .fax{ display:block; width:100%;text-align:center;}
+	.PageContent .menu01 { width:25%;}
+	.PageContent .menu01 { padding: 0 5%;}
+	.PageContent{ padding:0 5%;}
+	/*Jay Fixed*/
+	.PageContent{ padding:0 3%;}
+	.PageContent .menu01 { width:25%; padding:0 3%; padding:0 2%;}
+    .LoginChkContent{background-size:100% 350px; max-height:350px;}
+    .LoginContent .LoginChk_text{ padding:3% 0; padding-top:10%;}
+	
+	}
+
+	
+@media only screen and (min-width:0px) and (max-width:480px){
+	.Header .systemDate{ letter-spacing:0.5px;}
+	.Header .Nav li.nav01,.Header .Nav li.nav02,.Header .Nav li.nav03,.Header .Nav li.nav04{ background:none;}
+	}
+
+
+@media only screen and (min-width:0px) and (max-width:450px){
+	/*.Header .slideButton{width:25%;}*/
+	/*.PageContent .menu01 { width:33.333%;}
+	.PageContent .menu01 { padding: 0 10%;}
+	.PageContent .menu01 .menu01text {font-size:12px;}*/
+
+	.LoginContent{ padding:12% 10%;}
+	.LoginContent .login_logo img{ width:100%; height:100%;}
+	.LoginContent .login_bu{ width:100%; height:auto;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { width:25%; padding:0 3.5%; padding:0 1%; letter-spacing:-0.5px;}
+	.PageContent .menu01 .menu01text a br { /*display:none;*/}
+	}
+	
+@media only screen and (min-width:0px) and (max-width:410px){	
+	.Header .systemDate span.systemDate01{ display:block; width:100%; font-size:12px;}
+	.Pagetop { font-size: 12px;	}
+	}
+@media only screen and (min-width:0px) and (max-width:400px){
+	.PageContent .menu01 .menu01text {height:36px;}
+	.Footer .FooterContent .mail{ display:block; width:100%;text-align:center;}
+	.PageContent .menu01 .menu01text { font-size:12px; height:50px;}
+	.PageContent .menu01 { padding: 0 4.5%;}
+	#imgCaptcha {padding-left: 0; margin-top:10px; clear:left;}
+	.LoginContent .login_text img { width:100%; height:auto;}
+    .LoginChkContent{background-size:100% 340px; max-height:340px;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { width:25%; padding:0 1%;}
+    }
+	
+@media only screen and (min-width:0px) and (max-width:390px){	
+    .LoginContent .login_text .Captcha input {width:100%;}
+	.LoginContent .login_text .account input{ width:90%;}
+	.LoginContent .login_text .password input{ width:90%;}
+	}
+@media only screen and (min-width:0px) and (max-width:350px){
+	.PageContent .menu01 { width:33.333%;}
+	.PageContent .menu01 { padding: 0 7%;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { padding:0 5%;}
+	.LoginContent .login_text { font-size:12px; padding-top:30px;}
+	.LoginContent {  background-size: 100% 550px;}
+	.LoginContent { height:550px;}
+	.Header .Nav li a{ font-size:12px;}
+	.Header{ padding: 0 5px;}
+	.LoginBottom { font-size:12px;}
+    .LoginChkContent{background-size:100% 320px; max-height:320px;}
+	.PageContent .menu01 .menu01text{font-size:11px; height:48px;}
+	}	
+	
+@media only screen and (min-width:0px) and (max-width:240px){
+	.PageContent .menu01 { width:50%;}
+	.PageContent .menu01 { padding: 0 14%;}
+	/*Jay Fixed*/
+	.PageContent .menu01 { padding:0 7%;}
+	.LoginContent .login_text .Captcha input { height:30px;}
+	.LoginContent .login_logo img{ padding:5%;}
+	/*.LoginContent .login_text { font-size:12px; padding-top:20px;}*/
+	.LoginContent {  background-size: 100% 400px;}
+	}	
+

@@ -1,0 +1,195 @@
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\DemoWebForm.dll.config
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\DemoWebForm.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\DemoWebForm.pdb
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\csc.exe
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\csc.exe.config
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\csc.rsp
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\csi.exe
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\csi.exe.config
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\csi.rsp
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.AppContext.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Console.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.IO.Compression.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Security.Claims.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.ValueTuple.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\vbc.exe
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\vbc.exe.config
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\vbc.rsp
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\ClassLibrary.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\ClassLibrary.pdb
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\obj\Debug\WebSite.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\obj\Debug\WebSite.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\obj\Debug\WebSite.csproj.CopyComplete
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\obj\Debug\DemoWebForm.dll
+C:\Users\Administrator\Desktop\DemoWebForm\WebSite\obj\Debug\DemoWebForm.pdb
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\obj\Debug\WebSite.csprojAssemblyReference.cache
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\obj\Debug\WebSite.csproj.CoreCompileInputs.cache
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\WebSite.dll.config
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\WebSite.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\WebSite.pdb
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\csc.exe
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\csc.exe.config
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\csc.rsp
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\csi.exe
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\csi.exe.config
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\csi.rsp
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.Managed.Core.targets
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.AppContext.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Collections.Immutable.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Console.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.IO.Compression.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.IO.FileSystem.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.IO.Pipes.AccessControl.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.IO.Pipes.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Security.AccessControl.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Security.Claims.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Security.Principal.Windows.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.ValueTuple.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Xml.ReaderWriter.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Xml.XmlDocument.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Xml.XPath.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\vbc.exe
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\vbc.exe.config
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\vbc.rsp
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\VBCSCompiler.exe
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\roslyn\VBCSCompiler.exe.config
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\ClassLibrary.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\ClosedXML.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\DocumentFormat.OpenXml.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\ExcelNumberFormat.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\FastMember.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\ICSharpCode.SharpZipLib.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\System.IO.FileSystem.Primitives.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\System.IO.Packaging.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\ClassLibrary.pdb
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\ClosedXML.pdb
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\ClosedXML.xml
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\DocumentFormat.OpenXml.xml
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\ExcelNumberFormat.xml
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\bin\ICSharpCode.SharpZipLib.xml
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\obj\Debug\WebSite.csproj.CopyComplete
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\obj\Debug\WebSite.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\WebSite\obj\Debug\WebSite.pdb
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\WebSite.dll.config
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\WebSite.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\WebSite.pdb
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\csc.exe
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\csc.exe.config
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\csc.rsp
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\csi.exe
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\csi.exe.config
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\csi.rsp
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.Managed.Core.targets
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.AppContext.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Collections.Immutable.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Console.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.IO.Compression.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.IO.FileSystem.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.IO.Pipes.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Security.AccessControl.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Security.Claims.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Security.Principal.Windows.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.ValueTuple.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Xml.XmlDocument.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Xml.XPath.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\vbc.exe
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\vbc.exe.config
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\vbc.rsp
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\VBCSCompiler.exe
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\roslyn\VBCSCompiler.exe.config
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\ClassLibrary.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\ClosedXML.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\DocumentFormat.OpenXml.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\ExcelNumberFormat.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\FastMember.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\ICSharpCode.SharpZipLib.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\System.IO.FileSystem.Primitives.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\System.IO.Packaging.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\ClassLibrary.pdb
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\ClosedXML.xml
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\DocumentFormat.OpenXml.xml
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\ExcelNumberFormat.xml
+D:\程式\ASP.NET\DemoWebForm\WebSite\bin\ICSharpCode.SharpZipLib.xml
+D:\程式\ASP.NET\DemoWebForm\WebSite\obj\Debug\WebSite.csprojAssemblyReference.cache
+D:\程式\ASP.NET\DemoWebForm\WebSite\obj\Debug\WebSite.csproj.CoreCompileInputs.cache
+D:\程式\ASP.NET\DemoWebForm\WebSite\obj\Debug\WebSite.csproj.CopyComplete
+D:\程式\ASP.NET\DemoWebForm\WebSite\obj\Debug\WebSite.dll
+D:\程式\ASP.NET\DemoWebForm\WebSite\obj\Debug\WebSite.pdb

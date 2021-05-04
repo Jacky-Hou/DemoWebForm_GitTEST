@@ -1,0 +1,59 @@
+\\ASUS-NAS5104T\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\bin\Debug\ClassLibrary.dll
+\\ASUS-NAS5104T\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\bin\Debug\ClassLibrary.pdb
+\\ASUS-NAS5104T\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+\\ASUS-NAS5104T\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+\\ASUS-NAS5104T\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\obj\Debug\ClassLibrary.dll
+\\ASUS-NAS5104T\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\obj\Debug\ClassLibrary.pdb
+\\AS6302T-549E\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\bin\Debug\ClassLibrary.dll
+\\AS6302T-549E\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\bin\Debug\ClassLibrary.pdb
+\\AS6302T-549E\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+\\AS6302T-549E\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+\\AS6302T-549E\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\obj\Debug\ClassLibrary.dll
+\\AS6302T-549E\website\0DNS206\Website(Project Code)\VOH-漢聲廣播電臺\程式原始碼\VOH\ClassLibrary\obj\Debug\ClassLibrary.pdb
+D:\IIS\測試\VOH\ClassLibrary\bin\Debug\ClassLibrary.dll
+D:\IIS\測試\VOH\ClassLibrary\bin\Debug\ClassLibrary.pdb
+D:\IIS\測試\VOH\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+D:\IIS\測試\VOH\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\IIS\測試\VOH\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\IIS\測試\VOH\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\Administrator\Desktop\DemoWebForm\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\Administrator\Desktop\DemoWebForm\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\Administrator\Desktop\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\Administrator\Desktop\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.pdb
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\ClassLibrary.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\ClassLibrary.pdb
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\ClosedXML.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\DocumentFormat.OpenXml.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\ExcelNumberFormat.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\FastMember.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\ICSharpCode.SharpZipLib.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\System.IO.FileSystem.Primitives.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\System.IO.Packaging.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\ClosedXML.pdb
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\ClosedXML.xml
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\DocumentFormat.OpenXml.xml
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\ExcelNumberFormat.xml
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\bin\Debug\ICSharpCode.SharpZipLib.xml
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.csproj.CopyComplete
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.dll
+\\10.168.168.103\website\0DNS206\Website(Project Code)\DemoWebForm\程式碼原始檔\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.pdb
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\ClassLibrary.dll
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\ClassLibrary.pdb
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\ClosedXML.dll
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\DocumentFormat.OpenXml.dll
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\ExcelNumberFormat.dll
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\FastMember.dll
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\System.IO.FileSystem.Primitives.dll
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\System.IO.Packaging.dll
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\ClosedXML.xml
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\DocumentFormat.OpenXml.xml
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\ExcelNumberFormat.xml
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\bin\Debug\ICSharpCode.SharpZipLib.xml
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.csproj.CopyComplete
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.pdb
+D:\程式\ASP.NET\DemoWebForm\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache

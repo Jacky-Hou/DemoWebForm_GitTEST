@@ -1,0 +1,403 @@
+﻿@charset "utf-8";
+/* 優吉兒網頁編號 RWD 開發
+   開發日期:2014/3/19
+   更新紀錄:2016/1/4 整理css
+   開發人員：Jay
+----------------------------------*/
+
+/*=======================================全域設定=======================================*/
+
+/*html5 標籤元素設定
+------------------------*/
+header, nav, section, article, aside, time, footer { display:block;}
+
+/*全域屬性設定
+------------------------*/
+*, *:before, *:after { box-sizing: border-box;}
+html, body { padding:0; margin:0; background:#303030;}
+html { 
+/*針對 Safiri Mobile 旋轉時自動放大做的調整*/
+-webkit-text-size-adjust: 100%;}
+body { font-family:Arial,"微軟正黑體";}
+a img { border:0;}
+
+/*共用元件設定
+------------------------*/
+.Div-W1000 { width:100%; height:auto; overflow:hidden; margin:0 auto; max-width:1680px;}
+.Wrapper { width:100%; height:auto; overflow:hidden; margin:0 auto; }
+
+/*=======================================上方設定=======================================*/
+
+/*Header設定
+------------------------*/
+.Header { width:100%; height:120px;  overflow:visible; margin:0 auto;  padding:0 10px;  
+background: #3a3a3a;
+background: -moz-linear-gradient(top,  #3a3a3a 0%, #0d0d0d 100%);
+background: -webkit-linear-gradient(top,  #3a3a3a 0%,#0d0d0d 100%);
+background: linear-gradient(to bottom,  #3a3a3a 0%,#0d0d0d 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#0d0d0d',GradientType=0 );
+}
+.Header > .Div-W1000 {overflow:visible;position:relative; padding:0 160px 0 150px;}
+.Header .Logo { width:100%; max-width:115px; height:120px; overflow:hidden; position:absolute; left:0; z-index:10; }
+.Header .Logo a { display:block; width:100%; height:120px; overflow:hidden; background: url(../../Images/Logo.png) 0 10px no-repeat; text-indent:-9999px;}
+
+/*Nav設定
+------------------------*/
+.Wrapper .Header .Nav{ background:none;}
+.Header .Nav { width:100%; height:120px; overflow:visible; margin:0 auto;}
+.Header .Nav * { padding:0; margin:0; list-style:none; transition:all 0.5s;}
+.Header .Nav ul.MainMenu { width:100%; height:120px; overflow:visible; margin:0 auto;}
+.Header .Nav ul.MainMenu li.MainMenuLi { width:12.5%; height:120px; line-height:120px; font-size:19px; text-align:center; float:left; position:relative; overflow:visible;}
+.Header .Nav ul.MainMenu li.MainMenuLi a { display:block; text-decoration:none; overflow:hidden; position:relative; z-index:10; color:#fff;
+/*超出範圍顯示"..."*/
+white-space: nowrap; text-overflow: ellipsis;-o-text-overflow: ellipsis;}
+.Header .Nav ul.MainMenu li.MainMenuLi a:hover { color:#fff;}
+.Header .Nav ul.MainMenu li.MainMenuLi:after {background: #4f4f4f;background: -moz-linear-gradient(top,  #4f4f4f 0%, #2a2a2a 100%);background: -webkit-linear-gradient(top,  #4f4f4f 0%,#2a2a2a 100%);background: linear-gradient(to bottom,  #4f4f4f 0%,#2a2a2a 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#2a2a2a',GradientType=0 ); content:''; width:100%; height:0%; display:block; opacity:0; position:absolute; top:0; left:0; z-index:0; transition:all 0.5s;}
+.Header .Nav ul.MainMenu li.MainMenuLi:hover:after { height:100%; opacity:1;}
+.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub { width:100%; height:auto; overflow:hidden; left:0; top:115px; position:absolute; z-index:9999;  background:url(../Images/Layout/Bg_SubMenu.png) top center no-repeat; padding-top:5px;  display: none; transition:all 0s;}
+.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub li { width:100%; height:auto; text-align:left; overflow:hidden; background:#ffc03c; background:rgba(247,171,0,0.9); line-height:1.5em;}
+/*.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub li:hover { background:#802a2a;}*/
+.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub li a { display:block; width:100%; height:auto; overflow:hidden; color:#010000; font-size:16px;padding:25px 10px; transition:all 0s;}
+/*.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub li a:before { content:'>'; display:inline-block; font-size:10px; line-height:20px; width:15px; transition:all 0.3s;}*/
+.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub li a:hover { color:#fff; background:#F7AB00;}
+/*.Header .Nav ul.MainMenu li.MainMenuLi ul.MainMenuSub li a:hover:before { width:20px; }*/
+
+.Header .Nav ul.MainMenu li.MainMenuLi a:before{ display:none; }
+.Header .Nav ul.MainMenu li.MainMenuLi a:after{ display:none;}
+.Header .Nav ul.MainMenu li.MainMenuLi a:hover:after{ display:none;}
+.Header .Nav ul.MainMenu li.MainMenuLi a:hover:before{ display:none;}
+
+.Header .TopMenu{ display:none;}
+.Header .Nav ul.MainMenu{ background:none;}
+
+/*Search設定
+------------------------*/
+.Header .Search { width:100%; max-width:150px; height:auto; overflow:hidden; position:absolute; right:0; top:32px; padding-right:0;}
+.Header .Search form { width:100%; height:auto; overflow:hidden; display:block; float:right;}
+.Header .Search input[type="text"] { width:100%; height:35px; line-height:35px; outline:none; border:1px solid #ccc; padding:0 35px 0 5px; font-size:12px; color:#555; float:left; background:#c9c9c9;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; font-family:"微軟正黑體";}
+.Header .Search .SearchBtn { width:25px; height:25px; overflow:hidden; display:block; text-indent:-9999px; background: url(../../Images/Layout/UI/SearchBtn.png) no-repeat; position:absolute; top:5px; right:5px;}
+
+/*DefBanner設定
+------------------------*/
+.DefBanner { width:100%; height:auto; overflow:hidden; margin:0 auto;}
+.DefBanner img { border:0; display:block;}
+
+/*DefNews設定
+------------------------*/
+.DefNews { width:100%; height:45px; overflow:hidden; margin:0 auto; position:relative; padding-left:250px;}
+.DefNews * { padding:0 ; margin:0; list-style:none; text-decoration:none;}
+.DefNews h1 { width:250px; height:45px; text-align:center; color:#fff; font-size:18px; line-height:45px; font-weight:normal;position:absolute; left:0; top:0;cursor:default; 
+background: rgb(247, 171, 0);
+background: -moz-linear-gradient(90deg, rgb(247, 171, 0) 0%, rgb(232, 148, 21) 100%);
+background: -webkit-linear-gradient(90deg, rgb(247, 171, 0) 0%, rgb(232, 148, 21) 100%);
+background: -o-linear-gradient(90deg, rgb(247, 171, 0) 0%, rgb(232, 148, 21) 100%);
+background: -ms-linear-gradient(90deg, rgb(247, 171, 0) 0%, rgb(232, 148, 21) 100%);
+background: linear-gradient(180deg, rgb(247, 171, 0) 0%, rgb(232, 148, 21) 100%);
+
+}
+div#abgne_marquee {	position: relative;	overflow: hidden;	width: 100%;	height: 45px;
+background: rgb(70, 70, 70);
+background: -moz-linear-gradient(90deg, rgb(70, 70, 70) 0%, rgb(28, 28, 28) 100%);
+background: -webkit-linear-gradient(90deg, rgb(70, 70, 70) 0%, rgb(28, 28, 28) 100%);
+background: -o-linear-gradient(90deg, rgb(70, 70, 70) 0%, rgb(28, 28, 28) 100%);
+background: -ms-linear-gradient(90deg, rgb(70, 70, 70) 0%, rgb(28, 28, 28) 100%);
+background: linear-gradient(180deg, rgb(70, 70, 70) 0%, rgb(28, 28, 28) 100%);
+
+}
+div#abgne_marquee ul {	position: absolute; padding-left:50px; padding-right:10px; width:100%; height:auto; overflow:hidden; }
+div#abgne_marquee ul li a { width:100%; height:45px; display: block;	overflow: hidden;font-size:16px;line-height: 45px; color:#FFF;white-space: nowrap; text-overflow: ellipsis;-o-text-overflow: ellipsis;}
+/*DefContent設定
+------------------------*/
+.DefContent .DefProducts .slider ul li .DivFrame .DivImg{ height:auto;}
+
+/*DefProducts設定
+------------------------*/
+.DefProducts { width:100%; height:auto; overflow:hidden; margin:0 auto; color:#f1f1f1; padding:0 10px; background:#fff; }
+.DefProducts .Div-W1000 * { padding:0; margin:0; list-style:none; text-decoration:none; color:#000; }
+
+
+/*DefLink設定
+------------------------*/
+.DefLink { width:100%; height:auto; overflow:hidden; margin:0 auto;}
+.DefLink a { width:25%; height:280px; overflow:hidden; position:relative; float:left; display:block; font-size:42px; text-align:center; color:#FFF; text-decoration:none; line-height:280px;}
+.DefLink a:after { content:''; width:100%; height:100%; display:block; background:rgba(255,255,255,0.2); position:absolute; top:0; left:0; z-index:10;opacity:0;
+transition:all 0.3s; }
+.DefLink a:Hover:after { opacity:1;   }
+.DefLink a img { width:100%; max-width:100%; height:auto; display:block; position:relative; z-index:1;}
+
+.DefLink a:nth-child(4n+1){ background:#D6006A;}
+.DefLink a:nth-child(4n+2){ background:#E99514;}
+.DefLink a:nth-child(4n+3){ background:#009D9B;}
+.DefLink a:nth-child(4n+4){ background:#009944;}
+
+.DefLink .icofont,.DefLink .fa{ margin-right:15px; font-size:46px; }
+
+/*=======================================中間共用框架設定=======================================*/
+
+
+
+
+/*分類說明區塊
+------------------------*/
+.PageMenuContent { width:100%; height:auto; overflow:hidden; margin:0 auto; max-width:1680px;}
+
+/*內容設定
+------------------------*/
+.PageContent { width:100%; height:auto; overflow:hidden; padding: 80px 10px; margin:0 auto; background:#fff;}
+.PageArticle { width:100%; max-width:1680px; height:auto; overflow:hidden; margin:0 auto; padding:10px 0; font-size:16px; color:#333;}
+/*內文預設標題*/
+.PageArticle .PageArticleH1 { width:100%; font-size:30px; height:auto; overflow:hidden; font-weight:normal; text-align:center;}
+.PageArticle img { max-width:100%; height:auto;}
+
+/*沒有資料時*/
+p.NoData { width:100%; height:auto; overflow:hidden; text-align:center; color:#F00; padding:0; margin:0;cursor:default;}
+/*需特別顯示醒目字時*/
+.notice { color:#F00;}
+
+/*基本表格設定*/
+table.BasicTable { width:100%; height:auto;}
+table.BasicTable tr:nth-of-type(odd) { background:#eee;}
+table.BasicTable tr:first-of-type { background:#333; color:#fff;}
+table.BasicTable td { padding:10px; height:44px; line-height:24px; text-align:center;}
+
+/*社群分享*/
+.SocialNerwork { width:100%; height:auto; overflow:hidden; text-align:right;}
+.SocialNerwork span { display:inline-block; width:32px; height:32px; overflow:hidden;}
+.SocialNerwork span a { display:block; width:100%; height:auto; overflow:hidden; float:left;}
+.SocialNerwork span a img { max-width:100%; height:auto; display:block;}
+.SocialNerwork span span { margin:0; width:100%;}
+
+/*後台嵌入Youtube*/
+.PageArticle iframe { max-width:100%; margin:10px 0;}
+/*後台上傳圖片(非編輯器)*/
+.PageArticle img.ArticleImg { margin:10px 0;}
+
+/*分頁設定*/
+.PageList { width:100%; height:auto; overflow:hidden;}
+
+/*========按鈕設定========*/
+
+/*回上一頁*/
+.GoBack { width:100%; max-width:120px; height:50px; line-height:50px; text-align:center;  font-size:14px; text-decoration:none; display:block; margin:20px auto;color:#fff; background:#303030;transition:all 0.3s;
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+.GoBack:hover { color:#fff; background:#000;}
+
+/*兩個按鈕時*/
+.Btn_Two { width:100%; max-width:250px; height:auto; overflow:hidden; margin:20px auto;}
+.Btn_Two .GoBack { margin:0; float:left;}
+.Btn_Two .GoBack:nth-of-type(2n+2) { float:right;}
+.Btn_Two2 {width:100%; max-width:250px; height:auto; overflow:hidden;  }
+.Btn_Two2 a { margin:0; float:left;}
+.Btn_Two2 a:nth-of-type(2n+2) { float:right;}
+
+
+/*三個按鈕時*/
+.Btn_Thr { width:100%; max-width:380px; height:auto; overflow:hidden; margin:20px auto;}
+.Btn_Thr .GoBack { margin:0; float:left; margin-right:10px;}
+.Btn_Thr .GoBack:nth-of-type(3n+3) { margin-right:0;}
+
+/*檔案下載*/
+.Btn_Down { width:100%; max-width:120px; height:50px; line-height:50px; text-align:center;  font-size:14px; text-decoration:none; display:block; margin:20px auto; border:1px solid #303030; color:#303030;
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; transition:all 0.3s;}
+.Btn_Down:hover { border:1px solid #3D547E; background:#3D547E; color:#fff; }
+.Btn_Down2 { width:100%; max-width:120px; height:40px; line-height:40px; text-align:center;  font-size:14px; text-decoration:none; display:block; border:1px solid #303030; color:#303030; margin-bottom:10px 0;transition:all 0.3s;
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+.Btn_Down2:hover { border:1px solid #3D547E; background:#3D547E; color:#fff; }
+/*網址*/
+.Btn_Url { width:100%; max-width:120px; height:50px; line-height:50px; text-align:center;  font-size:14px; text-decoration:none; display:block; margin:20px auto; border:1px solid #303030;color:#303030;transition:all 0.3s;
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+/*圖片下載*/
+.Btn_ImgDown { width:100%; max-width:120px; height:50px; line-height:50px; text-align:center;  font-size:14px; text-decoration:none; display:block; margin:20px auto; border:1px solid #303030;color:#303030;transition:all 0.3s;
+/*圓角*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+.Btn_ImgDown:hover { border:1px solid #3D547E; background:#3D547E; color:#fff; }
+/*ProgessBar*/
+.PageArticle img.ProgessBar { height:12px;}
+
+
+.css_PageList{ width:100%; height:auto; overflow:hidden; margin:20px 0; float:left;}
+.SocialNetworkWrapper { width:50%; height:auto; overflow:hidden; float:right; margin:10px 0;}
+.clear { clear:both;}
+
+
+
+/*=======================================下方設定=======================================*/
+
+/*Footer設定
+------------------------*/
+.Wrapper .footer { background:#303030;}
+.footer { width:100%; height:auto; padding:65px 10px 40px 10px; overflow:visible;  position:relative;}
+.footer p { margin:0; font-size:14px; text-align:center; color:#fff; width:100%; height:auto; display:block; padding:5PX 0; cursor:default; display:none;}
+.footer .GoTop { width:120px; height:58px; overflow:hidden; position:absolute; left:50%; margin-left:-60px;  top:-57px; z-index:15;  display:none; } 
+.footer .GoTop a { width:120px; height:58px; display:block; background:none;  text-align:center; text-decoration:none; font-size:20px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 60px 60px 60px;
+border-color: transparent transparent #303030 transparent;
+
+}
+.footer .GoTop a:after {line-height:58px; content:'TOP'; color:#FFF;}
+
+.footer .Div-W1000{display:none; }
+
+.footer .copyright { text-align:center; color:#999; font-size:14px;}
+.footer .copyright br{ display:none;}
+
+/*優吉兒網站連結*/
+.uGear { width:170px; height:60px; margin-top:20px; text-align:left; font-family:"微軟正黑體"; background:url(../../images/Layout/uGear/truste_Ugear.png) left top no-repeat;  float:right; position:static; margin:20px 10px 0 0;  } 
+.uGear:hover {background:url(../../images/Layout/uGear/truste_Ugear_o.png); background-repeat:no-repeat;}
+.uGear a { display:inline-block; width:auto; height:60px; line-height:90px; font-size:12px; color:#fff; text-decoration:none; text-indent:2px;}
+.uGear a:hover { color:#fff33f; }
+
+
+/*=======================================媒體查詢設定=======================================*/
+
+@media only screen and (min-width:0px) and (max-width:1440px){
+
+.Showroom .productlist li { width:32.6666%; }
+.Showroom .productlist li:nth-child(4n) { margin-right:1%;}
+.Showroom .productlist li:nth-child(3n) { margin-right:0;}
+}
+
+@media only screen and (min-width:0px) and (max-width:1350px){
+.Header .Nav ul.MainMenu li.MainMenuLi {font-size:16px; }
+.Header .Logo {max-width: 85px;}
+.Header .Logo a{background: url(../../Images/Logo.png) 0 20px no-repeat; background-size:400px auto;}
+.Header > .Div-W1000{padding: 0 160px 0 110px;}
+}
+
+@media only screen and (min-width:0px) and (max-width:1100px){
+.DefLink a { width:50%;}
+
+}
+
+@media only screen and (min-width:0px) and (max-width:1024px){
+.Header { height:100px;  overflow:hidden; padding-right:80px; }
+.Header .Div-W1000 { position:relative; padding:0; overflow:hidden;}
+.Header .Logo {  position:relative; float:left; z-index:999;  height:100px;  }
+.Header .Logo a{ height:100px; background: url(../../Images/Logo.png) 0 10px no-repeat; background-size:400px auto;}
+.Header .Nav { display:none;}
+.Header .Search { position:relative; float:right;z-index:999; }
+
+.Showroom .productlist li { width:49.5%; }
+.Showroom .productlist li:nth-child(3n) { margin-right:1%;}
+.Showroom .productlist li:nth-child(2n) { margin-right:0;}
+
+.Header .Search{top: 32px;}
+
+body .slicknav_menu { display:block; width:70%; }
+body .slicknav_menu { margin-top:23px;}
+body .slicknav_menu .slicknav_icon-bar { background:#fff;}
+body .slicknav_btn{  width:45px; height:45px;}
+.slicknav_nav ul li{ min-width:100%;}
+body .slicknav_nav{margin-top: 25px;}
+body .slicknav_menu .slicknav_open .slicknav_icon {background: url(../../JS/SlickNav/slicknav_icon_close_w.png) 0 0 no-repeat;}
+}
+@media only screen and (min-width:0px) and (max-width:1000px){
+.ContactUs .ContactContent { padding:0 ;}
+.ContactUs iframe { height:300px; float:none;  margin:0 auto;}
+.ContactUs form#frmUG { width:100%; position:relative; right:inherit; top:inherit; overflow:hidden; margin:0 auto;}
+.ContactUs fieldset { min-height:inherit;}
+
+
+.uGear { width:100%; height:60px; float:none; margin:0 auto; text-align:center; background:none;  }
+.uGear:hover {background:none;}
+.uGear a { display:inline-block; width:auto; height:60px; line-height:90px; font-size:12px; color:#fff; text-decoration:none; text-indent:2px;}
+.uGear a:hover { color:#fff33f; }
+
+
+}
+
+@media only screen and (min-width:0px) and (max-width:768px){
+.DefNews { padding-left: 25%; }
+.DefNews h1 { width:25%;}
+.DefLink a:Hover:after { opacity:0;   }
+.PageArticle .PageArticleH1 {  font-size:24px;}
+
+.Btn_Down,.Btn_Down2,.Btn_Url,.Btn_ImgDown {transition:all 0s;}
+
+.PageTitleWrapper { padding:20px 0;}
+.PageTitleWrapper .PageTitle h1 { font-size:30px;}
+
+.PageMenuTop #SlideDownButton { display:block;}
+.PageMenuTop #SlideMenu { display:none; border-top:1px dotted #5e5e5e;  }
+.PageMenuTop ul { padding:0; }
+.PageMenuTop li { width:100%; display:block; margin-bottom:0; border-bottom:1px dotted #5e5e5e;}
+.PageMenuTop li a { -webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;  overflow:hidden;white-space: nowrap; text-overflow: ellipsis;-o-text-overflow: ellipsis;}
+.PageMenu .SubMenu ul li {  font-size:16px; margin:15px 15px 10px 0; }
+
+.Showroom .productlist li { width:100%; margin-right:0; }
+.Showroom .productlist li:nth-child(3n) { margin-right:0;}
+
+.PageDownload li:hover { -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0);    -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0);
+    box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0);}
+.NewsGalleryWrap li:hover {border: 1px solid #eeeeee;
+-webkit-box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0);
+-moz-box-shadow:2px 2px 2px 0px rgba(50, 50, 50, 0);
+box-shadow:2px 2px 2px 0px rgba(50, 50, 50, 0);}
+
+.Showroom .productlist li .productTypeContent:hover  {  border:1px solid #eeeeee;
+-webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0);
+    box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0); }
+
+
+}
+@media only screen and (min-width:0px) and (max-width:680px){
+
+.swiper-container-horizontal > .swiper-pagination { display:none;}
+
+.ContactUs fieldset { padding:20px;}
+
+.SocialNetworkWrapper { float:none; margin:0 auto; width:100%;}
+.Btn_Down2 { margin:0 auto; margin-top:10px; margin-bottom:10px; }
+
+}
+
+@media only screen and (min-width:0px) and (max-width:600px){
+.DefLink a { width:100%;}
+.ContactUs .FormWrapper3 { width:100%;}
+}
+
+@media only screen and (max-width: 540px) and (min-width: 0px){
+.Header .Search { display:block;}
+.footer .copyright br{ display: block; line-height:1.8em;}
+
+}
+
+@media only screen and (min-width:0px) and (max-width:512px){
+.NewsGalleryWrap li { width:90%; margin:0 auto; margin-bottom: 15px ; float:none;}
+.NewsGalleryWrap li:nth-of-type(4n+1) { float:none;}
+
+div#abgne_marquee ul{ padding-left:20px;}
+.DefNews {
+    padding-left: 20%;
+}
+.DefNews h1 {
+    width: 20%;
+}
+}
+@media only screen and (min-width:0px) and (max-width:480px){
+	.ContactUs .FormWrapper { padding-left:0;}
+	.ContactUs label { position:relative; width:100%;}
+	.ContactUs .RwdBr { display:inline;}
+	
+
+}
+
+@media only screen and (min-width:0px) and (max-width:400px){
+.Header { height:auto; padding:0 10px 30px 10px; }
+.Header .Search { z-index:5; max-width:inherit; top:inherit; right:inherit; width:100%; float:none; margin:0 auto;}
+
+}
+
+@media only screen and (min-width:0px) and (max-width:320px){
+.Btn_Two { max-width:220px;}
+.Btn_Two .GoBack { max-width:100px;}
+.AboutUs .PageArticle .About02 { padding:10px;}
+}

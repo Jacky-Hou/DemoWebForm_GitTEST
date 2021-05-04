@@ -1,0 +1,1870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此檔案由您的 Web 專案發佈/封裝處理序使用。您可以藉由編輯此 MSBuild 檔案，
+自訂此處理序的行為。若要深入了解，請前往 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\WebSite\DemoWebForm</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ClassLibrary.dll">
+      <publishTime>12/02/2020 16:15:02</publishTime>
+    </File>
+    <File Include="bin/ClassLibrary.pdb">
+      <publishTime>12/02/2020 16:15:02</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.dll">
+      <publishTime>12/18/2018 08:56:38</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.pdb">
+      <publishTime>12/18/2018 08:56:38</publishTime>
+    </File>
+    <File Include="bin/DemoWebForm.dll">
+      <publishTime>08/05/2019 09:52:28</publishTime>
+    </File>
+    <File Include="bin/DemoWebForm.pdb">
+      <publishTime>08/05/2019 09:52:28</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>06/06/2017 22:59:22</publishTime>
+    </File>
+    <File Include="bin/ExcelNumberFormat.dll">
+      <publishTime>11/23/2017 09:21:44</publishTime>
+    </File>
+    <File Include="bin/FastMember.dll">
+      <publishTime>03/06/2018 05:29:48</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>08/15/2018 17:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>10/18/2019 23:39:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.Logging.dll">
+      <publishTime>10/18/2019 23:40:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>10/18/2019 23:44:00</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/22/2019 01:06:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>02/26/2020 11:31:08</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/11/2016 23:13:46</publishTime>
+    </File>
+    <File Include="bin/System.IO.Packaging.dll">
+      <publishTime>06/11/2016 23:13:48</publishTime>
+    </File>
+    <File Include="bin/WebSite.dll">
+      <publishTime>12/02/2020 19:09:04</publishTime>
+    </File>
+    <File Include="bin/WebSite.dll.config">
+      <publishTime>12/02/2020 19:08:58</publishTime>
+    </File>
+    <File Include="bin/WebSite.pdb">
+      <publishTime>12/02/2020 19:09:04</publishTime>
+    </File>
+    <File Include="Content/jquery.jqGrid/ellipsis-xbl.xml">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Content/jquery.jqGrid/ui.jqgrid.css">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/animated-overlay.gif">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.menu.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>09/05/2019 17:55:24</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.spinner.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tooltip.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/animated-overlay.gif">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_222222_256x240.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_454545_256x240.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_888888_256x240.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery-ui.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.button.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.core.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.menu.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>09/05/2019 17:55:22</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>09/05/2019 17:55:20</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.slider.min.css">
+      <publishTime>09/05/2019 17:55:20</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.spinner.min.css">
+      <publishTime>09/05/2019 17:55:20</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>09/05/2019 17:55:20</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.theme.min.css">
+      <publishTime>09/05/2019 17:55:20</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tooltip.min.css">
+      <publishTime>09/05/2019 17:55:20</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>12/02/2020 16:15:00</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-ar.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-bg.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-bg1251.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-cat.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-cn.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-cs.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-da.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-de.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-dk.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-el.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-en.js">
+      <publishTime>09/05/2019 17:55:28</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-es.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-fa.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-fi.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-fr.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-gl.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-he.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-hr.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-hr1250.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-hu.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-id.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-is.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-it.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-ja.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-kr.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-lt.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-mne.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-nl.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-no.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-pl.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-pt-br.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-pt.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-ro.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-ru.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-sk.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-sr-latin.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-sr.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-sv.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-th.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-tr.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-tw.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-ua.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/i18n/grid.locale-vi.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>09/05/2019 17:55:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>09/05/2019 17:55:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.map">
+      <publishTime>09/05/2019 17:55:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.10.0.js">
+      <publishTime>09/05/2019 17:55:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.10.0.min.js">
+      <publishTime>09/05/2019 17:55:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.jqGrid.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.jqGrid.min.js">
+      <publishTime>09/05/2019 17:55:26</publishTime>
+    </File>
+    <File Include="Test/FBorLineshare.aspx">
+      <publishTime>07/17/2020 16:14:50</publishTime>
+    </File>
+    <File Include="TW/Admin/Acct/ugA_Acct.aspx">
+      <publishTime>09/12/2019 10:20:02</publishTime>
+    </File>
+    <File Include="TW/Admin/Acct/ugA_AcctCat.aspx">
+      <publishTime>02/05/2020 11:16:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Acct/ugA_AcctCat_m.aspx">
+      <publishTime>09/06/2019 11:41:02</publishTime>
+    </File>
+    <File Include="TW/Admin/Acct/ugA_Acct_m.aspx">
+      <publishTime>09/09/2019 14:34:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Acct/ugA_incLeft.ascx">
+      <publishTime>08/22/2019 13:33:04</publishTime>
+    </File>
+    <File Include="TW/Admin/CSS/font-awesome/css/font-awesome.min.css">
+      <publishTime>08/12/2019 16:13:10</publishTime>
+    </File>
+    <File Include="TW/Admin/CSS/icofont/css/icofont.css">
+      <publishTime>08/12/2019 16:14:16</publishTime>
+    </File>
+    <File Include="TW/Admin/CSS/ProgressBar.css">
+      <publishTime>09/30/2016 11:49:08</publishTime>
+    </File>
+    <File Include="TW/Admin/CSS/ugA_Login.css">
+      <publishTime>04/20/2018 11:22:44</publishTime>
+    </File>
+    <File Include="TW/Admin/CSS/ugA_Main.css">
+      <publishTime>09/06/2019 11:43:22</publishTime>
+    </File>
+    <File Include="TW/Admin/CSS/ugA_Menu.css">
+      <publishTime>05/24/2018 14:54:06</publishTime>
+    </File>
+    <File Include="TW/Admin/CSS/ugA_Setting.css">
+      <publishTime>08/01/2019 09:06:28</publishTime>
+    </File>
+    <File Include="TW/Admin/CSS/ugA_SubMenu.css">
+      <publishTime>04/20/2018 11:22:42</publishTime>
+    </File>
+    <File Include="TW/Admin/CSS/ugA_UI.css">
+      <publishTime>07/12/2019 17:46:50</publishTime>
+    </File>
+    <File Include="TW/Admin/Default.aspx">
+      <publishTime>09/06/2019 14:44:28</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_Click100P.gif">
+      <publishTime>04/20/2018 11:25:04</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_Click100P_blue.gif">
+      <publishTime>04/20/2018 11:25:04</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_Click100P_Red.gif">
+      <publishTime>04/20/2018 11:25:04</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_Def.jpg">
+      <publishTime>04/20/2018 11:25:04</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_FnBu.gif">
+      <publishTime>04/20/2018 11:25:04</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_FnBu_o.gif">
+      <publishTime>04/20/2018 11:25:04</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_Left.gif">
+      <publishTime>04/20/2018 11:25:04</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_Login.jpg">
+      <publishTime>04/20/2018 11:25:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_Menu.jpg">
+      <publishTime>04/20/2018 11:25:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_Menu01.gif">
+      <publishTime>04/20/2018 11:25:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_Menu02.gif">
+      <publishTime>04/20/2018 11:25:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_MenuCat.gif">
+      <publishTime>04/20/2018 11:24:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_MenuHome.gif">
+      <publishTime>04/20/2018 11:24:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_MenuItem.gif">
+      <publishTime>04/20/2018 11:24:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bg_MenuTitle.gif">
+      <publishTime>04/20/2018 11:24:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bu_Back.gif">
+      <publishTime>04/20/2018 11:24:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bu_Home.gif">
+      <publishTime>04/20/2018 11:25:16</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bu_Home_o.gif">
+      <publishTime>04/20/2018 11:24:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bu_Login.gif">
+      <publishTime>04/20/2018 11:24:56</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bu_LoginCls.gif">
+      <publishTime>04/20/2018 11:24:56</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bu_Logoff.gif">
+      <publishTime>04/20/2018 11:24:54</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Bu_Logoff_o.gif">
+      <publishTime>04/20/2018 11:24:52</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Diary/Face/01.gif">
+      <publishTime>04/20/2018 11:25:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Diary/Face/02.gif">
+      <publishTime>04/20/2018 11:25:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Diary/Face/03.gif">
+      <publishTime>04/20/2018 11:25:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Diary/Face/04.gif">
+      <publishTime>04/20/2018 11:25:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Diary/Face/05.gif">
+      <publishTime>04/20/2018 11:25:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Diary/Face/Thumbs.db">
+      <publishTime>04/20/2018 11:25:04</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Diary/Face/_notes/dwsync.xml">
+      <publishTime>04/20/2018 11:25:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Eng/Bu_Back.gif">
+      <publishTime>04/20/2018 11:25:12</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Eng/Bu_Login.gif">
+      <publishTime>04/20/2018 11:25:12</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Eng/Bu_LoginCls.gif">
+      <publishTime>04/20/2018 11:25:12</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_add.jpg">
+      <publishTime>04/20/2018 11:24:52</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_add_o.jpg">
+      <publishTime>04/20/2018 11:24:52</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_best.jpg">
+      <publishTime>04/20/2018 11:24:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_best_o.jpg">
+      <publishTime>04/20/2018 11:24:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_browse.jpg">
+      <publishTime>04/20/2018 11:24:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_browse_o.jpg">
+      <publishTime>04/20/2018 11:24:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_change.jpg">
+      <publishTime>04/20/2018 11:24:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_change_o.jpg">
+      <publishTime>04/20/2018 11:24:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_cleanSearch.jpg">
+      <publishTime>04/20/2018 11:24:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_cleanSearch_o.jpg">
+      <publishTime>04/20/2018 11:24:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_copy.jpg">
+      <publishTime>04/20/2018 11:24:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_copy_o.jpg">
+      <publishTime>04/20/2018 11:24:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_cover.jpg">
+      <publishTime>04/20/2018 11:24:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_cover_o.jpg">
+      <publishTime>04/20/2018 11:24:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_delete.jpg">
+      <publishTime>04/20/2018 11:24:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_deleteExcel.jpg">
+      <publishTime>04/20/2018 11:24:44</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_deleteExcel_o.jpg">
+      <publishTime>04/20/2018 11:24:44</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_delete_o.jpg">
+      <publishTime>04/20/2018 11:24:40</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_download.jpg">
+      <publishTime>04/20/2018 11:24:40</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_download_o.jpg">
+      <publishTime>04/20/2018 11:24:40</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_files.jpg">
+      <publishTime>04/20/2018 11:24:40</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_files2.jpg">
+      <publishTime>04/20/2018 11:24:40</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_files2_o.jpg">
+      <publishTime>04/20/2018 11:24:40</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_files_o.jpg">
+      <publishTime>04/20/2018 11:24:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_import.jpg">
+      <publishTime>04/20/2018 11:24:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_import_o.jpg">
+      <publishTime>04/20/2018 11:24:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_inventory.jpg">
+      <publishTime>04/20/2018 11:24:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_inventory_o.jpg">
+      <publishTime>04/20/2018 11:24:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_modify.jpg">
+      <publishTime>04/20/2018 11:24:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_modify_o.jpg">
+      <publishTime>04/20/2018 11:24:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_money.jpg">
+      <publishTime>04/20/2018 11:24:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_money_o.jpg">
+      <publishTime>04/20/2018 11:24:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_newProduct.jpg">
+      <publishTime>04/20/2018 11:24:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_newProduct_o.jpg">
+      <publishTime>04/20/2018 11:24:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_preinstall.jpg">
+      <publishTime>04/20/2018 11:24:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_preinstall_o.jpg">
+      <publishTime>04/20/2018 11:24:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_print.jpg">
+      <publishTime>04/20/2018 11:24:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_print_o.jpg">
+      <publishTime>04/20/2018 11:24:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_renew.jpg">
+      <publishTime>04/20/2018 11:24:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_renew_o.jpg">
+      <publishTime>04/20/2018 11:24:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_reply.jpg">
+      <publishTime>04/20/2018 11:24:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_reply_o.jpg">
+      <publishTime>04/20/2018 11:24:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_search.jpg">
+      <publishTime>04/20/2018 11:24:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_search_o.jpg">
+      <publishTime>04/20/2018 11:24:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_selectProduct.jpg">
+      <publishTime>04/20/2018 11:24:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_selectProduct_o.jpg">
+      <publishTime>04/20/2018 11:24:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_startAndEnd.jpg">
+      <publishTime>04/20/2018 11:24:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_startAndEnd_o.jpg">
+      <publishTime>04/20/2018 11:24:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_stop.jpg">
+      <publishTime>04/20/2018 11:24:28</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_stop_o.jpg">
+      <publishTime>04/20/2018 11:24:28</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_top.jpg">
+      <publishTime>04/20/2018 11:24:24</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_top_o.jpg">
+      <publishTime>04/20/2018 11:24:24</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_type.jpg">
+      <publishTime>04/20/2018 11:24:24</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_type_o.jpg">
+      <publishTime>04/20/2018 11:24:24</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_up.jpg">
+      <publishTime>04/20/2018 11:24:24</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_upToDateProduct.jpg">
+      <publishTime>04/20/2018 11:24:24</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_upToDateProduct_o.jpg">
+      <publishTime>04/20/2018 11:24:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/FnBu_icon_up_o.jpg">
+      <publishTime>04/20/2018 11:24:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Calendar.gif">
+      <publishTime>04/20/2018 11:24:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_CalendarNext.gif">
+      <publishTime>04/20/2018 11:24:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_CalendarPrev.gif">
+      <publishTime>04/20/2018 11:24:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Dot.gif">
+      <publishTime>04/20/2018 11:24:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Email.gif">
+      <publishTime>04/20/2018 11:24:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Error.gif">
+      <publishTime>04/20/2018 11:24:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_File.gif">
+      <publishTime>04/20/2018 11:24:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Folder.gif">
+      <publishTime>04/20/2018 11:24:20</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Item.gif">
+      <publishTime>04/20/2018 11:42:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_LayOutLB.gif">
+      <publishTime>04/20/2018 11:24:20</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_LayOutLD.gif">
+      <publishTime>04/20/2018 11:24:20</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_LayOutLT.gif">
+      <publishTime>04/20/2018 11:24:20</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_LayOutRB.gif">
+      <publishTime>04/20/2018 11:24:16</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_LayOutRD.gif">
+      <publishTime>04/20/2018 11:24:20</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_LayOutRT.gif">
+      <publishTime>04/20/2018 11:24:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Loading.gif">
+      <publishTime>04/20/2018 11:24:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Modify.gif">
+      <publishTime>04/20/2018 11:24:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_People.gif">
+      <publishTime>04/20/2018 11:24:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Preview.gif">
+      <publishTime>04/20/2018 11:23:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Sticky.gif">
+      <publishTime>04/20/2018 11:23:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Url.gif">
+      <publishTime>04/20/2018 11:23:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_View.gif">
+      <publishTime>04/20/2018 11:23:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_Web.gif">
+      <publishTime>04/20/2018 11:23:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Icon_WebMail.gif">
+      <publishTime>04/20/2018 11:23:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Img_DefUpload.gif">
+      <publishTime>04/20/2018 11:23:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Loading.gif">
+      <publishTime>04/20/2018 11:23:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/loading.swf">
+      <publishTime>04/20/2018 11:23:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/background/Def_bg05.jpg">
+      <publishTime>04/20/2018 11:25:16</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/background/Thumbs.db">
+      <publishTime>04/20/2018 11:25:14</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/CopyRight/Thumbs.db">
+      <publishTime>04/20/2018 11:25:20</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/20150706175046.png">
+      <publishTime>09/23/2015 16:21:42</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/20150717135221.png">
+      <publishTime>09/23/2015 16:21:42</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/20150804144212.png">
+      <publishTime>05/07/2019 17:36:02</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/20150804145733.png">
+      <publishTime>09/23/2015 16:21:42</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/20150804145818.png">
+      <publishTime>09/23/2015 16:21:42</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/20150813120835.png">
+      <publishTime>09/23/2015 16:21:44</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/20150813120858.png">
+      <publishTime>09/23/2015 16:21:44</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/20150813121358.png">
+      <publishTime>09/23/2015 16:21:44</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/20150813121422.png">
+      <publishTime>09/23/2015 16:21:44</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu26.png">
+      <publishTime>09/23/2015 16:21:44</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu27.png">
+      <publishTime>09/23/2015 16:21:44</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu28.png">
+      <publishTime>09/23/2015 16:21:44</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu29.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu30.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu31.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu32.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu33.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu39.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu49.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu50.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/b2b2cmenu51.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/back_bu.png">
+      <publishTime>09/23/2015 16:21:46</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/captcha.bmp">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/Header_bg.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/Header_bg2.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/icon_account.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/icon_password.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/icon_wrong.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/login_bg.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/login_bg2.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/login_bu.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/login_logo.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu01.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu02.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu03.png">
+      <publishTime>05/07/2019 16:42:18</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu04.png">
+      <publishTime>09/23/2015 16:21:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu05.png">
+      <publishTime>09/23/2015 16:21:50</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu06.png">
+      <publishTime>05/07/2019 17:44:22</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu07.png">
+      <publishTime>05/07/2019 17:09:56</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu08.png">
+      <publishTime>09/23/2015 16:21:50</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu09.png">
+      <publishTime>09/23/2015 16:21:50</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu10.png">
+      <publishTime>05/07/2019 17:02:18</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu11.png">
+      <publishTime>05/07/2019 17:01:40</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu12.png">
+      <publishTime>05/30/2019 14:11:54</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu13.png">
+      <publishTime>09/23/2015 16:21:50</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu14.png">
+      <publishTime>05/07/2019 17:30:48</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu15.png">
+      <publishTime>09/23/2015 16:21:50</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu16.png">
+      <publishTime>05/07/2019 16:57:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu17.png">
+      <publishTime>05/07/2019 16:45:42</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu18.png">
+      <publishTime>09/23/2015 16:21:52</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu19.png">
+      <publishTime>05/07/2019 17:31:42</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu20.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu21.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu22.png">
+      <publishTime>05/07/2019 16:48:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu23.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu24.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu25.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu26.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu27.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu28.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu29.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu30.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu31.png">
+      <publishTime>09/23/2015 16:22:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu32.png">
+      <publishTime>09/23/2015 16:22:12</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu33.png">
+      <publishTime>09/23/2015 16:22:12</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu34.png">
+      <publishTime>09/23/2015 16:22:12</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu35.png">
+      <publishTime>09/23/2015 16:22:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu36.png">
+      <publishTime>09/23/2015 16:22:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu37.png">
+      <publishTime>05/07/2019 17:41:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu38.png">
+      <publishTime>05/07/2019 17:41:54</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu39.png">
+      <publishTime>09/23/2015 16:22:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu40.png">
+      <publishTime>09/23/2015 16:22:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu41.png">
+      <publishTime>09/23/2015 16:22:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu42.png">
+      <publishTime>11/16/2018 11:25:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu43.png">
+      <publishTime>09/23/2015 16:22:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu44.png">
+      <publishTime>09/23/2015 16:22:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu45.png">
+      <publishTime>09/23/2015 16:22:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu46.png">
+      <publishTime>09/23/2015 16:22:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu47.png">
+      <publishTime>05/07/2019 17:35:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu48.png">
+      <publishTime>05/07/2019 17:32:40</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu49.png">
+      <publishTime>09/23/2015 16:22:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu50.png">
+      <publishTime>09/23/2015 16:22:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu51.png">
+      <publishTime>09/23/2015 16:22:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu52.png">
+      <publishTime>09/23/2015 16:22:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu53.png">
+      <publishTime>05/07/2019 17:25:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/menu_icon.png">
+      <publishTime>09/23/2015 16:22:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/nav_01.png">
+      <publishTime>09/23/2015 16:22:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/nav_02.png">
+      <publishTime>09/23/2015 16:22:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/nav_03.png">
+      <publishTime>09/23/2015 16:22:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/icon/nav_04.png">
+      <publishTime>09/23/2015 16:22:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/Setting/MenuAgo/Thumbs.db">
+      <publishTime>04/20/2018 11:26:02</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/uGearLogo.gif">
+      <publishTime>04/20/2018 11:23:56</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/Bg_MenuTitle.png">
+      <publishTime>04/20/2018 11:26:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/Def_bg01.jpg">
+      <publishTime>04/20/2018 11:26:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/Home_icon.png">
+      <publishTime>04/20/2018 11:26:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/left_bg.png">
+      <publishTime>04/20/2018 11:26:58</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/Logoff_icon.png">
+      <publishTime>04/20/2018 11:26:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon01.png">
+      <publishTime>04/20/2018 11:26:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon02.png">
+      <publishTime>04/20/2018 11:26:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon03.png">
+      <publishTime>04/20/2018 11:26:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon04.png">
+      <publishTime>04/20/2018 11:26:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon05.png">
+      <publishTime>04/20/2018 11:26:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon06.png">
+      <publishTime>04/20/2018 11:26:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon07.png">
+      <publishTime>04/20/2018 11:26:38</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon08.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon09.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon10.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon11.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon12.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon13.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon14.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon15.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon16.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon17.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon18.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon19.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon20.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon21.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon22.png">
+      <publishTime>04/20/2018 11:26:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon23.png">
+      <publishTime>04/20/2018 11:26:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon24.png">
+      <publishTime>04/20/2018 11:26:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon25.png">
+      <publishTime>04/20/2018 11:26:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon26.png">
+      <publishTime>04/20/2018 11:26:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon27.png">
+      <publishTime>04/20/2018 11:26:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon28.png">
+      <publishTime>04/20/2018 11:26:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon29.png">
+      <publishTime>04/20/2018 11:26:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon30.png">
+      <publishTime>04/20/2018 11:26:34</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon31.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon32.png">
+      <publishTime>04/20/2018 11:26:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon33.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon34.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon35.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon36.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon37.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon38.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon39.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon40.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon41.png">
+      <publishTime>04/20/2018 11:26:32</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon42.png">
+      <publishTime>04/20/2018 11:26:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon43.png">
+      <publishTime>04/20/2018 11:26:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon44.png">
+      <publishTime>04/20/2018 11:26:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon45.png">
+      <publishTime>04/20/2018 11:26:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon46.png">
+      <publishTime>04/20/2018 11:26:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon47.png">
+      <publishTime>04/20/2018 11:26:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon48.png">
+      <publishTime>04/20/2018 11:26:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon49.png">
+      <publishTime>04/20/2018 11:26:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon50.png">
+      <publishTime>04/20/2018 11:26:30</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon51.png">
+      <publishTime>04/20/2018 11:26:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon52.png">
+      <publishTime>04/20/2018 11:26:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon53.png">
+      <publishTime>04/20/2018 11:26:10</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon54.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon55.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon56.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon57.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon58.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon59.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon60.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon61.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon62.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon63.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon64.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon65.png">
+      <publishTime>04/20/2018 11:26:08</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon66.png">
+      <publishTime>04/20/2018 11:26:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon67.png">
+      <publishTime>04/20/2018 11:26:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon68.png">
+      <publishTime>04/20/2018 11:26:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon69.png">
+      <publishTime>04/20/2018 11:26:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon70.png">
+      <publishTime>04/20/2018 11:26:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon71.png">
+      <publishTime>04/20/2018 11:26:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon72.png">
+      <publishTime>04/20/2018 11:26:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuItem_icon73.png">
+      <publishTime>04/20/2018 11:26:06</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/MenuTitle_line.png">
+      <publishTime>04/20/2018 11:26:02</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/UI/_notes/dwsync.xml">
+      <publishTime>04/20/2018 11:27:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/YouTubeDescr01.jpg">
+      <publishTime>04/20/2018 11:23:56</publishTime>
+    </File>
+    <File Include="TW/Admin/Images/_notes/dwsync.xml">
+      <publishTime>04/20/2018 11:27:00</publishTime>
+    </File>
+    <File Include="TW/Admin/Inc/Basic.Master">
+      <publishTime>09/06/2019 15:29:54</publishTime>
+    </File>
+    <File Include="TW/Admin/Inc/Basic_Index.Master">
+      <publishTime>09/04/2019 11:21:50</publishTime>
+    </File>
+    <File Include="TW/Admin/Inc/ugA_DatePicket.ascx">
+      <publishTime>09/04/2019 16:10:40</publishTime>
+    </File>
+    <File Include="TW/Admin/Inc/ugA_MsgBox.ascx">
+      <publishTime>08/05/2019 12:45:36</publishTime>
+    </File>
+    <File Include="TW/Admin/Inc/ugA_Pagination.ascx">
+      <publishTime>08/29/2019 18:36:28</publishTime>
+    </File>
+    <File Include="TW/Admin/Inc/ugA_TableList.ascx">
+      <publishTime>08/01/2019 13:57:19</publishTime>
+    </File>
+    <File Include="TW/Admin/ugA_CopyRight.htm">
+      <publishTime>09/12/2019 10:18:02</publishTime>
+    </File>
+    <File Include="TW/Admin/ugA_LoginChk.html">
+      <publishTime>07/09/2019 16:25:48</publishTime>
+    </File>
+    <File Include="TW/Admin/ugA_Logout.aspx">
+      <publishTime>08/05/2019 11:54:44</publishTime>
+    </File>
+    <File Include="TW/Admin/ugA_Menu.aspx">
+      <publishTime>08/14/2019 10:13:44</publishTime>
+    </File>
+    <File Include="TW/Admin/User/ugA_incLeft.ascx">
+      <publishTime>08/14/2019 13:36:12</publishTime>
+    </File>
+    <File Include="TW/Admin/User/ugA_User.aspx">
+      <publishTime>01/08/2020 15:35:32</publishTime>
+    </File>
+    <File Include="TW/Admin/User/ugA_User_m.aspx">
+      <publishTime>09/09/2019 15:08:20</publishTime>
+    </File>
+    <File Include="TW/Captcha-Text/ugC_Captcha-Text.aspx">
+      <publishTime>08/13/2019 15:08:22</publishTime>
+    </File>
+    <File Include="TW/CSS/font-awesome.min.css">
+      <publishTime>08/05/2019 14:07:06</publishTime>
+    </File>
+    <File Include="TW/CSS/font-awesome/css/font-awesome.css">
+      <publishTime>05/06/2019 11:49:48</publishTime>
+    </File>
+    <File Include="TW/CSS/font-awesome/css/font-awesome.min.css">
+      <publishTime>05/06/2019 11:49:46</publishTime>
+    </File>
+    <File Include="TW/CSS/font-awesome/fonts/fontawesome-webfont.eot">
+      <publishTime>06/17/2016 10:48:08</publishTime>
+    </File>
+    <File Include="TW/CSS/font-awesome/fonts/fontawesome-webfont.svg">
+      <publishTime>06/17/2016 10:48:06</publishTime>
+    </File>
+    <File Include="TW/CSS/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>06/17/2016 10:48:08</publishTime>
+    </File>
+    <File Include="TW/CSS/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>06/17/2016 10:48:10</publishTime>
+    </File>
+    <File Include="TW/CSS/font-awesome/fonts/FontAwesome.otf">
+      <publishTime>06/17/2016 10:48:08</publishTime>
+    </File>
+    <File Include="TW/CSS/Home/Default.css">
+      <publishTime>06/04/2019 17:21:14</publishTime>
+    </File>
+    <File Include="TW/CSS/icofont.css">
+      <publishTime>08/05/2019 14:07:34</publishTime>
+    </File>
+    <File Include="TW/CSS/icofont/css/icofont.css">
+      <publishTime>06/20/2017 14:13:16</publishTime>
+    </File>
+    <File Include="TW/CSS/icofont/fonts/icofont.eot">
+      <publishTime>06/17/2016 11:13:38</publishTime>
+    </File>
+    <File Include="TW/CSS/icofont/fonts/icofont.svg">
+      <publishTime>06/17/2016 11:13:40</publishTime>
+    </File>
+    <File Include="TW/CSS/icofont/fonts/icofont.ttf">
+      <publishTime>06/17/2016 11:13:36</publishTime>
+    </File>
+    <File Include="TW/CSS/icofont/fonts/icofont.woff">
+      <publishTime>06/17/2016 11:13:38</publishTime>
+    </File>
+    <File Include="TW/CSS/Setting/ugC_CSS1.css">
+      <publishTime>05/02/2019 15:53:44</publishTime>
+    </File>
+    <File Include="TW/CSS/Setting/ugC_CSS2.css">
+      <publishTime>05/27/2019 16:13:16</publishTime>
+    </File>
+    <File Include="TW/CSS/Setting/ugC_CSS3.css">
+      <publishTime>05/27/2019 16:13:18</publishTime>
+    </File>
+    <File Include="TW/CSS/Setting/ugC_CSS4.css">
+      <publishTime>05/27/2019 16:13:20</publishTime>
+    </File>
+    <File Include="TW/CSS/Setting/ugC_CSS5.css">
+      <publishTime>05/27/2019 16:13:24</publishTime>
+    </File>
+    <File Include="TW/CSS/Setting/ugC_CSS6.css">
+      <publishTime>05/27/2019 16:13:28</publishTime>
+    </File>
+    <File Include="TW/CSS/Setting/ugC_CSS7.css">
+      <publishTime>05/27/2019 16:13:32</publishTime>
+    </File>
+    <File Include="TW/CSS/Setting/ugC_CSS8.css">
+      <publishTime>05/27/2019 16:13:36</publishTime>
+    </File>
+    <File Include="TW/CSS/SlickNav/slicknav.css">
+      <publishTime>08/05/2019 14:13:32</publishTime>
+    </File>
+    <File Include="TW/CSS/ugC_Main.css">
+      <publishTime>01/08/2020 11:40:32</publishTime>
+    </File>
+    <File Include="TW/GoogleCalender/GoogleCalender.aspx">
+      <publishTime>02/27/2020 10:25:58</publishTime>
+    </File>
+    <File Include="TW/Home/Default.aspx">
+      <publishTime>08/14/2019 09:02:00</publishTime>
+    </File>
+    <File Include="TW/Home/ugC_incBannerButton_Def.ascx">
+      <publishTime>08/05/2019 15:08:08</publishTime>
+    </File>
+    <File Include="TW/Home/ugC_incBannerText_Def.ascx">
+      <publishTime>08/05/2019 15:00:40</publishTime>
+    </File>
+    <File Include="TW/Home/ugC_incBanner_Def.ascx">
+      <publishTime>08/05/2019 17:18:12</publishTime>
+    </File>
+    <File Include="TW/Home/ugC_incLink02_Def.ascx">
+      <publishTime>08/05/2019 15:08:54</publishTime>
+    </File>
+    <File Include="TW/Home/ugC_incLink_Def.ascx">
+      <publishTime>08/05/2019 15:05:44</publishTime>
+    </File>
+    <File Include="TW/Home/ugC_incProducts_Def.ascx">
+      <publishTime>08/15/2019 16:31:22</publishTime>
+    </File>
+    <File Include="TW/iframe/ValidateCode.aspx">
+      <publishTime>08/06/2019 09:21:56</publishTime>
+    </File>
+    <File Include="TW/Images/mario.png">
+      <publishTime>03/17/2020 11:47:38</publishTime>
+    </File>
+    <File Include="TW/Inc/Basic.Master">
+      <publishTime>08/19/2019 09:14:24</publishTime>
+    </File>
+    <File Include="TW/Inc/ug_AcctCatID.ascx">
+      <publishTime>09/04/2019 16:10:26</publishTime>
+    </File>
+    <File Include="TW/Inc/ug_AcctEdu.ascx">
+      <publishTime>09/03/2019 16:27:06</publishTime>
+    </File>
+    <File Include="TW/Inc/ug_AcctHowKnow.ascx">
+      <publishTime>09/03/2019 15:52:58</publishTime>
+    </File>
+    <File Include="TW/Inc/ug_AcctOccu.ascx">
+      <publishTime>09/03/2019 15:52:58</publishTime>
+    </File>
+    <File Include="TW/Inc/ug_Area.ascx">
+      <publishTime>09/03/2019 18:50:34</publishTime>
+    </File>
+    <File Include="TW/Inc/ug_City.ascx">
+      <publishTime>09/03/2019 18:47:38</publishTime>
+    </File>
+    <File Include="TW/Inc/ug_Continent.ascx">
+      <publishTime>09/03/2019 19:01:54</publishTime>
+    </File>
+    <File Include="TW/Inc/ug_ContinentCityArea.ascx">
+      <publishTime>09/04/2019 17:03:48</publishTime>
+    </File>
+    <File Include="TW/Jquery/FBshare.aspx">
+      <publishTime>05/13/2020 13:24:56</publishTime>
+    </File>
+    <File Include="TW/Jquery/JqueryAutoComple.aspx">
+      <publishTime>05/08/2020 19:01:36</publishTime>
+    </File>
+    <File Include="TW/Jquery/Step1.aspx">
+      <publishTime>05/12/2020 16:26:58</publishTime>
+    </File>
+    <File Include="TW/Jquery/Step2.aspx">
+      <publishTime>05/12/2020 18:36:50</publishTime>
+    </File>
+    <File Include="TW/Jquery/Step3.aspx">
+      <publishTime>05/12/2020 19:16:04</publishTime>
+    </File>
+    <File Include="TW/Jquery/Step4.aspx">
+      <publishTime>05/12/2020 16:02:00</publishTime>
+    </File>
+    <File Include="TW/Jquery/Step5.aspx">
+      <publishTime>05/12/2020 19:16:58</publishTime>
+    </File>
+    <File Include="TW/Jquery/Step6.aspx">
+      <publishTime>05/12/2020 16:02:10</publishTime>
+    </File>
+    <File Include="TW/JS/bootstrap.css">
+      <publishTime>01/18/2018 10:29:48</publishTime>
+    </File>
+    <File Include="TW/JS/bootstrap.js">
+      <publishTime>01/18/2018 10:29:48</publishTime>
+    </File>
+    <File Include="TW/JS/ChkField.js">
+      <publishTime>09/04/2019 17:15:24</publishTime>
+    </File>
+    <File Include="TW/JS/ddsort.js">
+      <publishTime>09/28/2018 18:15:58</publishTime>
+    </File>
+    <File Include="TW/JS/jquery-1.12.4.js">
+      <publishTime>04/14/2020 16:18:28</publishTime>
+    </File>
+    <File Include="TW/JS/jquery-3.4.1.min.js">
+      <publishTime>07/03/2019 12:02:36</publishTime>
+    </File>
+    <File Include="TW/JS/jquery-ui.css">
+      <publishTime>09/14/2016 17:34:06</publishTime>
+    </File>
+    <File Include="TW/JS/jquery-ui.min.js">
+      <publishTime>09/14/2016 17:34:06</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.dataTables.min.js">
+      <publishTime>07/23/2019 16:35:58</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.jqGrid.min.js">
+      <publishTime>02/07/2013 13:52:12</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.js">
+      <publishTime>06/20/2017 14:13:20</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery-1.12.4.js">
+      <publishTime>04/14/2020 16:18:28</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery-ui-1.8.2.custom.min.js">
+      <publishTime>07/16/2019 15:25:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery-ui-slideraccess.js">
+      <publishTime>07/16/2019 15:25:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery-ui-timepicker-addon.css">
+      <publishTime>07/16/2019 15:25:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery-ui-timepicker-addon.js">
+      <publishTime>07/16/2019 15:50:58</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery-ui.css">
+      <publishTime>09/14/2016 17:34:06</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery-ui.js">
+      <publishTime>09/14/2016 17:34:06</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery-ui.min.js">
+      <publishTime>09/14/2016 17:34:06</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery.ui.core.js">
+      <publishTime>07/16/2019 15:25:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery.ui.datepicker.js">
+      <publishTime>07/16/2019 15:25:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery.ui.timepicker.js">
+      <publishTime>07/16/2019 15:25:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/jquery.ui.widget.js">
+      <publishTime>07/16/2019 15:25:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/CSS/demos.css">
+      <publishTime>07/16/2019 15:42:26</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.accordion.css">
+      <publishTime>09/23/2015 18:04:44</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.all.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.autocomplete.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.base.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.button.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.core.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.datepicker.css">
+      <publishTime>11/10/2016 10:43:08</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.dialog.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.progressbar.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.resizable.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.selectable.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.slider.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.tabs.css">
+      <publishTime>09/23/2015 18:04:46</publishTime>
+    </File>
+    <File Include="TW/JS/jquery.ui/themes/jquery.ui.theme.css">
+      <publishTime>09/23/2015 00:00:00</publishTime>
+    </File>
+    <File Include="TW/JS/Menu.js">
+      <publishTime>01/18/2019 09:07:54</publishTime>
+    </File>
+    <File Include="TW/JS/Open.js">
+      <publishTime>06/20/2017 14:13:26</publishTime>
+    </File>
+    <File Include="TW/JS/ScrollTop.js">
+      <publishTime>03/08/2019 11:57:08</publishTime>
+    </File>
+    <File Include="TW/JS/SkitterSlideshow/jquery.easing.1.3.js">
+      <publishTime>06/20/2017 14:13:22</publishTime>
+    </File>
+    <File Include="TW/JS/SlickNav/jquery.slicknav.js">
+      <publishTime>08/05/2019 14:14:02</publishTime>
+    </File>
+    <File Include="TW/JS/SlickNav/modernizr.min.js">
+      <publishTime>08/05/2019 14:14:02</publishTime>
+    </File>
+    <File Include="TW/JS/Slider.js">
+      <publishTime>01/17/2019 14:27:32</publishTime>
+    </File>
+    <File Include="TW/JS/Swiper/Css/swiper.min.css">
+      <publishTime>01/14/2019 14:07:18</publishTime>
+    </File>
+    <File Include="TW/JS/Swiper/is/classList.min.js">
+      <publishTime>08/05/2019 14:49:54</publishTime>
+    </File>
+    <File Include="TW/JS/Swiper/is/swiper.min.js">
+      <publishTime>08/05/2019 14:49:54</publishTime>
+    </File>
+    <File Include="TW/JS/ToolJS.js">
+      <publishTime>08/20/2018 16:16:38</publishTime>
+    </File>
+    <File Include="TW/Member/ugC_incMember.ascx">
+      <publishTime>01/08/2020 15:45:18</publishTime>
+    </File>
+    <File Include="TW/Member/ugC_incPageMenuTop.ascx">
+      <publishTime>08/19/2019 09:38:50</publishTime>
+    </File>
+    <File Include="TW/Member/ugC_Member.aspx">
+      <publishTime>09/04/2019 16:39:34</publishTime>
+    </File>
+    <File Include="TW/Member/ugC_Member_Final.aspx">
+      <publishTime>08/16/2019 14:00:30</publishTime>
+    </File>
+    <File Include="TW/Member/ugC_Member_Login.aspx">
+      <publishTime>01/09/2020 13:56:36</publishTime>
+    </File>
+    <File Include="TW/Member/ugC_Member_Regulation.aspx">
+      <publishTime>08/29/2019 15:01:00</publishTime>
+    </File>
+    <File Include="TW/oAuthLine/LineLoginStatus.ashx">
+      <publishTime>01/09/2020 15:08:44</publishTime>
+    </File>
+    <File Include="TW/oAuthLine/LineLoginStatus.aspx">
+      <publishTime>01/08/2020 15:36:20</publishTime>
+    </File>
+    <File Include="TW/oAuthLine/lineOAuth.js">
+      <publishTime>02/03/2020 09:18:44</publishTime>
+    </File>
+    <File Include="TW/ugC_Captcha.aspx">
+      <publishTime>08/07/2019 17:04:44</publishTime>
+    </File>
+    <File Include="TW/ugC_incTop.ascx">
+      <publishTime>08/19/2019 09:13:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/02/2020 19:09:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
